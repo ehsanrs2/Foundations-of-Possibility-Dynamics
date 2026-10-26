@@ -46,3 +46,7 @@ A future-fault scenario cannot be used to select actions *before* that scenario 
 ## 7.11 Fault ontology and representation-induced false backups
 
 The [Issue #9 audit](../research/gbr-metric-audit-v0.3.md) demonstrates failure of raw GBR under duplicated rule aliases, source-token refinement, narrowed failure exposures and a zero-slack backup. An exposure token must map to a declared fault-relevant physical unit (or a genuinely separately failing rule implementation). The raw score cannot establish that two names correspond to two independent components. Semantics-preserving identity maps must be registered **before** computing the metric or evaluating held-out outcomes. Neither simple label-renaming tests nor two independent implementations of the *same* faulty score definition resolve this construct-validity threat.
+
+## 7.12 Ontology uncertainty and conditional denominators
+
+The [R1 scope contract](../appendices/C-fault-event-ontology.md) rejects unmodeled support tokens and explicitly records protected components, physical mechanism identities and event common causes. This is conservative but still depends on evidence not supplied by source code. The [proposed P1 restoration estimand](../appendices/D-predictive-estimands.md) warns that a policy can alter which goals are lost; comparing loss-conditioned restoration fractions between *different* policies can create selection bias. Prediction should use one common frozen evaluation policy and identical pre-shock observables, while causal effects require a separate design.

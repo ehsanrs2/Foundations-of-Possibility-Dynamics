@@ -71,3 +71,7 @@ All uses of GBR must therefore state the external fault ontology, physical compo
 ## 4.9 A conditional information limitation
 
 If the entire observable pre-failure model is X and exact GBR is Z=f(X), then an unrestricted Bayes-optimal predictor given X cannot improve merely by also receiving Z: the best attainable predictions from (X,Z) are exactly those from X. The proof and scope are in [Issue #8 audit](../research/novelty-audit-v0.3.md). A finite-data or resource-limited learner may still benefit from engineered Z, but this is an **unverified empirical/computational claim**, not novel information or an independent physical law.
+
+## 4.10 Fault-event ontology gate R1 (candidate, NOT revised historical GBR)
+
+[Appendix C](../appendices/C-fault-event-ontology.md) defines an explicit *physically evidenced* mapping from every causal-support token to a mechanism identity and a nonempty fault-event incidence, or a documented protected status. Missing coverage is a measurement failure rather than evidence of an independent route. The executable [R1 diagnostic](../experiments/fault_ontology_r1.py) deduplicates equivalent labeled descriptions only **under those externally provided identities**. It contrasts the guarded pair with the tiny minimum fault-event hitting-set and independent-basic-event static survival baselines. These are restricted demonstrations; they neither correct GBR for resource-consuming policy uncertainty nor establish predictive novelty. The historical G1 definition and its known defects remain visible.

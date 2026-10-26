@@ -1,0 +1,14 @@
+{
+  "gate": "R1",
+  "classification": "declared_ontology_negative_controls_not_H1",
+  "same_physical_pair": 0,
+  "same_min_event_cut": 1,
+  "independent_physical_pair": 1,
+  "independent_min_event_cut": 2,
+  "alarm_narrow_pair": 1,
+  "alarm_with_common_power_pair": 0,
+  "split_source_single_unit_pair": 0,
+  "one_event_static_survival": "1/2",
+  "two_independent_events_static_survival": "3/4",
+  "result": "PASS"
+}
