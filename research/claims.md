@@ -12,4 +12,8 @@
 | C-008 | A new scientific discipline has been established | **Not claimed** | No supporting evidence |
 | C-009 | Illustrative program output agrees with archived result | Software regression result | Seven independent assertions (not hypothesis tests) |
 
+| C-010 | Optional construction cannot reduce existential reachable goals under nested transitions | Proven conditional statement | Appendix A.2 |
+| C-011 | GBR gain is bounded by the number of baseline-reachable goals | Proven conditional statement | Appendix A.3 |
+| C-012 | Finite construction dynamics admit augmented-state transition representation | Proven conditional statement | Appendix A.5 |
+
 **Policy:** Do not promote definitions, examples or hypotheses into findings without independent evidence and explicit uncertainty analysis. Retain null results.

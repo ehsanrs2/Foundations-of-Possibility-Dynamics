@@ -26,3 +26,7 @@ This book develops a bounded operational formalism and a research agenda. It doe
 ## Supporting record
 
 [Protocol P1](../research/protocol.md) · [Claims ledger](../research/claims.md) · [Scientific review](../research/scientific-review-v0.2.md) · [Bibliography](../references/references.md) · [Glossary](../glossary.md)
+
+## Technical appendices
+
+[Appendix A — Propositions, proofs and counterexamples](../appendices/A-mathematical-propositions.md) · [Appendix B — Provenance and reproduction](../appendices/B-reproducibility.md)

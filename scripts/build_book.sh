@@ -8,7 +8,8 @@ set -- book/01-scope.md book/02-prior-work.md book/03-formal-foundations.md \
  book/04-measures.md book/05-toy-case.md book/06-experimental-design.md \
  book/07-validity-threats.md book/08-research-agenda.md \
  book/09-interpretation.md book/10-conclusion.md \
- research/claims.md research/protocol.md references/references.md
+ research/claims.md research/protocol.md references/references.md \
+ appendices/A-mathematical-propositions.md appendices/B-reproducibility.md
 pandoc -f markdown+tex_math_dollars -s --toc \
  --metadata=title:"Foundations of Possibility Dynamics" \
  --metadata=subtitle:"Working scientific monograph v0.2" \
