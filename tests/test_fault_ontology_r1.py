@@ -46,9 +46,8 @@ class FaultOntologyR1Tests(unittest.TestCase):
 
     def test_scope_without_source_incidence_must_explicitly_protect(self):
         m = alias_scope(physically_distinct=False)
-        bad = replace(m, protected={})
         with self.assertRaises(ValueError):
-            assess(self.plans, "goal", bad)
+            replace(m, protected={})  # reject incomplete scope at creation
 
     def test_missing_plan_support_rejected_not_ignored(self):
         m = alias_scope(physically_distinct=False)
@@ -140,6 +139,12 @@ class FaultOntologyR1Tests(unittest.TestCase):
         self.assertEqual(res["same_physical_pair"],0)
         self.assertEqual(res["independent_physical_pair"],1)
         self.assertEqual(res["alarm_with_common_power_pair"],0)
+
+    def test_archived_r1_manifest(self):
+        import json
+        from pathlib import Path
+        path = Path(__file__).parents[1] / "experiments" / "r1_expected.json"
+        self.assertEqual(audit(), json.loads(path.read_text(encoding="utf-8")))
 
 
 if __name__ == "__main__":
