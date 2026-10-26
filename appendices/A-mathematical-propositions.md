@@ -61,3 +61,10 @@ This is an analytic counterexample, not new empirical data.
 ## A.7 What remains unproved
 
 No general predictive superiority of GBR, no causal effect of increasing it, no theoretical irreducibility beyond familiar control representations, and no cross-domain law is proven. Strong empirical evaluation remains necessary.
+
+
+## A.8 Conditional information redundancy of a deterministic feature
+
+Let X be the *complete* preregistered pre-failure input representation and Z=f(X) an exact deterministic feature (including candidate GBR). Every predictor h(X,Z) is the X-only function x↦h(x,f(x)). Conversely, an X-only predictor can ignore Z. Therefore the infimum achievable expected loss over unrestricted predictors is identical with and without Z. When defined, conditional mutual information I(Y;Z|X)=0. **This is elementary information redundancy, not a novel scientific law.** It does not rule out empirical advantages in finite sample size, capacity-limited learning, compression or fixed compute budgets, where calculating Z itself must be budgeted.
+
+See [the explicit reviewer novelty audit](../research/novelty-audit-v0.3.md) for limitations and falsifiers.

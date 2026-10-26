@@ -12,3 +12,6 @@ The list is a **starting bibliography, not a systematic review**. Publication da
 ## Verification still required
 
 Full mathematical equivalence audit with dynamic hypergraph reachability, AND/OR dependency graphs, repair models, viability and real-options theory. No claim that GBR was first proposed here is justified without that audit. Cite primary records and do not reproduce licensed books, figures or substantial passages.
+
+
+7. **Ruijters, E. J. J., & Stoelinga, M. I. A. (2015).** Fault tree analysis: A survey of the state-of-the-art in modeling, analysis and tools. *Computer Science Review*, 15–16, 29–62. [DOI: 10.1016/j.cosrev.2015.03.001](https://doi.org/10.1016/j.cosrev.2015.03.001). Prior art on path/cut sets, dynamic fault trees, common-cause events and quantitative reliability.

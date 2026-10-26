@@ -41,3 +41,8 @@ A pre-shock plan conditioned on the exact future failure realization is **clairv
 ## 7.10 Selection of information sets and scenario distributions
 
 A future-fault scenario cannot be used to select actions *before* that scenario is observed. The [G4 verification](../research/G4-verification.md) enforces a common pre-shock prefix across all scenarios and allows branching only after the shock. Its exact toy case yields success 1/2 with non-clairvoyant preparation versus 1 with perfect scenario foresight. These numbers are properties of a designed model, not observed recovery frequencies. The nominal **shock time is still known**, the complete scenario set is predefined, and the fault identity is revealed immediately; a deployment policy may lack any of these. Do not treat a clairvoyant optimizer as an equal-information prediction baseline.
+
+
+## 7.11 Fault ontology and representation-induced false backups
+
+The [Issue #9 audit](../research/gbr-metric-audit-v0.3.md) demonstrates failure of raw GBR under duplicated rule aliases, source-token refinement, narrowed failure exposures and a zero-slack backup. An exposure token must map to a declared fault-relevant physical unit (or a genuinely separately failing rule implementation). The raw score cannot establish that two names correspond to two independent components. Semantics-preserving identity maps must be registered **before** computing the metric or evaluating held-out outcomes. Neither simple label-renaming tests nor two independent implementations of the *same* faulty score definition resolve this construct-validity threat.

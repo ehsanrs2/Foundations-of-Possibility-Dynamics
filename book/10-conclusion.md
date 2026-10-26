@@ -9,3 +9,10 @@ The candidate GOG quantity counts newly accessible end goals. The candidate GBR 
 The central limitations are substantive. Shared dependencies may destroy both paths. Plan feasibility is conditional on time, costs and available components. Existing state-space and network methods may represent exactly the same mechanism. The toy example has been reproduced as software but no ensemble study has yet established incremental predictive value.
 
 Consequently, **neither a general physical law nor a separate scientific discipline has been demonstrated**. The research program should advance through preregistered counterexample-driven comparisons with strong baselines, and remain prepared to publish a negative result. The value of this edition lies in making its scientific commitments auditable.
+
+
+## Reviewer verdict and release limitation (v0.3 audit)
+
+The critical review of Issues #8 and #9 provides two additional reasons to retain **Major Revision** status. (i) Given the complete input system model, an exact deterministic GBR feature is informationally redundant for an unconstrained optimal predictor; potential gains must come from restricted representation/computation or additional input, properly accounted for. (ii) Raw binary GBR can count two labels for **one physical backup mechanism** as two independent exposed plans. Distinctly named implementation rules are not evidence of separate independent fault units.
+
+[The novelty audit](../research/novelty-audit-v0.3.md) and [reproducible negative controls](../research/gbr-metric-audit-v0.3.md) narrow rather than settle the theory's scientific claims. **No hypothesis test has established prediction or causation, and Issues #3 and #8–#12 remain open.** Negative results should remain visible in every subsequent edition.

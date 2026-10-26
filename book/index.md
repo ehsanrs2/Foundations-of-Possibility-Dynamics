@@ -30,3 +30,8 @@ This book develops a bounded operational formalism and a research agenda. It doe
 ## Technical appendices
 
 [Appendix A — Propositions, proofs and counterexamples](../appendices/A-mathematical-propositions.md) · [Appendix B — Provenance and reproduction](../appendices/B-reproducibility.md)
+
+
+## Critical peer-review response
+
+[Issue #8 novelty audit](../research/novelty-audit-v0.3.md) · [Issue #9 metric audit and counterexamples](../research/gbr-metric-audit-v0.3.md). These add **negative controls and conditional limitations**, not a claim that the review is resolved or that H1 is confirmed.

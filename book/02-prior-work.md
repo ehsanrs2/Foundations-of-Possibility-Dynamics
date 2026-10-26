@@ -35,3 +35,10 @@ Multiple paths and robustness to failures are standard network-science concerns.
 Before publishing a novelty claim, conduct targeted searches for **dynamic hypergraphs**, **AND/OR dependency networks**, **network repair and self-healing**, **temporal reachability**, **evolvability**, **real options**, and **reconfigurable systems**. Document inclusion criteria and compare mathematical definitions rather than their names alone.
 
 The operational objective is to test an incremental predictive contribution, not to win a terminology dispute. The working bibliography records only verified citations and unresolved retrieval work.
+
+
+## 2.7 Fault trees and minimal cut sets
+
+Ruijters and Stoelinga (2015) review conventional, dynamic and repairable **fault-tree analysis**, including path sets, cut sets, common-cause dependencies and probability-of-failure models (DOI: [10.1016/j.cosrev.2015.03.001](https://doi.org/10.1016/j.cosrev.2015.03.001)). Their work is a substantive prior comparator for the binary independence predicate in GBR. A pair of supports with disjoint **declared exposed tokens** is not automatically a new concept of fault tolerance or a calibrated probability.
+
+The [narrow correspondence table](../research/novelty-audit-v0.3.md) now separates reachability, dynamic AND/OR networks, fault trees, repair, viability, and empowerment. It is a **work-in-progress map, not a completed systematic novelty audit**.

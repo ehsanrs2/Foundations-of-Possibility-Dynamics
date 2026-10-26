@@ -73,3 +73,10 @@ To advance: independent oracle for causal-support extraction, consumable resourc
 [G4](G4-verification.md) introduces a *shared, non-clairvoyant pre-shock action prefix* and fully observed scenario-adapted recourse after a **known** deterministic shock boundary. Exact probability-weighted joint post-shock success is computed under a finite rational scenario distribution. A clairvoyant full augmented-state comparator provides an information-theoretic **upper bound** within this model. These are exact small-model calculations, **not** a statistical comparison of GBR.
 
 The remaining scientific tasks require explicit uncertainty/observation semantics, resource-sensitive causal support and a frozen full-information/equal-information baseline. The main P1 sample-size justification, held-out family splits and GBR predictor fitting have not yet been performed.
+
+
+## Reviewer-critical gate before any P1 freeze
+
+The [novelty audit](novelty-audit-v0.3.md) and [metric audit](gbr-metric-audit-v0.3.md) establish why the protocol cannot yet be frozen: GBR depends on an externally evidenced physical-fault identity map, exposed set F, plan-equivalence convention and deadline/resource semantics. Baselines must receive **identical raw inputs** and all feature-computation cost must count within the declared budget. The primary non-clairvoyant policy-trajectory endpoint, strict loss/recovery denominator, generator holdouts, sample size and loss function must be frozen *before* confirmatory data collection.
+
+G1's raw plan metric remains a **candidate under review**, not a validated predictor. This audit adds deterministic counterexamples only; it does not complete #3, #8, #9, #10, #11 or #12.
