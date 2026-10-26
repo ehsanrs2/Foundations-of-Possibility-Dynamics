@@ -48,3 +48,9 @@ C-025: Raw G1 GBR gain can equal 1 after adding a purely aliased second rule for
 C-026: The numerical value of raw GBR is robust to omitted shared physical failure causes, token splitting and zero-slack alternative routes. **Status: false in explicit constructed counterexamples.** See [metric audit](gbr-metric-audit-v0.3.md).
 
 C-027: GBR improves held-out non-clairvoyant recovery prediction beyond equal-information and equal-computation standard methods. **Status: H1 OPEN; no confirmatory test completed**.
+
+C-028: A strict declaration of physical mechanism IDs, failure-event incidence and protected-component rationales can prevent the previously demonstrated alias-score false positive *under the declared R1 ontology*. **Status: constructed bounded modeling diagnostic, not real-world identification.** See [Appendix C](../appendices/C-fault-event-ontology.md).
+
+C-029: Static survival under independent basic-event indicators differs for one shared event and two independent events in an illustrative two-route system (1/2 vs 3/4 when event failure probabilities equal 1/2). **Status: exact combinatorial toy calculation; not observed reliability or dynamic restoration**.
+
+C-030: Definitional reachability gain, predictive benefit under matched information, and intervention-caused resilience benefit are three **distinct estimands**; none may substitute for evidence of another. **Status: conceptual separation; H1 remains untested.** See [Appendix D](../appendices/D-predictive-estimands.md).

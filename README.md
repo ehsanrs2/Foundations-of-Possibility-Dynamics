@@ -61,3 +61,7 @@ Formal author credit and an open-content license have **not been agreed or grant
 [Novelty and information-redundancy audit](research/novelty-audit-v0.3.md) · [GBR exposure/representation counterexamples](research/gbr-metric-audit-v0.3.md) · [Executable negative-control diagnostic](experiments/gbr_review_counterexamples.py).
 
 **Major Revision remains necessary.** The raw candidate GBR can report false physical backup under a merely duplicated rule alias; a deterministic GBR feature adds no information to an unrestricted predictor already given its complete source model. These are negative/conditional results, **not** empirical H1 validation. Reviewer Issues #8, #9, #10, #11, #12 and overarching #3 stay open.
+
+## R1 reviewer response: physical fault-event ontology and separate estimands
+
+[Appendix C — fault ontology](appendices/C-fault-event-ontology.md) · [Appendix D — predictive/causal estimands](appendices/D-predictive-estimands.md) · [strictly scoped executable diagnostics](experiments/fault_ontology_r1.py). Physical failure IDs and shared causes are external assumptions requiring evidence; unknown support tokens cause a hard error. This **does not** establish a valid universal GBR metric or finish preregistration. Issues #9, #11, #12 and #3 remain open.

@@ -35,3 +35,7 @@ This book develops a bounded operational formalism and a research agenda. It doe
 ## Critical peer-review response
 
 [Issue #8 novelty audit](../research/novelty-audit-v0.3.md) · [Issue #9 metric audit and counterexamples](../research/gbr-metric-audit-v0.3.md). These add **negative controls and conditional limitations**, not a claim that the review is resolved or that H1 is confirmed.
+
+## Reviewer-response appendices
+
+[Appendix C — Physical fault-event ontology and scoped route comparison](../appendices/C-fault-event-ontology.md) · [Appendix D — Separate predictive and causal estimands](../appendices/D-predictive-estimands.md).
