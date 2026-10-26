@@ -39,3 +39,7 @@ The [G2 model](../research/G2-verification.md) adds inventory depletion/replenis
 ## Gate G3: dynamic restoration histories and shared inventory
 
 The [G3 audit](../research/G3-verification.md) uses history flags and two search implementations to distinguish retention, genuine restoration and joint feasibility. It remains a bounded, perfect-foresight software gate. **G4 must remove inappropriate advance knowledge of disturbances**, evaluate executable policies and freeze equal-information baselines before any predictive benchmark for GBR can be interpreted.
+
+## Gate G4: shock observation and non-clairvoyant action prefixes
+
+The [G4 software specification](../research/G4-verification.md) replaces the single known realization with a finite distribution of possible shocks, requiring one pre-shock action history and admitting scenario-adaptive recourse only after observation. A full-information optimizer supplies a strictly more informed upper bound. This resolves one avoidable look-ahead ambiguity but **does not implement GBR predictive benchmarking**. Next priorities are scenario observation uncertainty, consuming-resource plan provenance, and prespecified held-out comparisons to conventional augmented-state control.

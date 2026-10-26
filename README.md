@@ -50,3 +50,7 @@ Formal author credit and an open-content license have **not been agreed or grant
 ## Gate G3: time-consistent restoration and joint feasibility
 
 [Gate G3 report](research/G3-verification.md) distinguishes post-fault availability, function retained across the fault, **strict restoration after an observed loss**, and **joint attainability of all targets on one history**. An explicit history enumerator is compared with a standard augmented-state solver and the G2 reachability baseline. All results are **perfect-foresight software checks**, not a predictive result, new law or validation of GBR. [Code](experiments/p1_gate3.py) · [Tests](tests/test_p1_gate3.py).
+
+## Gate G4: information-consistent policies
+
+[Gate G4 report](research/G4-verification.md) compares *non-clairvoyant common pre-shock prefixes with scenario-adapted post-shock recourse* to a full-information upper bound from ordinary augmented-state reachability. Two independent search strategies provide a bounded software cross-check. [Code](experiments/p1_gate4.py) · [Tests](tests/test_p1_gate4.py) · [Deterministic manifest](experiments/g4_expected.json). **This is not empirical evidence for H1 or for a new general theory.**
