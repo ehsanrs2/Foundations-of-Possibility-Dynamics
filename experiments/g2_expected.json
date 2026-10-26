@@ -1,0 +1,10 @@
+{
+  "gate": "G2",
+  "status": "software_verification_not_P1",
+  "seed": 20261026,
+  "instances": 64,
+  "stressed_variants": 64,
+  "solver_comparisons": 256,
+  "mismatches": 0,
+  "result": "PASS"
+}

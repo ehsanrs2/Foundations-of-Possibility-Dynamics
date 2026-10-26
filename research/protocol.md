@@ -57,3 +57,7 @@ No power calculation or sample-size justification has been performed yet; these 
 [G1](G1-verification.md) explicitly tracks initial-source and rule support in a sequential monotone production model, including scoped exposures and pre-run loss of initial components or rules. Complete sets of goal plans agreed between action-sequence DFS and rule-subset enumeration in **192 comparisons** from 48 small cases plus a faulted counterpart each; 13 dedicated checks exercise assumptions and counterexamples. **No P1 predictive data, calibration, held-out generalization or H1 testing were performed.**
 
 To advance: independent oracle for causal-support extraction, consumable resources, dynamic shock distributions and fair strong baselines; preregister a meaningful sample size before any confirmatory analysis.
+
+## G2 implementation status: bounded in-run shock and inventory (nonconfirmatory)
+
+[G2](G2-verification.md) models durable capabilities, separately **consumable integer stock**, one discrete fault applied during the horizon at a time boundary, optional generation and post-fault existential goal availability. Exhaustive history DFS and layered state search are compared. The output is **not** a G1 causal-plan score or statistical recovery predictor. The 'post-fault availability' target includes surviving pre-existing goals, so strict recovery after loss will require separate trajectory history variables. Full P1 registration, strong baselines, family holdouts and H1 testing remain pending.

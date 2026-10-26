@@ -31,3 +31,7 @@ An independent exhaustive search oracle and a dynamic-programming solver agreed 
 ## Gate G1: bounded causal-plan support (completed as software check)
 
 [Gate G1](../research/G1-verification.md) establishes one narrow operational definition of a plan's causal source/rule dependencies and uses two distinct enumeration strategies to compare tiny examples under pre-planning shocks. The 192 successful paired plan-set checks indicate internal consistency in sampled finite instances, not the value or novelty of GBR. The next research priority is *resource-consuming, disturbance-aware plan execution*, independent provenance checking and preregistered out-of-family prediction baselines, **not** a domain-specific financial backtest.
+
+## Gate G2: resource constraints and in-run faults (software gate)
+
+The [G2 model](../research/G2-verification.md) adds inventory depletion/replenishment and shocks during a bounded trajectory. Two search strategies check post-fault goal availability. Its contributions are **operational correctness checks** only; no conclusion about GBR performance or the existence of a new fundamental science may be drawn. G3 must address plan/path provenance under consumption, multiple disturbances and equal-information full augmented-state baselines.

@@ -29,3 +29,7 @@ Finite predeclared rules may produce novelty along a trajectory without creating
 ## 7.7 Selection effects
 
 A hand-crafted example is useful pedagogy but not an unbiased evaluation. Register independent samples, negative outcomes, uncertainty procedures and reasons for discarded cases prior to confirmatory testing.
+
+## 7.8 Fault-time and consumption ambiguity
+
+With resource-consuming rules, individual routes cannot be combined merely by union: they can require the **same kit** or compete for stock after a loss. A fault at a transition boundary differs from a fault during an operation. The current G2 engine makes this distinction explicit and has no interrupted-action semantics. An end goal present after the fault may have survived it instead of being newly restored; these are different resilience outcomes. [G2 specification and limitations](../research/G2-verification.md).

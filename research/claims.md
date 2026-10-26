@@ -25,3 +25,5 @@ C-014: LEAN engine validation of GBR is **not yet performed**. See [integration 
 C-015: Under G1's explicit finite, nonconsuming, sequential production assumptions, two enumeration strategies agreed on all **192 tested plan-set comparisons** and their candidate GOG/GBR values. **Status: bounded software verification only.** See [G1 audit](G1-verification.md).
 
 C-016: GBR gain implies recovery under arbitrary correlated shocks. **Refuted by shared-component counterexample and exposure sensitivity.** See [G1 audit](G1-verification.md) and Chapter 7.
+
+C-017: G2 implements post-fault existential reachability with finite consumable stock and one in-run boundary event, and compares DFS history enumeration to layered state search. **Status: software verification only.** See [G2](G2-verification.md). No statement about probabilistic resilience, GBR predictive value or real systems follows.
