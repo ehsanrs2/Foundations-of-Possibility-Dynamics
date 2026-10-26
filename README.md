@@ -30,3 +30,5 @@ See the [claims ledger](research/claims.md) before citing a statement as a resul
 ## Attribution and licensing
 
 Formal author credit and an open-content license have **not been agreed or granted**. A public repository does not automatically provide an open license. Third-party sources are cited, not reproduced.
+
+**Formal audit:** [Mathematical propositions and counterexamples](appendices/A-mathematical-propositions.md) · [Artifact provenance](appendices/B-reproducibility.md).
