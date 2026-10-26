@@ -45,3 +45,9 @@ Report differences in a prespecified predictive score (e.g. MAE for continuous r
 7. Execute; then publish all results and deviations from protocol.
 
 No power calculation or sample-size justification has been performed yet; these must precede confirmatory claims.
+
+## G0 verification status (completed, nonconfirmatory)
+
+[G0](G0-verification.md) compares exhaustive enumeration with an independent mask/time solver for small bounded systems, including initial-component shocks: 256 comparisons, zero mismatches. The model does not implement GBR and cannot be used to claim H1. Subsequent P1 steps remain unexecuted.
+
+[QuantConnect LEAN](../integrations/lean/README.md) was screened for eventual financial transfer but not used for the core P1 experiment.
