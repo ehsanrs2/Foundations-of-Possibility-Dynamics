@@ -1,32 +1,32 @@
 # Foundations of Possibility Dynamics
 
-**An open, critical, reproducible scientific monograph in development (v0.1, 26 October 2026).**
+**Working scientific monograph v0.2 (26 October 2026)** — an open research record, **not an established scientific discipline or empirically validated general theory**.
 
-[Read the book](book/index.md) · [Research protocol](research/protocol.md) · [Claims register](research/claims.md) · [References](references/references.md) · [راهنمای فارسی](README.fa.md)
+[Read the 10 chapters](book/index.md) · [Persian guide](README.fa.md) · [Research protocol](research/protocol.md) · [Claims ledger](research/claims.md) · [Technical review](research/scientific-review-v0.2.md)
 
-> **Epistemic status:** Possibility Dynamics is a *proposed research program*, not an established discipline. The work develops precise questions about changing reachable capabilities, their generation and loss, and resilience under disruptions. No general law, predictive advantage, or cross-domain validation has yet been demonstrated.
+## Aim
 
-## Scientific question
+Study how bounded systems generate, lose and rebuild *operationally reachable* capabilities under resource and time constraints. Test whether constructible backup routes predict disturbance recovery above established network redundancy, reachability, viability and empowerment measures.
 
-When a system gains or loses a capability, how does this affect what it can *reach, construct, preserve and recover* under stated constraints? Can generative structure predict outcomes beyond existing measures of graph redundancy, reachability, viability and empowerment?
+## Present scientific status
 
-## What is available now?
+The book contains finite-system definitions, candidate GOG and GBR gain measures, a hand-designed illustrative communication scenario and a detailed prospective experimental protocol. **No ensemble validation, cross-domain tests or general physical law has been established.** Known augmented state-space methods may describe the same phenomena.
 
-- A carefully bounded conceptual framework and a finite-system mathematical formalization.
-- A **candidate**, not validated, measure of generative backup redundancy (GBR).
-- One manually constructed toy example illustrating the difference between gaining a new goal and constructing a backup route to an existing goal.
-- A preregistration-style protocol for simulations yet to be conducted.
+## Reproduce and build
 
-## Read responsibly
+Requires Python 3.9+; Pandoc for publication artifacts.
 
-Every chapter distinguishes **Established** (prior literature), **Definition** (stipulated formalism), **Conjecture** (unverified), and **Evidence** (observed with provenance). An illustrative example is not evidence that the candidate metric is novel or useful. The notion of physically possible futures must not be confused with bounded practical reachability.
+    python -m unittest discover -s tests -v
+    python -m experiments.toy_case
+    python scripts/check_book.py
+    bash scripts/build_book.sh
 
-## Build
+The build generates HTML and EPUB in the ignored dist directory. GitHub Actions runs unit/integrity checks and uploads HTML/EPUB build artifacts. An illustrative example is not confirmatory scientific evidence.
 
-Content lives in plain Markdown, with the table of contents in [book/index.md](book/index.md). No proprietary build tooling is required. A future print edition can use Pandoc / Quarto after bibliographic and editorial review.
+## Scientific integrity
 
-## Research integrity
+See the [claims ledger](research/claims.md) before citing a statement as a result. Negative evidence and mathematical counterexamples are essential. The editorial roadmap and caveats are in [the self-review](research/scientific-review-v0.2.md).
 
-For changes to scientific claims, include a source, a boundary or counterexample, and the status of verification. See [contribution guide](CONTRIBUTING.md). No external finding or prior scientific concept is claimed as original.
+## Attribution and licensing
 
-Copyright remains with the respective authors. **License for this new text is not yet selected**; do not assume an open-content license. Third-party source material is referenced, not reproduced.
+Formal author credit and an open-content license have **not been agreed or granted**. A public repository does not automatically provide an open license. Third-party sources are cited, not reproduced.

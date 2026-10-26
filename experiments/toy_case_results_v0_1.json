@@ -1,0 +1,24 @@
+{
+  "initial": {
+    "fixed_goal_reachable": true,
+    "generative_goal_reachable": true,
+    "gop": 0,
+    "gbr": 1,
+    "fixed_plans": [
+      "wired_existing"
+    ],
+    "generative_plans": [
+      "wired_existing",
+      "optical_newly_composed"
+    ]
+  },
+  "after_wire_failure": {
+    "fixed_goal_reachable": false,
+    "generative_goal_reachable": true,
+    "gop": 1,
+    "gbr": 0,
+    "generative_plans": [
+      "optical_newly_composed"
+    ]
+  }
+}

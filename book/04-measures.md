@@ -1,58 +1,52 @@
-# Chapter 4 — Candidate measures
+# Chapter 4 — Candidate measures and consistency
 
-**Status: working proposals; names and formulas are provisional.**
+**Status: provisional definitions; not established discoveries.**
 
-## 4.1 Why counting newly reachable goals is insufficient
+## 4.1 Why new-goal counts miss resilience
 
-For a target family \(\mathcal G\), define the *candidate* generative option gain
-
-\[
-\mathrm{GOG}(s)=|\mathcal R^{\mathrm{construct}}_{H,B}(s)\setminus
-\mathcal R^{\mathrm{no\;construct}}_{H,B}(s)|.
-\]
-
-This nonnegative count only captures newly attainable goals under a specified comparison. It **misses** a constructible redundant route to a goal already reachable without construction. A zero score need not imply weak recoverability.
-
-Names used in previous exploratory notes (e.g., “GOP”) are not standardized; this book uses GOG unless a later decision log revises terminology.
-
-## 4.2 Generative backup redundancy (GBR)
-
-Let \(\mathcal P_g^0(s)\) denote baseline feasible plans for target \(g\) without constructing new capability types, and \(\mathcal P_g^+(s)\) feasible plans allowed to construct them. Choose an **explicit failure-sensitive component set** \(F\), and define \(D(p)\subseteq F\) as the vulnerable components required by plan \(p\).
-
-For goals reachable at baseline, define the candidate indicator:
+Let R0(s;H,B) denote the end goals reachable in a finite model when capability construction is disabled; R+(s;H,B) the same goals when optional construction is allowed, with all other constraints fixed. Define **generative option gain** as
 
 \[
-b_g(s)=\mathbf 1\{\exists p\in\mathcal P_g^0(s),\,
-q\in\mathcal P_g^+(s)\setminus\mathcal P_g^0(s):
-D(p)\cap D(q)=\varnothing\}.
+\mathrm{GOG}(s)=|\mathcal R^+(s;H,B)\setminus\mathcal R^0(s;H,B)|.
 \]
 
-Then
+This detects *newly reachable goals*, not new ways to reach an existing goal. Where construction is optional, R0 is a subset of R+, but neither set specifies probability or desirability.
+
+## 4.2 Generative backup redundancy *gain* (GBR)
+
+For baseline-reachable goal g, let P0(g,s) be individually feasible plans without construction and P+(g,s) a superset also allowing construction. Plan feasibility requires a specified budget, duration and resource semantics. Let F be the finite set of failure-exposed components in a **specified intervention model**, and let D_F(p) be every element of F required by plan p, including construction prerequisites.
+
+For j in {0,+}, let
 
 \[
-\mathrm{GBR}(s)=\sum_{g\in\mathcal R^0_{H,B}(s)} b_g(s).
+b_g^j(s)=\mathbf{1}\{\exists p\ne q\in\mathcal P_g^j(s):
+D_F(p)\cap D_F(q)=\varnothing\}.
 \]
 
-**Important:** This indicator by itself only says there is *some* independent constructible alternative, and depends on the specified vulnerability set and entire plan semantics. It is not a universally established robustness metric. If \(F\) is empty, if all dependencies are counted incorrectly, or if construction requires the failed component, the interpretation fails. In particular, a plan-dependent rule should not be mistaken for one that remains feasible *after* a failure without recomputing the feasible plans in the post-intervention state.
+Our **candidate** measure is
 
-## 4.3 Three distinct evaluation targets
+\[
+\mathrm{GBR}_{gain}(s)=
+\sum_{g\in\mathcal R^0(s;H,B)}
+\left(b_g^+(s)-b_g^0(s)\right).
+\]
 
-- **Pre-disturbance feature:** GBR estimated only with data available before intervention.
-- **Post-disturbance outcome:** goal recovery, restoration latency and incurred cost after a held-out failure.
-- **Incremental predictive value:** improvement beyond matched baselines on held-out network families and interventions.
+This corrects the v0.1 mismatch: original prose described existence of a constructed backup but toy code computed the **increment** of a binary backup indicator. Provided P0 is contained in P+, GBR gain cannot be negative. The metric saturates after one independent backup *pair* per goal; it does not count every possible independent route or provide a probability of recovery.
 
-A correlation between a feature and an outcome is not evidence that increasing that feature causes resilience. Use randomized manipulations or well-supported causal assumptions for such a claim.
+## 4.3 Three critical limitations
 
-## 4.4 Strong baseline families
+First, independence is **relative to F**, not absolute. Two routes can share power and sensor components absent from F and both fail if those shared components break. Second, a plan feasible before a shock can become infeasible after it; post-shock recovery must be recomputed with surviving resources, time and capabilities. Third, two individually feasible plans may compete for resources and be impossible to execute simultaneously.
 
-Compare against graph size and degree distributions; paths/edge- or vertex-connectivity; minimal cuts; resource slack; standard reachability and viability measures; and where tractable, empowerment or state-action-channel approximations. Use matched computational budgets where applicable.
+## 4.4 A potential trivialization
 
-## 4.5 Provisional predictions
+Any finite construction rule can be represented as another transition in an augmented ordinary state space. In a complete model, standard reachability can already represent constructed alternatives. **No claim that the metric transcends control or network theory follows.** The testable possibility is more modest: a compact pre-shock structural feature may improve *held-out prediction* given a stated information and computation budget.
 
-H1: Under matched initial conditions, capability-generating dependency structure explains **held-out** recovery outcomes beyond simpler topology-only baselines.
+## 4.5 Hypotheses
 
-H0: It contributes no reproducible incremental predictive value.
+**H0:** GBR gain yields no reproducible incremental predictive value over strong baselines.
 
-H2 (exploratory): The effect changes sign or disappears under high generation costs, tight deadlines, or correlated prerequisite failures.
+**H1:** GBR gain improves held-out prediction on prespecified system families.
 
-No prediction has been empirically validated in this edition.
+**H2 (exploratory):** benefits vanish under common-cause failures, high construction costs or short horizons.
+
+A predictive improvement would not establish causation or a fundamentally new law. These hypotheses have **not** been empirically tested.
