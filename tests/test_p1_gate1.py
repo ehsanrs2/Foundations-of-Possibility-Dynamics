@@ -119,5 +119,13 @@ class G1PlanSupportTests(unittest.TestCase):
             self.compare(item)
 
 
+    def test_archived_expected_manifest(self):
+        import json
+        from pathlib import Path
+        expected_file = Path(__file__).parents[1] / "experiments" / "g1_expected.json"
+        expected = json.loads(expected_file.read_text(encoding="utf-8"))
+        self.assertEqual(audit(), expected)
+
+
 if __name__ == "__main__":
     unittest.main()
