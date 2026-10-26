@@ -67,3 +67,9 @@ To advance: independent oracle for causal-support extraction, consumable resourc
 [G3](G3-verification.md) computes four history-consistent existential queries: post-fault availability, retention, strict restoration *only after actual pre-fault holding and fault-caused loss*, and joint post-fault attainability. The time-layer solver retains goals-lost-at-fault flags to avoid conflating histories with different restoration histories. An independent timed-history oracle and the original G2 full-state baseline provide comparison checks.
 
 **Important confounder:** pre-shock planning has perfect knowledge of the deterministic future fault in these solvers. Results may depend on anticipatory actions that would not be feasible for a policy lacking advance notice. P1 must compare models under identical information sets and non-clairvoyant policies; G3 cannot justify a resilience-prediction claim.
+
+## Gate G4: the pre-shock information boundary
+
+[G4](G4-verification.md) introduces a *shared, non-clairvoyant pre-shock action prefix* and fully observed scenario-adapted recourse after a **known** deterministic shock boundary. Exact probability-weighted joint post-shock success is computed under a finite rational scenario distribution. A clairvoyant full augmented-state comparator provides an information-theoretic **upper bound** within this model. These are exact small-model calculations, **not** a statistical comparison of GBR.
+
+The remaining scientific tasks require explicit uncertainty/observation semantics, resource-sensitive causal support and a frozen full-information/equal-information baseline. The main P1 sample-size justification, held-out family splits and GBR predictor fitting have not yet been performed.

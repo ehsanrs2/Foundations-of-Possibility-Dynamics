@@ -29,3 +29,7 @@ The [G2 software kernel](../experiments/p1_gate2.py) extends the earlier monoton
 ## 6.7 Strict restoration and perfect foresight
 
 The [G3 solver](../research/G3-verification.md) separates retention from restoration using loss-at-fault history flags. Its strict restoration query requires the goal to be held just before the fault, removed by the fault, and reacquired later on the **same trajectory**. It also computes whether all goals can coexist on one inventory-feasible trajectory. These are best-case reachable outcomes under an **already known future fault**. They cannot represent policy performance under unknown future disturbances without a new information model and policy evaluation protocol.
+
+## 6.8 G4: separate foresight from resilience
+
+The [G4 model](../research/G4-verification.md) considers a finite scenario distribution whose realization cannot affect pre-shock actions; the controller observes the scenario only at the known shock time and may then take different feasible continuation actions. This avoids the specific G3 pitfall of optimizing the pre-shock history *with* knowledge of the realized future fault. For the same model, a scenario-by-scenario clairvoyant solver provides an **upper bound**, not a deployable prediction benchmark. The G4 endpoint is binary joint goal attainment after the fault, not the strict-restoration endpoint of G3. The underlying observation and fault-time assumptions remain restrictive; no P1 confirmatory experiment has yet been executed.

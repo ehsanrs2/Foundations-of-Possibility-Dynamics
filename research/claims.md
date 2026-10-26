@@ -33,3 +33,9 @@ C-018: G3 distinguishes existential post-fault availability, retention, strict r
 C-019: Individual attainability of two goals implies attainable simultaneous possession under shared consumable inventory. **False:** the one-kit/two-goal counterexample has both goals independently attainable but no joint feasible execution. See [G3 report](G3-verification.md).
 
 C-020: G3 verifies GBR predictive superiority or non-clairvoyant adaptive policy quality. **Not claimed**; perfect foresight is part of the present diagnostic model.
+
+C-021: G4 distinguishes a shared non-clairvoyant pre-shock prefix from scenario-dependent post-shock continuation under fully observed discrete shocks. **Status: operational modeling definition; software test only.** See [G4](G4-verification.md).
+
+C-022: In a constructed single-kit, two-scenario example, a non-clairvoyant prefix attains exact modeled success 1/2 while advance scenario knowledge attains 1. **Status: analytical toy counterexample, not empirical probability or H1 evidence.**
+
+C-023: Optimal non-clairvoyant joint-success probability does not exceed a scenario-clairvoyant upper bound under identical dynamics and scenario distribution. **Status: elementary conditional inequality, proved by max-sum ≤ sum-max; not a new general law.**

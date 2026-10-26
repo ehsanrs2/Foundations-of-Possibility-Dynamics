@@ -1,0 +1,12 @@
+{
+  "gate": "G4",
+  "classification": "software_verification_not_H1",
+  "seed": 20261026,
+  "instances": 40,
+  "stressed_variants": 40,
+  "oracle_dp_comparisons": 160,
+  "mismatches": 0,
+  "example_nonclairvoyant_success": "1/2",
+  "example_clairvoyant_upper": "1",
+  "result": "PASS"
+}
