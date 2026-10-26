@@ -42,3 +42,7 @@ Formal author credit and an open-content license have **not been agreed or grant
 ## Latest verification: Gate G1
 
 [Gate G1 report](research/G1-verification.md) and [code](experiments/p1_gate1.py): bounded causal plan-support tracking, scope-dependent backup calculations and pre-plan shocks. Two enumeration approaches agreed on 192 complete plan-set comparisons from 48 tiny sampled models and paired starting-source failures (no disagreements); 13 dedicated tests were added. **This is only a software/formal gate, not a predictive validation or mathematical novelty result.** Future studies remain subject to preregistration and robust baselines.
+
+## Latest bounded verification: Gate G2
+
+[Gate G2](research/G2-verification.md) introduces discrete **consumable inventory**, replenishment, and a **single in-run fault at a tick boundary**, evaluated by independent exhaustive DFS versus time-layer state-set search. It checks *post-fault goal availability*, which can mean retention as well as restoration. [Executable experiment](experiments/p1_gate2.py), [expected diagnostic](experiments/g2_expected.json), and [tests](tests/test_p1_gate2.py) are versioned. These software checks are **not GBR prediction experiments** or evidence for H1.
