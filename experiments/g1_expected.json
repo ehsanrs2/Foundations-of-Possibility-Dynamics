@@ -1,0 +1,10 @@
+{
+  "gate": "G1",
+  "status": "software_verification_not_H1",
+  "seed": 20261026,
+  "instances": 48,
+  "shock_variants": 48,
+  "plan_set_comparisons": 192,
+  "mismatches": 0,
+  "result": "PASS"
+}
