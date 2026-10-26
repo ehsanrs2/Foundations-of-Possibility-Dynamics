@@ -35,3 +35,7 @@ An independent exhaustive search oracle and a dynamic-programming solver agreed 
 ## Gate G2: resource constraints and in-run faults (software gate)
 
 The [G2 model](../research/G2-verification.md) adds inventory depletion/replenishment and shocks during a bounded trajectory. Two search strategies check post-fault goal availability. Its contributions are **operational correctness checks** only; no conclusion about GBR performance or the existence of a new fundamental science may be drawn. G3 must address plan/path provenance under consumption, multiple disturbances and equal-information full augmented-state baselines.
+
+## Gate G3: dynamic restoration histories and shared inventory
+
+The [G3 audit](../research/G3-verification.md) uses history flags and two search implementations to distinguish retention, genuine restoration and joint feasibility. It remains a bounded, perfect-foresight software gate. **G4 must remove inappropriate advance knowledge of disturbances**, evaluate executable policies and freeze equal-information baselines before any predictive benchmark for GBR can be interpreted.

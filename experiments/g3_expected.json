@@ -1,0 +1,11 @@
+{
+  "gate": "G3",
+  "classification": "bounded_software_verification_not_H1",
+  "seed": 20261026,
+  "original_instances": 64,
+  "stressed_variants": 64,
+  "solver_pair_comparisons": 256,
+  "g2_baseline_checks": 256,
+  "mismatches": 0,
+  "result": "PASS"
+}

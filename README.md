@@ -46,3 +46,7 @@ Formal author credit and an open-content license have **not been agreed or grant
 ## Latest bounded verification: Gate G2
 
 [Gate G2](research/G2-verification.md) introduces discrete **consumable inventory**, replenishment, and a **single in-run fault at a tick boundary**, evaluated by independent exhaustive DFS versus time-layer state-set search. It checks *post-fault goal availability*, which can mean retention as well as restoration. [Executable experiment](experiments/p1_gate2.py), [expected diagnostic](experiments/g2_expected.json), and [tests](tests/test_p1_gate2.py) are versioned. These software checks are **not GBR prediction experiments** or evidence for H1.
+
+## Gate G3: time-consistent restoration and joint feasibility
+
+[Gate G3 report](research/G3-verification.md) distinguishes post-fault availability, function retained across the fault, **strict restoration after an observed loss**, and **joint attainability of all targets on one history**. An explicit history enumerator is compared with a standard augmented-state solver and the G2 reachability baseline. All results are **perfect-foresight software checks**, not a predictive result, new law or validation of GBR. [Code](experiments/p1_gate3.py) · [Tests](tests/test_p1_gate3.py).

@@ -25,3 +25,7 @@ An improvement limited to a simulator family supports an engineering predictor i
 ## 6.6 G2 implementation: a strictly bounded execution kernel
 
 The [G2 software kernel](../experiments/p1_gate2.py) extends the earlier monotone rules with per-action consumable stock, replenishment, waiting, and a single irreversible fault at a discrete time boundary. It reports *the earliest time each target is available after the disturbance*. This intentionally covers both retention and restoration, and cannot be called a strict restoration-time estimate. Separate goals are existentially tested and need not be jointly satisfiable. The model's one-tick atomic operations are a simplification, not a realistic treatment of failures during long-running actions. The [G2 audit](../research/G2-verification.md) defines these restrictions; no prospective P1 ensemble experiment is reported.
+
+## 6.7 Strict restoration and perfect foresight
+
+The [G3 solver](../research/G3-verification.md) separates retention from restoration using loss-at-fault history flags. Its strict restoration query requires the goal to be held just before the fault, removed by the fault, and reacquired later on the **same trajectory**. It also computes whether all goals can coexist on one inventory-feasible trajectory. These are best-case reachable outcomes under an **already known future fault**. They cannot represent policy performance under unknown future disturbances without a new information model and policy evaluation protocol.

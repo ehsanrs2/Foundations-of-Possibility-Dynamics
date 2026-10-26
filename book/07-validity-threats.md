@@ -33,3 +33,7 @@ A hand-crafted example is useful pedagogy but not an unbiased evaluation. Regist
 ## 7.8 Fault-time and consumption ambiguity
 
 With resource-consuming rules, individual routes cannot be combined merely by union: they can require the **same kit** or compete for stock after a loss. A fault at a transition boundary differs from a fault during an operation. The current G2 engine makes this distinction explicit and has no interrupted-action semantics. An end goal present after the fault may have survived it instead of being newly restored; these are different resilience outcomes. [G2 specification and limitations](../research/G2-verification.md).
+
+## 7.9 Perfect-foresight planning and endpoint selection
+
+A pre-shock plan conditioned on the exact future failure realization is **clairvoyant**; using its outcome as a label for an actual agent without future information would overstate resilience. The [G3 audit](../research/G3-verification.md) explicitly separates different history-dependent endpoints. Moreover, earliest post-fault availability and earliest strict restoration can be realized by **different** histories and must not be treated as one recovery policy. Pre-register the target outcome and observability assumptions before any model comparison.
