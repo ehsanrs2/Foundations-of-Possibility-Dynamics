@@ -61,3 +61,9 @@ To advance: independent oracle for causal-support extraction, consumable resourc
 ## G2 implementation status: bounded in-run shock and inventory (nonconfirmatory)
 
 [G2](G2-verification.md) models durable capabilities, separately **consumable integer stock**, one discrete fault applied during the horizon at a time boundary, optional generation and post-fault existential goal availability. Exhaustive history DFS and layered state search are compared. The output is **not** a G1 causal-plan score or statistical recovery predictor. The 'post-fault availability' target includes surviving pre-existing goals, so strict recovery after loss will require separate trajectory history variables. Full P1 registration, strong baselines, family holdouts and H1 testing remain pending.
+
+## Gate G3 — distinct outcome labels, not a preregistered P1 result
+
+[G3](G3-verification.md) computes four history-consistent existential queries: post-fault availability, retention, strict restoration *only after actual pre-fault holding and fault-caused loss*, and joint post-fault attainability. The time-layer solver retains goals-lost-at-fault flags to avoid conflating histories with different restoration histories. An independent timed-history oracle and the original G2 full-state baseline provide comparison checks.
+
+**Important confounder:** pre-shock planning has perfect knowledge of the deterministic future fault in these solvers. Results may depend on anticipatory actions that would not be feasible for a policy lacking advance notice. P1 must compare models under identical information sets and non-clairvoyant policies; G3 cannot justify a resilience-prediction claim.

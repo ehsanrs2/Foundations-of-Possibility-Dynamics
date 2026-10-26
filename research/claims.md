@@ -27,3 +27,9 @@ C-015: Under G1's explicit finite, nonconsuming, sequential production assumptio
 C-016: GBR gain implies recovery under arbitrary correlated shocks. **Refuted by shared-component counterexample and exposure sensitivity.** See [G1 audit](G1-verification.md) and Chapter 7.
 
 C-017: G2 implements post-fault existential reachability with finite consumable stock and one in-run boundary event, and compares DFS history enumeration to layered state search. **Status: software verification only.** See [G2](G2-verification.md). No statement about probabilistic resilience, GBR predictive value or real systems follows.
+
+C-018: G3 distinguishes existential post-fault availability, retention, strict restoration conditional on *actual* fault-caused loss, and joint target attainability. **Status: operational definitions and bounded software checks only.** See [G3 report](G3-verification.md).
+
+C-019: Individual attainability of two goals implies attainable simultaneous possession under shared consumable inventory. **False:** the one-kit/two-goal counterexample has both goals independently attainable but no joint feasible execution. See [G3 report](G3-verification.md).
+
+C-020: G3 verifies GBR predictive superiority or non-clairvoyant adaptive policy quality. **Not claimed**; perfect foresight is part of the present diagnostic model.
