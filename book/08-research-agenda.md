@@ -27,3 +27,7 @@ This stage-gated structure prevents the scientific book from becoming a narrativ
 ## Gate G0: software verification (completed)
 
 An independent exhaustive search oracle and a dynamic-programming solver agreed on 256 small-reachability comparisons from a seeded generator. The [G0 audit](../research/G0-verification.md) reports this software result and its restrictions. The GBR predictor and formal P1 trial **remain untested**. [LEAN](../integrations/lean/README.md) is proposed only for a later financial-domain transfer study, and no LEAN engine run is claimed.
+
+## Gate G1: bounded causal-plan support (completed as software check)
+
+[Gate G1](../research/G1-verification.md) establishes one narrow operational definition of a plan's causal source/rule dependencies and uses two distinct enumeration strategies to compare tiny examples under pre-planning shocks. The 192 successful paired plan-set checks indicate internal consistency in sampled finite instances, not the value or novelty of GBR. The next research priority is *resource-consuming, disturbance-aware plan execution*, independent provenance checking and preregistered out-of-family prediction baselines, **not** a domain-specific financial backtest.

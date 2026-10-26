@@ -51,3 +51,9 @@ No power calculation or sample-size justification has been performed yet; these 
 [G0](G0-verification.md) compares exhaustive enumeration with an independent mask/time solver for small bounded systems, including initial-component shocks: 256 comparisons, zero mismatches. The model does not implement GBR and cannot be used to claim H1. Subsequent P1 steps remain unexecuted.
 
 [QuantConnect LEAN](../integrations/lean/README.md) was screened for eventual financial transfer but not used for the core P1 experiment.
+
+## Gate G1 — bounded plan-support verification (software gate completed)
+
+[G1](G1-verification.md) explicitly tracks initial-source and rule support in a sequential monotone production model, including scoped exposures and pre-run loss of initial components or rules. Complete sets of goal plans agreed between action-sequence DFS and rule-subset enumeration in **192 comparisons** from 48 small cases plus a faulted counterpart each; 12 dedicated checks exercise assumptions and counterexamples. **No P1 predictive data, calibration, held-out generalization or H1 testing were performed.**
+
+To advance: independent oracle for causal-support extraction, consumable resources, dynamic shock distributions and fair strong baselines; preregister a meaningful sample size before any confirmatory analysis.

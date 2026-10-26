@@ -50,3 +50,9 @@ Any finite construction rule can be represented as another transition in an augm
 **H2 (exploratory):** benefits vanish under common-cause failures, high construction costs or short horizons.
 
 A predictive improvement would not establish causation or a fundamentally new law. These hypotheses have **not** been empirically tested.
+
+## 4.6 G1 operational implementation and exposure sensitivity (not H1 evidence)
+
+[Gate G1](../research/G1-verification.md) introduces a causal-support representation: every feasible goal plan carries provenance from initial inputs and rule instances. Backup-path independence is checked **only after intersecting those full supports with the declared failure-exposure set F**. This makes the scope of the claim explicit. In the illustrative alarm system, an optical and a wired pathway have disjoint exposed dependencies when power and sensor are protected; extending F to include the shared power supply changes the backup indicator from one to zero. A conditional binary feature does not supply a recovery probability or claim of immunity to common-cause faults.
+
+Two differently organized finite enumerators agreed on 192 plan-set comparisons; they share representation conventions and are not wholly independent implementations. G1 contains no fitted predictive model, held-out benchmark or inferential result. Formal hypotheses H0/H1 remain open.
