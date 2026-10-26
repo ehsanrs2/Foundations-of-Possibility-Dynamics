@@ -36,3 +36,8 @@ This edition does **not** establish a new science, a universal measure of future
 ## 1.5 Reader's roadmap
 
 Chapters 2–5 map existing literature, specify a finite-system formalism, define candidate measures, and explain a deliberately small example. The research protocol describes the measurements necessary before treating the conjecture as supported.
+
+
+## 1.6 Critical review: claim narrowed to bounded feature utility
+
+[The reviewer response](../research/novelty-audit-v0.3.md) distinguishes a mere formal re-encoding, which **cannot** establish a new scientific object, from an actual measured finite-computation or finite-data benefit. An exactly computed feature cannot contain information absent from the complete source representation already available to an unrestricted model. Any defendable future contribution is presently a **conditional candidate feature-engineering or computational-compression result**, with explicit equal-information baselines and falsifiers. None has been demonstrated.

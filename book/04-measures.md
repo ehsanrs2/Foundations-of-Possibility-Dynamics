@@ -60,3 +60,14 @@ Two differently organized finite enumerators agreed on 192 plan-set comparisons;
 ## 4.7 G3: structural option scores versus executable joint outcomes
 
 [Gate G3](../research/G3-verification.md) gives an inventory-constrained counterexample where different goals can be achieved separately but cannot be held together along any one feasible history. Thus binary disjoint-path indicators and separately computed option sets are not enough to infer execution feasibility under competing resource use. This finding concerns **model semantics**, not measured predictive performance of GBR. Any future GBR implementation with consumable resources must state whether it represents mutually exclusive alternatives or simultaneously executable backup plans.
+
+
+## 4.8 Reviewer-critical counterexamples to raw GBR gain
+
+[The executable metric audit](../research/gbr-metric-audit-v0.3.md) shows that raw GBR can be **1** for two labeled rules that denote **one declared physical implementation**, where an identity-aware projection gives **0**. Similarly, adding shared power to the exposed set can flip the alarm example from **1** to **0**, and an alternative route requiring the entire time horizon can still receive the same binary backup indicator as a route with ample slack. These are constructed negative controls, not empirical distributional estimates.
+
+All uses of GBR must therefore state the external fault ontology, physical component identity, scope of exposure F, plan-equivalence convention, cost/deadline rules and uncertainty about unmodeled common causes. Never treat physical identity as automatically recoverable from software labels. This v0.3 audit **does not silently redefine** the historical G1 index or establish a universally correct replacement.
+
+## 4.9 A conditional information limitation
+
+If the entire observable pre-failure model is X and exact GBR is Z=f(X), then an unrestricted Bayes-optimal predictor given X cannot improve merely by also receiving Z: the best attainable predictions from (X,Z) are exactly those from X. The proof and scope are in [Issue #8 audit](../research/novelty-audit-v0.3.md). A finite-data or resource-limited learner may still benefit from engineered Z, but this is an **unverified empirical/computational claim**, not novel information or an independent physical law.

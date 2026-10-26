@@ -54,3 +54,10 @@ Formal author credit and an open-content license have **not been agreed or grant
 ## Gate G4: information-consistent policies
 
 [Gate G4 report](research/G4-verification.md) compares *non-clairvoyant common pre-shock prefixes with scenario-adapted post-shock recourse* to a full-information upper bound from ordinary augmented-state reachability. Two independent search strategies provide a bounded software cross-check. [Code](experiments/p1_gate4.py) · [Tests](tests/test_p1_gate4.py) · [Deterministic manifest](experiments/g4_expected.json). **This is not empirical evidence for H1 or for a new general theory.**
+
+
+## Reviewer-driven critical audit (Issues #8 and #9)
+
+[Novelty and information-redundancy audit](research/novelty-audit-v0.3.md) · [GBR exposure/representation counterexamples](research/gbr-metric-audit-v0.3.md) · [Executable negative-control diagnostic](experiments/gbr_review_counterexamples.py).
+
+**Major Revision remains necessary.** The raw candidate GBR can report false physical backup under a merely duplicated rule alias; a deterministic GBR feature adds no information to an unrestricted predictor already given its complete source model. These are negative/conditional results, **not** empirical H1 validation. Reviewer Issues #8, #9, #10, #11, #12 and overarching #3 stay open.

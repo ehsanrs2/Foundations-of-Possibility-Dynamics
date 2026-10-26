@@ -39,3 +39,12 @@ C-021: G4 distinguishes a shared non-clairvoyant pre-shock prefix from scenario-
 C-022: In a constructed single-kit, two-scenario example, a non-clairvoyant prefix attains exact modeled success 1/2 while advance scenario knowledge attains 1. **Status: analytical toy counterexample, not empirical probability or H1 evidence.**
 
 C-023: Optimal non-clairvoyant joint-success probability does not exceed a scenario-clairvoyant upper bound under identical dynamics and scenario distribution. **Status: elementary conditional inequality, proved by max-sum ≤ sum-max; not a new general law.**
+
+
+C-024: For full pre-failure information X and exact deterministic GBR feature Z=f(X), an unrestricted optimal predictor cannot improve its best attainable expected loss by adding Z to X. **Status: proved conditional information-redundancy statement; familiar property, not a novel theorem.** See [novelty audit](novelty-audit-v0.3.md).
+
+C-025: Raw G1 GBR gain can equal 1 after adding a purely aliased second rule for the same declared physical implementation, while a physical-ID-aware check yields 0. **Status: constructed executable counterexample, not a population result.** See [metric audit](gbr-metric-audit-v0.3.md).
+
+C-026: The numerical value of raw GBR is robust to omitted shared physical failure causes, token splitting and zero-slack alternative routes. **Status: false in explicit constructed counterexamples.** See [metric audit](gbr-metric-audit-v0.3.md).
+
+C-027: GBR improves held-out non-clairvoyant recovery prediction beyond equal-information and equal-computation standard methods. **Status: H1 OPEN; no confirmatory test completed**.
