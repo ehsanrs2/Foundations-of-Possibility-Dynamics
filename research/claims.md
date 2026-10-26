@@ -17,3 +17,7 @@
 | C-012 | Finite construction dynamics admit augmented-state transition representation | Proven conditional statement | Appendix A.5 |
 
 **Policy:** Do not promote definitions, examples or hypotheses into findings without independent evidence and explicit uncertainty analysis. Retain null results.
+
+C-013: On 64 seeded tiny systems plus shock variants, two independent solver implementations agreed across 256 comparisons. **Status: software verification only**, not empirical scientific validation. See [G0](G0-verification.md).
+
+C-014: LEAN engine validation of GBR is **not yet performed**. See [integration decision](../integrations/lean/README.md).

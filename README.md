@@ -32,3 +32,9 @@ See the [claims ledger](research/claims.md) before citing a statement as a resul
 Formal author credit and an open-content license have **not been agreed or granted**. A public repository does not automatically provide an open license. Third-party sources are cited, not reproduced.
 
 **Formal audit:** [Mathematical propositions and counterexamples](appendices/A-mathematical-propositions.md) · [Artifact provenance](appendices/B-reproducibility.md).
+
+## P1 G0 verification and external tools
+
+[Gate G0 report](research/G0-verification.md): two independent bounded reachability solvers agreed on 256 fixed-seed comparisons over 64 synthetic instances and their shock variants. This is **software verification, not evidence for H1**. Run: python -m experiments.p1_gate0.
+
+[QuantConnect LEAN decision](integrations/lean/README.md): potentially useful for a *later financial-domain transfer*, but is not adopted as the core mathematical simulation engine. No LEAN backtest was run.

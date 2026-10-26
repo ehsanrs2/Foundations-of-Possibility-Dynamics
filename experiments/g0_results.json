@@ -1,0 +1,10 @@
+{
+  "gate": "G0",
+  "instances": 64,
+  "oracle_mismatches": 0,
+  "outcome": "PASS",
+  "seed": 20261026,
+  "shocked_variants": 64,
+  "solver_pair_comparisons": 256,
+  "type": "software_correctness_not_H1_test"
+}
