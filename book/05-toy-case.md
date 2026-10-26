@@ -31,3 +31,7 @@ The exact v0.1 scenario is retained as [Python source](../experiments/toy_case.p
     python -m experiments.toy_case
 
 Tests establish deterministic software behavior, **not** that GBR is novel, causally relevant, or superior to existing network-science measures.
+
+## 5.5 G1 reconstruction as an explicit rule graph
+
+The scenario now has three named rules: an ordinary wire-alarm use rule; a **generative** optical-transmitter construction rule requiring LED, timer and assembly; and an ordinary optical-alarm use rule. Time and kit costs are included for each legal sequence. The rule graph and its plan ancestry are executable in [G1](../experiments/p1_gate1.py). With the initial exposure set, GOG remains zero while GBR gain equals one. After a wire-source fault, the optical sequence can still reach the goal if prerequisites survive; after deleting a shared sensor or power input, neither route reaches the goal. This example remains constructed, not representative data.

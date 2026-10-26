@@ -38,3 +38,7 @@ Formal author credit and an open-content license have **not been agreed or grant
 [Gate G0 report](research/G0-verification.md): two independent bounded reachability solvers agreed on 256 fixed-seed comparisons over 64 synthetic instances and their shock variants. This is **software verification, not evidence for H1**. Run: python -m experiments.p1_gate0.
 
 [QuantConnect LEAN decision](integrations/lean/README.md): potentially useful for a *later financial-domain transfer*, but is not adopted as the core mathematical simulation engine. No LEAN backtest was run.
+
+## Latest verification: Gate G1
+
+[Gate G1 report](research/G1-verification.md) and [code](experiments/p1_gate1.py): bounded causal plan-support tracking, scope-dependent backup calculations and pre-plan shocks. Two enumeration approaches agreed on 192 complete plan-set comparisons from 48 tiny sampled models and paired starting-source failures (no disagreements); 13 dedicated tests were added. **This is only a software/formal gate, not a predictive validation or mathematical novelty result.** Future studies remain subject to preregistration and robust baselines.
