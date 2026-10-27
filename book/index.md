@@ -39,3 +39,8 @@ This book develops a bounded operational formalism and a research agenda. It doe
 ## Reviewer-response appendices
 
 [Appendix C — Physical fault-event ontology and scoped route comparison](../appendices/C-fault-event-ontology.md) · [Appendix D — Separate predictive and causal estimands](../appendices/D-predictive-estimands.md).
+
+
+## Primary research design — prospective only
+
+[Study design for H1, version 0.1 (draft, not preregistered)](../research/P1-H1-study-design-v0.1.md) · [machine-readable preregistration blockers](../research/p1_h1_design_candidate_v0_1.json).

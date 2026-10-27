@@ -48,3 +48,8 @@ The [G4 software specification](../research/G4-verification.md) replaces the sin
 ## R2: an additional falsifying construct-validity control
 
 The [R2 audit](../research/R2-resource-policy-bridge.md) connects R1 physical fault-event supports with G4's finite non-clairvoyant policy oracle. It shows an informative limitation: identical disjoint-route structure can correspond to distinct best executable recovery/availability rates when upfront investment is limited by inventory or time. The next gate should specify any proposed **resource-aware plan/policy feature** in advance and compare it with a fully informed **equal-information** augmented-state baseline; do not retrofit the feature to these toy outcomes and call that a predictive test.
+
+
+## P1/H1 design phase: no new confirmatory samples
+
+An executable [draft-protocol consistency check](../experiments/p1_protocol_audit.py) and a [hypothetical precision sensitivity calculator](../experiments/p1_sample_size_sensitivity.py) now support the [proposed study design](../research/P1-H1-study-design-v0.1.md). These are internal design tests, not predictive performance results. The next **hard scientific gate** is to finish the resource-aware feature ontology, implement non-anticipative loss-and-restoration policy rollouts, fully specify generators and independent test-unit sampling, then justify power and a locked primary comparison before any confirmatory outcomes are generated.

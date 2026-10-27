@@ -1,0 +1,114 @@
+{
+  "protocol_id": "P1-H1-CANDIDATE-2026-10-27",
+  "revision": "0.1",
+  "status": "DRAFT_NOT_PREREGISTERED",
+  "confirmatory_data_collected": false,
+  "scientific_question": "Does a preregistered physically scoped constructive-backup feature improve held-out prediction of non-anticipative strict restoration under matched raw information and computational budgets?",
+  "claim_type": "predictive_increment_under_resource_constraints_not_causal_not_novel_law",
+  "hypotheses": {
+    "H0": "paired expected held-out Brier improvement <= 0",
+    "H1": "paired expected held-out Brier improvement > 0"
+  },
+  "outcome": {
+    "primary": "binary_strict_restoration_after_actual_fault_caused_loss",
+    "pre_fault_active_required": true,
+    "removed_by_fault_required": true,
+    "reacquired_by_deadline_required": true,
+    "same_policy_trajectory_required": true,
+    "policy_frozen_shared_across_predictors": true,
+    "pre_fault_shock_realization_hidden": true,
+    "missing_eligible_rollouts": "UNDEFINED_EXCLUDE_FROM_CONDITIONAL_ANALYSIS_AND_REPORT_RATE",
+    "prediction_moment": "pre_fault_before_scenario_observation",
+    "aggregation": "mean_rollout_brier_within_system_then_equal_weight_systems",
+    "nonrestoration": "0_ONLY_WHEN_ACTUAL_LOSS_OCCURRED"
+  },
+  "feature": {
+    "id": "R1_scoped_pair_pre_fault",
+    "role": "candidate_feature_unverified",
+    "from_pre_fault_only": true,
+    "physical_ontology_required": true,
+    "exposure_scoped": true,
+    "insufficient_coverage": "MISSING_NOT_ZERO",
+    "semantics": "separately feasible exposed physical supports; not joint preparedness",
+    "status": "UNDER_REVIEW_BLOCKS_FINAL_FREEZE",
+    "additional_candidate_features": [
+      "GOG_exploratory_only_not_in_primary"
+    ]
+  },
+  "baselines": {
+    "input_access": "IDENTICAL_FULL_PREFAULT_RAW_MODEL_AND_SCENARIO_DISTRIBUTION",
+    "required": [
+      "resource_stock_and_time",
+      "topology_AND_OR",
+      "non_generative_reachability",
+      "physical_fault_event_min_cut",
+      "physical_path_redundancy",
+      "full_augmented_state_nonanticipative_policy_when_feasible"
+    ],
+    "oracle": "separate_unrestricted_full_information_diagnostic_not_fair_primary_baseline",
+    "time_budget_per_instance_seconds": null,
+    "memory_budget_mb": null,
+    "feature_computation_included": true,
+    "learner_and_hyperparameters": "NOT_FROZEN",
+    "tie_breaking": "NOT_FROZEN"
+  },
+  "design": {
+    "unit": "independent_system_instance",
+    "train_families": [
+      "random_AND_OR",
+      "modular_clusters",
+      "hub_dependencies"
+    ],
+    "tune_families": [
+      "temporal_bottleneck"
+    ],
+    "heldout_families": [
+      "spatial_lattice",
+      "hierarchical_common_cause"
+    ],
+    "family_definitions_implemented": false,
+    "fixed_seed_registry": false,
+    "number_independent_test_systems": null,
+    "number_rollouts_per_system": null,
+    "generator_release_commit": null,
+    "proposed_exploratory_pilot_instances_per_training_family": 24,
+    "confirmatory_test_data_access": "PROHIBITED_BEFORE_FREEZE",
+    "heldout_shock_draws_visible_to_features": false
+  },
+  "analysis": {
+    "primary_loss": "Brier_per_eligible_rollout_aggregated_within_system",
+    "effect": "mean_baseline_minus_augmented_Brier_at_independent_system_level",
+    "primary_comparison": "one_baseline_vs_plus_R1_feature",
+    "resampling_unit": "whole_independent_system_within_test_family",
+    "report_per_family": true,
+    "confidence_interval": "cluster_bootstrap_pre_spec_pending",
+    "alpha": 0.05,
+    "target_power": 0.8,
+    "minimum_practical_improvement": null,
+    "paired_difference_standard_deviation_estimate": null,
+    "sample_size_calculation": "NOT_COMPLETED_HYPOTHETICAL_SWEEP_ONLY",
+    "selection_policy": "DO_NOT_PEEK_AT_HELDOUT_RESULTS",
+    "multiple_comparison_policy": "ONE_PRIMARY_ONLY_EXPLORATORY_SEPARATELY"
+  },
+  "negative_controls": [
+    "duplicate_physical_alias",
+    "shared_event_common_cause",
+    "physical_event_scope_sensitivity",
+    "pre_fault_feature_no_realized_shock_access",
+    "preparation_kit_bottleneck",
+    "deadline_bottleneck",
+    "permuted_R1_within_training_only"
+  ],
+  "freeze_blockers": [
+    "externally justified_physical_ontology_or_explicit_synthetic_truth_scope",
+    "resource_consuming_plan_feature_semantics_review",
+    "deterministic_nonanticipative_rollout_policy_implementation",
+    "full_generator_family_specifications",
+    "train_tune_test_seed_registry_and_data_permissions",
+    "independent_system_sample_size_power_justification",
+    "fixed_model_and_feature_compute_time_memory_budgets",
+    "fixed_primary_effect_threshold_and_cluster_bootstrap",
+    "independent_oracle_equal_information_checks",
+    "independent_scientific_review_of_preregistration"
+  ]
+}
