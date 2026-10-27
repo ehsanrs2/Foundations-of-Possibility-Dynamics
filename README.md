@@ -77,3 +77,8 @@ Formal author credit and an open-content license have **not been agreed or grant
 [Prospective H1 study design](research/P1-H1-study-design-v0.1.md) · [machine-readable draft](research/p1_h1_design_candidate_v0_1.json) · [audit](experiments/p1_protocol_audit.py) · [hypothetical sample-size sensitivity](experiments/p1_sample_size_sensitivity.py).
 
 A primary strict-restoration outcome, matched-information baseline matrix, train/tune/sealed-family partition, clustered system-level loss and explicit freeze blockers are now documented. **The six family names are design placeholders, not generated datasets. Sample sizes, model/feature implementation, actual evaluation policy and effect threshold are NOT frozen. H1 has not been tested.** 
+
+
+## R3 — Executed, non-anticipative strict restoration
+
+[R3 methods report](research/R3-nonanticipative-strict-restoration.md) · [fixed-policy rollout code](experiments/p1_r3_policy_rollout.py) · [tests](tests/test_p1_r3_policy_rollout.py). Realized goal loss and subsequent reacquisition are now distinguished *on the same executed trajectory*, with unknown future shock time and conditional no-loss outcomes explicitly undefined. Two separately coded execution routines cross-check full histories. This is a **software/endpoint gate only**, not validation of H1, a trained predictor, or a frozen P1 rollout policy.

@@ -60,3 +60,8 @@ Two fault-event-disjoint plans can each be individually feasible yet **cannot bo
 ## 7.14 Prospective P1 threat checklist: eligibility, information leakage, and repeated shocks
 
 The [H1 design draft](../research/P1-H1-study-design-v0.1.md) protects the prediction timestamp before the realized fault, requires the same raw input and policy for baseline/candidate, counts feature runtime, and reserves family-level held-out partitions. Nevertheless, risk-set conditioning on **actual fault-caused loss** can select systematically different systems and policies; shock rollouts from one system are statistically dependent and must not masquerade as independent test instances. A fully informed augmented-state solver with the same simulator rules may correctly exhaust all useful predictive information; it is a scientifically essential negative comparator, not a straw baseline. Formal inferential rules and external-domain replication are not complete.
+
+
+## 7.15 History-consistent endpoint versus implementability
+
+The [R3 verification](../research/R3-nonanticipative-strict-restoration.md) prevents combining distinct success witnesses from different trajectories and avoids counting a retained goal as restored. Fault time now varies across scenarios and is not passed to the controller before occurrence. However the fixed action-priority heuristic assumes instantaneous full observation of post-fault capabilities and disabled actions, and the endpoint conditions on an **actual loss event**, which may itself depend on preparatory actions. Undefined risk-set cases must be disclosed by generator family; this remains a threat to confirmatory population inference.

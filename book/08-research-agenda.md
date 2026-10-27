@@ -53,3 +53,8 @@ The [R2 audit](../research/R2-resource-policy-bridge.md) connects R1 physical fa
 ## P1/H1 design phase: no new confirmatory samples
 
 An executable [draft-protocol consistency check](../experiments/p1_protocol_audit.py) and a [hypothetical precision sensitivity calculator](../experiments/p1_sample_size_sensitivity.py) now support the [proposed study design](../research/P1-H1-study-design-v0.1.md). These are internal design tests, not predictive performance results. The next **hard scientific gate** is to finish the resource-aware feature ontology, implement non-anticipative loss-and-restoration policy rollouts, fully specify generators and independent test-unit sampling, then justify power and a locked primary comparison before any confirmatory outcomes are generated.
+
+
+## R3: bounded actual trajectory outcomes (software verification only)
+
+[R3](../research/R3-nonanticipative-strict-restoration.md) provides a deterministic no-lookahead policy rollout and full same-history restoration bookkeeping with loss eligibility and resource-consuming actions. This closes one *implementation ambiguity*, not the broader H1 scientific gate. Future steps must independently fix the policy and fault observation model, generator distributions/seed registry, pre-failure physical feature contract, matched-information baselines and prospective statistical inference. The P1 JSON remains explicitly unregistered.
