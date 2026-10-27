@@ -42,3 +42,8 @@ The [G4 model](../research/G4-verification.md) considers a finite scenario distr
 ## 6.10 Structural feature versus resource-aware policy outcome
 
 The [R2 negative control](../research/R2-resource-policy-bridge.md) fixes fault identities and their probability distribution, and varies **only** inventory size or the number of available pre-fault preparation ticks. The independent structural path-pair indicator remains unchanged under positive kit supply while the non-clairvoyant optimized joint-service outcome changes. For future P1, planners and structural features must share resource/observation information, and *clairvoyant* solvers are upper bounds rather than deployable policy baselines. R2 evaluates *post-fault service availability*, not Appendix D's stricter restoration-after-loss estimand.
+
+
+## 6.11 P1/H1 candidate study design and the registration boundary
+
+The [prospective study design v0.1](../research/P1-H1-study-design-v0.1.md) now proposes a **pre-failure prediction** of strict actual-loss restoration under one fixed non-anticipating evaluation policy. It compares the same capacity-limited learner and raw information with/without a physically scoped candidate R1 feature, against augmented-state and conventional fault-cut/reachability measures. Rollouts are nested within **independently generated systems**, and a system without actual loss has an undefined *conditional* target, not automatic failure/success. Six train/tune/sealed-test family *names* are proposed, but their generators and held-out samples do not exist yet. No sample size, policy implementation, positive practical effect, primary interval rule or feature semantics is frozen. This is **not preregistration and no H1 experiment has been performed**.

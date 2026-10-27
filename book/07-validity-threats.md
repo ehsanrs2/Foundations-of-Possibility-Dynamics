@@ -55,3 +55,8 @@ The [R1 scope contract](../appendices/C-fault-event-ontology.md) rejects unmodel
 ## 7.13 Individually feasible alternatives are not jointly preparable
 
 Two fault-event-disjoint plans can each be individually feasible yet **cannot both be provisioned** before a fault under shared inventory depletion or inadequate preparation time. The [R2 controlled counterexample](../research/R2-resource-policy-bridge.md) exhibits this failure while holding the declared physical failure ontology and event probabilities fixed. Claiming practical resilience from a static GBR-like score alone conflates independent plans with an executable non-anticipative contingency policy. The R2 diagnostic does not establish a dynamic policy-sensitive GBR alternative.
+
+
+## 7.14 Prospective P1 threat checklist: eligibility, information leakage, and repeated shocks
+
+The [H1 design draft](../research/P1-H1-study-design-v0.1.md) protects the prediction timestamp before the realized fault, requires the same raw input and policy for baseline/candidate, counts feature runtime, and reserves family-level held-out partitions. Nevertheless, risk-set conditioning on **actual fault-caused loss** can select systematically different systems and policies; shock rollouts from one system are statistically dependent and must not masquerade as independent test instances. A fully informed augmented-state solver with the same simulator rules may correctly exhaust all useful predictive information; it is a scientifically essential negative comparator, not a straw baseline. Formal inferential rules and external-domain replication are not complete.

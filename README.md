@@ -70,3 +70,10 @@ Formal author credit and an open-content license have **not been agreed or grant
 ## R2 — Physically disjoint routes vs executable joint preparation
 
 [Resource-and-policy counterexample](research/R2-resource-policy-bridge.md) uses the same declared failure events but changes consumable kit supply and available pre-shock preparation time. A physically event-disjoint route pair exists in all positive-kit cases, yet **optimal non-clairvoyant post-fault goal attainment** ranges from 1/2 to 3/4 depending on resources and time. [Run the toy](experiments/resource_policy_r2.py). This is negative construct-validity evidence, NOT H1, real-world reliability or a general new metric.
+
+
+## P1/H1 main predictive study — draft design, not preregistered
+
+[Prospective H1 study design](research/P1-H1-study-design-v0.1.md) · [machine-readable draft](research/p1_h1_design_candidate_v0_1.json) · [audit](experiments/p1_protocol_audit.py) · [hypothetical sample-size sensitivity](experiments/p1_sample_size_sensitivity.py).
+
+A primary strict-restoration outcome, matched-information baseline matrix, train/tune/sealed-family partition, clustered system-level loss and explicit freeze blockers are now documented. **The six family names are design placeholders, not generated datasets. Sample sizes, model/feature implementation, actual evaluation policy and effect threshold are NOT frozen. H1 has not been tested.** 

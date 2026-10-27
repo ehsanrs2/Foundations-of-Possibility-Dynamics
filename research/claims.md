@@ -59,3 +59,10 @@ C-030: Definitional reachability gain, predictive benefit under matched informat
 C-031: Physical event-disjoint individual routes are not sufficient to ensure that a single non-clairvoyant policy can prepare both given shared consumable resources and preparation deadlines. **Status: exact constructed counterexample, not an empirical result.** See [R2](R2-resource-policy-bridge.md).
 
 C-032: Under the fixed four-event toy distribution, the same R1 pair score of 1 coexists with policy success 1/2 (one kit, two preparation ticks), 3/4 (two kits, two ticks) and 1/2 (two kits, one tick). **Status: deterministic bounded-model comparison, not H1 predictive validation**.
+
+
+C-033: A v0.1 prospective H1 design has been documented with a proposed pre-shock prediction moment, strict loss-conditioned restoration endpoint, matched-information conventional baselines and provisional generator-family split. **Status: unregistered design specification only, not results**. See [P1 draft](P1-H1-study-design-v0.1.md).
+
+C-034: The normal approximation table gives hypothetical independent-system sample sizes that vary strongly with unobserved paired-loss dispersion and desired minimum Brier improvement. **Status: conditional mathematical planning illustration; actual power and n remain undetermined**. See [planning code](../experiments/p1_sample_size_sensitivity.py).
+
+C-035: A final preregistered P1 study with independently validated recovery outcomes and held-out superiority of GBR exists. **Status: false; not claimed.** The study's core measurement, operational policy, generators, sample-size rationale, and comparison constraints remain open.
