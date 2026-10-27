@@ -58,3 +58,8 @@ An executable [draft-protocol consistency check](../experiments/p1_protocol_audi
 ## R3: bounded actual trajectory outcomes (software verification only)
 
 [R3](../research/R3-nonanticipative-strict-restoration.md) provides a deterministic no-lookahead policy rollout and full same-history restoration bookkeeping with loss eligibility and resource-consuming actions. This closes one *implementation ambiguity*, not the broader H1 scientific gate. Future steps must independently fix the policy and fault observation model, generator distributions/seed registry, pre-failure physical feature contract, matched-information baselines and prospective statistical inference. The P1 JSON remains explicitly unregistered.
+
+
+## R4: bounded developer-only system families
+
+The [R4 registry](../research/R4-development-family-boundary.md) implements three named TRAIN and one TUNE small-system grammars without producing or even implementing the two reserved test families. Seed fingerprints, a sealed-family rejection contract and R3 trace consistency checks provide reproducibility for *development experiments only*. The strong required next work is to freeze policy/target selection, physical support identity and matched-information baselines; specify sealed-family sampling independently under an immutable protocol; then justify the independent-system test count. No H1 scientific evidence arises from R4.

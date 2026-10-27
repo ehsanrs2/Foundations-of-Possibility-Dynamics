@@ -71,3 +71,8 @@ C-035: A final preregistered P1 study with independently validated recovery outc
 C-036: In a bounded G2 one-tick execution kernel, one fixed non-anticipative policy can produce a history-consistent binary label for strict post-fault restoration after actual loss, treating non-loss as undefined. **Status: R3 software/methods verification only, not measured predictive performance.** See [R3](R3-nonanticipative-strict-restoration.md).
 
 C-037: In one hand-constructed three-scenario R3 example, eligible loss mass is 2/3 and conditional restoration success equals 1/2. **Status: exact fixture arithmetic, not a sampled population or statistical H1 finding.**
+
+
+C-038: Four explicitly synthetic *development-side* generator grammars, three assigned TRAIN and one assigned TUNE, can be instantiated reproducibly with family/index-specific SHA-256-derived seeds and checked under the R3 trace oracle. **Status: software reproducibility gate, not independently validated families or H1 evidence.** See [R4](R4-development-family-boundary.md).
+
+C-039: The R4 development builder refuses the two reserved SEALED family identifiers before generating seeds or instances. **Status: software API guard only; not a general information-security boundary or a scientific guarantee of independence.**

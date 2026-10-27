@@ -99,3 +99,8 @@ See the [claims ledger](claims.md), [protocol history](protocol.md), and [separa
 ## R3 implementation addendum — draft status unchanged
 
 The [R3 policy rollout](R3-nonanticipative-strict-restoration.md) implements **one candidate operational endpoint**: actual loss at a fault boundary and later reacquisition by the same bounded deterministic policy history, with no advance access to the fault time or realized identity. Per-goal no-loss cases remain undefined and their probability mass is reported. R3 compares two separate execution procedures for tiny cases; it does not select a scientifically justified *final* policy, handle delayed observations, establish the physical fault-event ontology, generate independent train/tune/test families, freeze sample size or fit a predictor. **The prospective protocol remains DRAFT_NOT_PREREGISTERED and no H1 analysis is permitted.**
+
+
+## R4 development implementation addendum — study NOT frozen
+
+[Development-family boundary R4](R4-development-family-boundary.md) now gives small executable generation grammars for the three proposed TRAIN and one TUNE families only. The two SEALED test families remain unimplemented and ungenerated, with API calls explicitly rejected. A fixed seed derivation provides reproducible **developer** system units, four nested synthetic shock cases per system and whole-trace R3 checks. These outcomes are not independent held-out results, training of the H1 learner, estimates of out-of-family predictive advantage or evidence of real-system independence. The final policy, complete generator-family specifications, test seed registry and sampling frame remain open; the prospective protocol stays DRAFT_NOT_PREREGISTERED.
