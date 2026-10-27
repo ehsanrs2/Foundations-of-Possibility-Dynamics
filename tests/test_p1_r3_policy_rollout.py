@@ -48,8 +48,12 @@ class R3RolloutTests(unittest.TestCase):
         base=replace(trial.base,initial=trial.base.initial-{"service"})
         changed=replace(trial,base=base)
         self.check(changed)
-        for c in changed.cases:
-            self.assertIsNone(execute(changed,c).result("service"))
+        early=execute(changed,changed.cases[0])
+        self.assertIsNone(early.result("service"))  # never held before t=1
+        # A later fault can remove a goal CREATED before its own shock.
+        late=execute(changed,changed.cases[1])
+        self.assertIn("service",late.held_before_fault)
+        self.assertEqual(late.result("service"),0)
 
     def test_future_fault_times_share_preshock_trace(self):
         trial=demonstrator()
