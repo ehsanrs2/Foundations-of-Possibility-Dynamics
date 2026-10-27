@@ -54,3 +54,8 @@ C-028: A strict declaration of physical mechanism IDs, failure-event incidence a
 C-029: Static survival under independent basic-event indicators differs for one shared event and two independent events in an illustrative two-route system (1/2 vs 3/4 when event failure probabilities equal 1/2). **Status: exact combinatorial toy calculation; not observed reliability or dynamic restoration**.
 
 C-030: Definitional reachability gain, predictive benefit under matched information, and intervention-caused resilience benefit are three **distinct estimands**; none may substitute for evidence of another. **Status: conceptual separation; H1 remains untested.** See [Appendix D](../appendices/D-predictive-estimands.md).
+
+
+C-031: Physical event-disjoint individual routes are not sufficient to ensure that a single non-clairvoyant policy can prepare both given shared consumable resources and preparation deadlines. **Status: exact constructed counterexample, not an empirical result.** See [R2](R2-resource-policy-bridge.md).
+
+C-032: Under the fixed four-event toy distribution, the same R1 pair score of 1 coexists with policy success 1/2 (one kit, two preparation ticks), 3/4 (two kits, two ticks) and 1/2 (two kits, one tick). **Status: deterministic bounded-model comparison, not H1 predictive validation**.
