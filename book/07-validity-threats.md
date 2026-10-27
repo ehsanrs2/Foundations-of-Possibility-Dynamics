@@ -65,3 +65,8 @@ The [H1 design draft](../research/P1-H1-study-design-v0.1.md) protects the predi
 ## 7.15 History-consistent endpoint versus implementability
 
 The [R3 verification](../research/R3-nonanticipative-strict-restoration.md) prevents combining distinct success witnesses from different trajectories and avoids counting a retained goal as restored. Fault time now varies across scenarios and is not passed to the controller before occurrence. However the fixed action-priority heuristic assumes instantaneous full observation of post-fault capabilities and disabled actions, and the endpoint conditions on an **actual loss event**, which may itself depend on preparatory actions. Undefined risk-set cases must be disclosed by generator family; this remains a threat to confirmatory population inference.
+
+
+## 7.16 Development-family and holdout leakage
+
+The [R4 development registry](../research/R4-development-family-boundary.md) prevents an accidental call to its builder from producing either proposed sealed-test family. It is not a security sandbox: repository editors can inspect or change generator code, and separate scripts can bypass the guard. Four shock realizations sharing one synthetic network are **nested observations, not four independent experimental units**. A generator that deliberately includes three service-loss scenarios per system cannot supply an empirical estimate of real fault incidence. Before P1, lock the family acceptance rules, observation policy, generator signatures, held-out seed registry and physical event mapping; no meaningful population inference is possible yet.

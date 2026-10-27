@@ -73,7 +73,25 @@
     "generator_release_commit": null,
     "proposed_exploratory_pilot_instances_per_training_family": 24,
     "confirmatory_test_data_access": "PROHIBITED_BEFORE_FREEZE",
-    "heldout_shock_draws_visible_to_features": false
+    "heldout_shock_draws_visible_to_features": false,
+    "development_generator_status": {
+      "status": "FOUR_DEV_FAMILIES_IMPLEMENTED_ONLY",
+      "source": "experiments/p1_r4_development_families.py",
+      "train_implemented": [
+        "random_AND_OR",
+        "modular_clusters",
+        "hub_dependencies"
+      ],
+      "tune_implemented": [
+        "temporal_bottleneck"
+      ],
+      "sealed_implemented": [],
+      "sealed_test_examples_generated": 0,
+      "seed_stream": "SHA256_R4_DEV_V1",
+      "policy_frozen": false,
+      "family_sampling_distributions_reviewed": false,
+      "confirmatory_data_collected": false
+    }
   },
   "analysis": {
     "primary_loss": "Brier_per_eligible_rollout_aggregated_within_system",
