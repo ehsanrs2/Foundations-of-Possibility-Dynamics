@@ -94,3 +94,8 @@ The machine-readable design deliberately carries **DRAFT_NOT_PREREGISTERED**, nu
 Only after all blockers are resolved should a versioned, reviewed, hashed P1 registration be created; then can actual held-out tests be run. A positive H1 under these restrictive conditions supports a bounded representation claim, not causal resilience. If the registered study finds no advantage or a trivial effect, document that failure in the book and do not move the goalposts.
 
 See the [claims ledger](claims.md), [protocol history](protocol.md), and [separate predictive vs causal estimands](../appendices/D-predictive-estimands.md). **There are no P1 confirmatory findings in this version.**
+
+
+## R3 implementation addendum — draft status unchanged
+
+The [R3 policy rollout](R3-nonanticipative-strict-restoration.md) implements **one candidate operational endpoint**: actual loss at a fault boundary and later reacquisition by the same bounded deterministic policy history, with no advance access to the fault time or realized identity. Per-goal no-loss cases remain undefined and their probability mass is reported. R3 compares two separate execution procedures for tiny cases; it does not select a scientifically justified *final* policy, handle delayed observations, establish the physical fault-event ontology, generate independent train/tune/test families, freeze sample size or fit a predictor. **The prospective protocol remains DRAFT_NOT_PREREGISTERED and no H1 analysis is permitted.**

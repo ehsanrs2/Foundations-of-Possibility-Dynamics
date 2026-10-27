@@ -66,3 +66,8 @@ C-033: A v0.1 prospective H1 design has been documented with a proposed pre-shoc
 C-034: The normal approximation table gives hypothetical independent-system sample sizes that vary strongly with unobserved paired-loss dispersion and desired minimum Brier improvement. **Status: conditional mathematical planning illustration; actual power and n remain undetermined**. See [planning code](../experiments/p1_sample_size_sensitivity.py).
 
 C-035: A final preregistered P1 study with independently validated recovery outcomes and held-out superiority of GBR exists. **Status: false; not claimed.** The study's core measurement, operational policy, generators, sample-size rationale, and comparison constraints remain open.
+
+
+C-036: In a bounded G2 one-tick execution kernel, one fixed non-anticipative policy can produce a history-consistent binary label for strict post-fault restoration after actual loss, treating non-loss as undefined. **Status: R3 software/methods verification only, not measured predictive performance.** See [R3](R3-nonanticipative-strict-restoration.md).
+
+C-037: In one hand-constructed three-scenario R3 example, eligible loss mass is 2/3 and conditional restoration success equals 1/2. **Status: exact fixture arithmetic, not a sampled population or statistical H1 finding.**
