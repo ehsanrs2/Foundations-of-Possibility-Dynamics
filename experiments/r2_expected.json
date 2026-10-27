@@ -1,0 +1,52 @@
+{
+  "gate": "R2",
+  "classification": "constructed_counterexample_not_H1",
+  "same_physical_fault_scope": "R2_TWO_INDEPENDENT_CHANNEL_EVENTS",
+  "conditions": [
+    {
+      "kits": 1,
+      "preparation_ticks": 2,
+      "individually_feasible_plans": 2,
+      "scoped_backup_pair": 1,
+      "event_min_cut": 2,
+      "nonclairvoyant_policy_success": "1/2",
+      "clairvoyant_upper_success": "3/4",
+      "no_construction_policy_success": "0",
+      "static_plan_survival": "3/4"
+    },
+    {
+      "kits": 2,
+      "preparation_ticks": 2,
+      "individually_feasible_plans": 2,
+      "scoped_backup_pair": 1,
+      "event_min_cut": 2,
+      "nonclairvoyant_policy_success": "3/4",
+      "clairvoyant_upper_success": "3/4",
+      "no_construction_policy_success": "0",
+      "static_plan_survival": "3/4"
+    },
+    {
+      "kits": 2,
+      "preparation_ticks": 1,
+      "individually_feasible_plans": 2,
+      "scoped_backup_pair": 1,
+      "event_min_cut": 2,
+      "nonclairvoyant_policy_success": "1/2",
+      "clairvoyant_upper_success": "3/4",
+      "no_construction_policy_success": "0",
+      "static_plan_survival": "3/4"
+    },
+    {
+      "kits": 0,
+      "preparation_ticks": 2,
+      "individually_feasible_plans": 0,
+      "scoped_backup_pair": 0,
+      "event_min_cut": 0,
+      "nonclairvoyant_policy_success": "0",
+      "clairvoyant_upper_success": "0",
+      "no_construction_policy_success": "0",
+      "static_plan_survival": "0"
+    }
+  ],
+  "result": "PASS"
+}

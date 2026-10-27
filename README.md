@@ -65,3 +65,8 @@ Formal author credit and an open-content license have **not been agreed or grant
 ## R1 reviewer response: physical fault-event ontology and separate estimands
 
 [Appendix C — fault ontology](appendices/C-fault-event-ontology.md) · [Appendix D — predictive/causal estimands](appendices/D-predictive-estimands.md) · [strictly scoped executable diagnostics](experiments/fault_ontology_r1.py). Physical failure IDs and shared causes are external assumptions requiring evidence; unknown support tokens cause a hard error. This **does not** establish a valid universal GBR metric or finish preregistration. Issues #9, #11, #12 and #3 remain open.
+
+
+## R2 — Physically disjoint routes vs executable joint preparation
+
+[Resource-and-policy counterexample](research/R2-resource-policy-bridge.md) uses the same declared failure events but changes consumable kit supply and available pre-shock preparation time. A physically event-disjoint route pair exists in all positive-kit cases, yet **optimal non-clairvoyant post-fault goal attainment** ranges from 1/2 to 3/4 depending on resources and time. [Run the toy](experiments/resource_policy_r2.py). This is negative construct-validity evidence, NOT H1, real-world reliability or a general new metric.

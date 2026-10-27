@@ -43,3 +43,8 @@ The [G3 audit](../research/G3-verification.md) uses history flags and two search
 ## Gate G4: shock observation and non-clairvoyant action prefixes
 
 The [G4 software specification](../research/G4-verification.md) replaces the single known realization with a finite distribution of possible shocks, requiring one pre-shock action history and admitting scenario-adaptive recourse only after observation. A full-information optimizer supplies a strictly more informed upper bound. This resolves one avoidable look-ahead ambiguity but **does not implement GBR predictive benchmarking**. Next priorities are scenario observation uncertainty, consuming-resource plan provenance, and prespecified held-out comparisons to conventional augmented-state control.
+
+
+## R2: an additional falsifying construct-validity control
+
+The [R2 audit](../research/R2-resource-policy-bridge.md) connects R1 physical fault-event supports with G4's finite non-clairvoyant policy oracle. It shows an informative limitation: identical disjoint-route structure can correspond to distinct best executable recovery/availability rates when upfront investment is limited by inventory or time. The next gate should specify any proposed **resource-aware plan/policy feature** in advance and compare it with a fully informed **equal-information** augmented-state baseline; do not retrofit the feature to these toy outcomes and call that a predictive test.

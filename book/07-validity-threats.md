@@ -50,3 +50,8 @@ The [Issue #9 audit](../research/gbr-metric-audit-v0.3.md) demonstrates failure 
 ## 7.12 Ontology uncertainty and conditional denominators
 
 The [R1 scope contract](../appendices/C-fault-event-ontology.md) rejects unmodeled support tokens and explicitly records protected components, physical mechanism identities and event common causes. This is conservative but still depends on evidence not supplied by source code. The [proposed P1 restoration estimand](../appendices/D-predictive-estimands.md) warns that a policy can alter which goals are lost; comparing loss-conditioned restoration fractions between *different* policies can create selection bias. Prediction should use one common frozen evaluation policy and identical pre-shock observables, while causal effects require a separate design.
+
+
+## 7.13 Individually feasible alternatives are not jointly preparable
+
+Two fault-event-disjoint plans can each be individually feasible yet **cannot both be provisioned** before a fault under shared inventory depletion or inadequate preparation time. The [R2 controlled counterexample](../research/R2-resource-policy-bridge.md) exhibits this failure while holding the declared physical failure ontology and event probabilities fixed. Claiming practical resilience from a static GBR-like score alone conflates independent plans with an executable non-anticipative contingency policy. The R2 diagnostic does not establish a dynamic policy-sensitive GBR alternative.

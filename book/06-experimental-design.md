@@ -37,3 +37,8 @@ The [G4 model](../research/G4-verification.md) considers a finite scenario distr
 ## 6.9 Distinct estimands and fixed risk population
 
 [Appendix D](../appendices/D-predictive-estimands.md) separates (A) nested-option reachability (definitional), (B) a prospective incremental predictive-risk contrast, and (C) an exploratory causal intervention contrast. Only B can test the current proposed H1. Its tentative label is **strict restoration after actual loss under a single frozen non-anticipative rollout policy**, with a clearly defined loss-conditioned denominator and explicit handling of zero-loss cases. This is a *pre-freeze methodological draft*: final shock distributions, model-family splits, sample size, compute budgets, loss functions and baselines have not yet been registered.
+
+
+## 6.10 Structural feature versus resource-aware policy outcome
+
+The [R2 negative control](../research/R2-resource-policy-bridge.md) fixes fault identities and their probability distribution, and varies **only** inventory size or the number of available pre-fault preparation ticks. The independent structural path-pair indicator remains unchanged under positive kit supply while the non-clairvoyant optimized joint-service outcome changes. For future P1, planners and structural features must share resource/observation information, and *clairvoyant* solvers are upper bounds rather than deployable policy baselines. R2 evaluates *post-fault service availability*, not Appendix D's stricter restoration-after-loss estimand.

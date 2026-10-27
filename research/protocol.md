@@ -84,3 +84,8 @@ G1's raw plan metric remains a **candidate under review**, not a validated predi
 ## R1: physically scoped failures and pre-freeze estimands
 
 The [fault-event contract](../appendices/C-fault-event-ontology.md) requires a justified physical mechanism map, basic fault-event incidence, written assumptions about protected dependencies, and scope sensitivity *before* interpreting structural independence. The [prospective estimand separation](../appendices/D-predictive-estimands.md) distinguishes nested-action reachability, bounded-learning prediction and causal intervention outcomes, with an explicit proposed loss-conditioned restoration target and risk-set selection warnings. The old raw G1 GBR formula is not silently rewritten. **Neither appendix constitutes finalized preregistration**; the physical ontology and a policy-conditioned resource-sensitive feature remain unvalidated.
+
+
+## R2 pre-registration warning — physical backup is not an executable policy
+
+A [hand-specified R2 control](R2-resource-policy-bridge.md) fixes physical event incidence and independent basic-event probabilities while varying kit supply and pre-shock time. The guarded R1 pair remains 1 for 1-kit and 2-kit feasible individual alternatives, but G4's optimal non-clairvoyant post-fault service probability varies from 1/2 to 3/4. A structural backup predicate is therefore **not a plug-in prediction of policy robustness**. Future H1 features must be defined *before observing test outcomes*, include their resource/time semantics, and face a resource-aware non-anticipative control baseline under identical information. R2 is NOT a frozen endpoint or an empirical study.
