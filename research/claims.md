@@ -76,3 +76,8 @@ C-037: In one hand-constructed three-scenario R3 example, eligible loss mass is 
 C-038: Four explicitly synthetic *development-side* generator grammars, three assigned TRAIN and one assigned TUNE, can be instantiated reproducibly with family/index-specific SHA-256-derived seeds and checked under the R3 trace oracle. **Status: software reproducibility gate, not independently validated families or H1 evidence.** See [R4](R4-development-family-boundary.md).
 
 C-039: The R4 development builder refuses the two reserved SEALED family identifiers before generating seeds or instances. **Status: software API guard only; not a general information-security boundary or a scientific guarantee of independence.**
+
+
+C-040: Bounded R5 development-only pilot infrastructure produces system-clustered, policy-specific strict-restoration and resource-use records under three fixed R3 policy variants on four synthetic TRAIN/TUNE grammars. **Status: exploratory diagnostics and software verification, not confirmatory H1 evidence.** See [R5](R5-development-pilot.md).
+
+C-041: A 3/4 per-system actual-loss eligibility mass in R5 reflects fault-case construction (three service-loss cases, one retained case, all weighted equally), not an inferred real-world failure risk. **Status: exact sampling-design fact, not empirical observation or independently estimated prevalence.**

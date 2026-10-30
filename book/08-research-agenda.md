@@ -63,3 +63,8 @@ An executable [draft-protocol consistency check](../experiments/p1_protocol_audi
 ## R4: bounded developer-only system families
 
 The [R4 registry](../research/R4-development-family-boundary.md) implements three named TRAIN and one TUNE small-system grammars without producing or even implementing the two reserved test families. Seed fingerprints, a sealed-family rejection contract and R3 trace consistency checks provide reproducibility for *development experiments only*. The strong required next work is to freeze policy/target selection, physical support identity and matched-information baselines; specify sealed-family sampling independently under an immutable protocol; then justify the independent-system test count. No H1 scientific evidence arises from R4.
+
+
+## R5: developer-only pilot to expose design weaknesses
+
+The [R5 developer pilot](../research/R5-development-pilot.md) now produces explicit nested rollout records and tests policy sensitivity under the four training/tuning grammars, never the sealed families. It preserves exact rational descriptive conditional restoration and basic action/kit accounting. **Its shock-risk fraction is known by construction**, which exposes why the final P1 study needs a scientifically justified fault sampling distribution, actual-loss risk population and an independent sample-size plan before preregistration. No GBR feature/learner is fitted or compared.
