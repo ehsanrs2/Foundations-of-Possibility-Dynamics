@@ -57,3 +57,25 @@ The R5 developer pilot may motivate revisions to **training-side** policy choice
 In particular, the artificially fixed eligibility fraction highlights a **serious limit** of the current design: any future scientifically meaningful risk-set analysis must justify its fault sampling frame and the observed fraction with actual pre-shock goal loss. Without this, a precise descriptive fraction here can be misleading.
 
 **Scientific status:** infrastructure and software checks only; no conclusion about GBR novelty, predictive advantage or causal resilience. Issues #3 and #8–#12 stay open.
+
+
+## Executed development pilot — descriptive record (2026-10-30)
+
+The **PR-head CI workflow run** [#41114038810](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41114038810) successfully executed the pilot and uploaded the [raw R5 artifact](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41114038810/artifacts/13005480769). The complete family/policy summary is retained in [R5 summary JSON](R5-development-pilot-summary-seed20261030.json); raw per-case records remain in the CI artifact (30-day retention) and can be regenerated from the source commit and seed.
+
+This run evaluated **84** developer systems (24 per TRAIN grammar, 12 in TUNE), with four stipulated fault cases and three fixed policies each: **1,008** policy-case evaluations. Two independently implemented R3 execution histories agreed for all 1,008; zero SEALED-family examples were generated.
+
+**Exact conditional strict-restoration fractions of designed eligible cases, NOT uncertainty estimates:**
+
+| Synthetic family | Independent developer systems | R3 original | Prepare-first after fault | Construction disabled |
+|---|---:|---:|---:|---:|
+| Random AND/OR | 24 | 5/9 | 19/36 | 0 |
+| Modular clusters | 24 | 2/3 | 7/12 | 0 |
+| Hub dependencies | 24 | 17/36 | 7/18 | 0 |
+| Temporal bottleneck | 12 | 25/36 | 11/18 | 0 |
+
+These exact synthetic proportions are **not generalization performance, confidence intervals or causal intervention effects**. The zero construction-disabled scores reflect these particular tiny grammars and developer policies; they do not establish that all real-world systems need optional construction. The pre/post priorities, available preparation time and common dependencies affect these descriptive outcomes. No final policy was selected or frozen using these observations.
+
+Every developer system had **3/4 eligible-loss probability by case construction**, giving **756 eligible policy-case records** out of 1,008, but this is NOT 756 independent samples. The independent development unit is the **system (n=84)**, itself generated from four related artificial grammars. No independent external engineering or natural-science systems were measured.
+
+**Decision:** R5 exposes policy sensitivity and the risk of interpreting designed eligibility as observed incidence, but **cannot calibrate actual-loss prevalence, justify final sample size, select the final policy, or test H1**. The protocol remains a DRAFT; all scientific freeze blockers remain.
