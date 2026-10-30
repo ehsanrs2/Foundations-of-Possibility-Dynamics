@@ -1,0 +1,31 @@
+name: R5 development-only pilot artifact (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  development-pilot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate R5 software contract
+        run: python -m unittest tests.test_p1_r5_dev_pilot -v
+      - name: Run bounded exploratory development pilot
+        run: |
+          mkdir -p r5-dev-artifact
+          python -m experiments.p1_r5_dev_pilot \
+            --seed 20261030 --train-n 24 --tune-n 12 \
+            --output r5-dev-artifact/r5_dev_pilot.json \
+            | tee r5-dev-artifact/r5_dev_summary.json
+      - name: Upload development-only records (NOT confirmatory data)
+        uses: actions/upload-artifact@v4
+        with:
+          name: r5-development-only-not-h1
+          path: r5-dev-artifact/
+          retention-days: 30

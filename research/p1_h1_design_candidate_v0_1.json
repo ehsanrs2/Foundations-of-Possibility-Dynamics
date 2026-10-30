@@ -91,6 +91,24 @@
       "policy_frozen": false,
       "family_sampling_distributions_reviewed": false,
       "confirmatory_data_collected": false
+    },
+    "development_pilot_status": {
+      "source": "experiments/p1_r5_dev_pilot.py",
+      "report": "research/R5-development-pilot.md",
+      "workflow": ".github/workflows/r5-development-pilot.yml",
+      "classification": "DEVELOPMENT_ONLY_DESCRIPTIVE_PILOT_NOT_H1",
+      "developer_master_seed": 20261030,
+      "training_instances_per_family": 24,
+      "tuning_instances": 12,
+      "holdout_instances_generated": 0,
+      "policies": [
+        "R3_original",
+        "prepare_first_after_fault",
+        "construction_disabled"
+      ],
+      "loss_eligibility": "3/4_BY_DELIBERATE_CASE_DESIGN",
+      "prediction_models_fit": false,
+      "final_evaluation_policy_frozen": false
     }
   },
   "analysis": {

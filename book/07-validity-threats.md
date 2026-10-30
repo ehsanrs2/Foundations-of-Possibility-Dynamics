@@ -70,3 +70,8 @@ The [R3 verification](../research/R3-nonanticipative-strict-restoration.md) prev
 ## 7.16 Development-family and holdout leakage
 
 The [R4 development registry](../research/R4-development-family-boundary.md) prevents an accidental call to its builder from producing either proposed sealed-test family. It is not a security sandbox: repository editors can inspect or change generator code, and separate scripts can bypass the guard. Four shock realizations sharing one synthetic network are **nested observations, not four independent experimental units**. A generator that deliberately includes three service-loss scenarios per system cannot supply an empirical estimate of real fault incidence. Before P1, lock the family acceptance rules, observation policy, generator signatures, held-out seed registry and physical event mapping; no meaningful population inference is possible yet.
+
+
+## 7.17 R5 developer pilot: designed eligibility and policy dependence
+
+The [R5 methods report](../research/R5-development-pilot.md) explicitly discloses that three of each four stipulated synthetic fault outcomes remove the initially held service. The resulting 3/4 conditional-risk eligibility is **designed** and yields no evidence of real-world frequency or independent sampling variance. A single system is the sampling unit even if each supplies twelve scenario/policy records; treating them as independent systems would be pseudoreplication. Policy variants alter resource consumption and recovery, but are developer heuristics not frozen policy interventions for causal inference. The test-family boundary remains unexamined.
