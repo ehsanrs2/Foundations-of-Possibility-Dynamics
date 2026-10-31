@@ -81,3 +81,10 @@ C-039: The R4 development builder refuses the two reserved SEALED family identif
 C-040: Bounded R5 development-only pilot infrastructure produces system-clustered, policy-specific strict-restoration and resource-use records under three fixed R3 policy variants on four synthetic TRAIN/TUNE grammars. **Status: exploratory diagnostics and software verification, not confirmatory H1 evidence.** See [R5](R5-development-pilot.md).
 
 C-041: A 3/4 per-system actual-loss eligibility mass in R5 reflects fault-case construction (three service-loss cases, one retained case, all weighted equally), not an inferred real-world failure risk. **Status: exact sampling-design fact, not empirical observation or independently estimated prevalence.**
+
+
+C-042: An explicit per-system *synthetic* independent-basic-event hazard law can replace R5's fixed 3/4 designed eligibility fraction and correctly report systems with zero actual-loss risk as having undefined conditional restoration. **Status: R6 model and software control; not externally calibrated failure incidence.** See [R6](R6-variable-risk-and-exact-baseline.md).
+
+C-043: For a completely known finite scenario law X, exact marginalization of one fixed non-anticipative policy's strict-restoration outcome supplies the optimal pre-shock conditional probability under Brier loss. The expected excess loss of a competing probability q is (q−p*)². **Status: standard conditional-expectation identity and model-based demonstration, not a new Possibility Dynamics theorem nor H1 validation.**
+
+C-044: A distinct scientific theory of dynamic possibility has been established as necessary by the experiments. **Status: NOT established.** The motivating questions, competing prior fields and explicit possible falsifiers are in [scientific motivation and boundaries](scientific-motivation-and-boundaries.md).

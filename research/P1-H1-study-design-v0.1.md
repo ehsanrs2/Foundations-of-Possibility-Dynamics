@@ -109,3 +109,10 @@ The [R3 policy rollout](R3-nonanticipative-strict-restoration.md) implements **o
 ## R5 addendum — exploratory pilot without H1 training or held-out testing
 
 The [R5 developer-only pilot](R5-development-pilot.md) now instantiates 24 synthetic systems from each of three TRAIN families and 12 from the TUNE family, each with four stipulated fault cases. It records strict actual-loss restoration under three fixed R3-based policies, independent whole-trajectory checks and kit/action-use diagnostics. The held-out generator families remain unimplemented and unseen. **By construction**, three of each four cases remove the initially held service; therefore R5 is unable to estimate genuine at-risk loss prevalence. Policy-selection and resource-equivalence questions remain preliminary. There is still no trained predictive model, frozen R1 feature, calibrated independent-unit variability, justified sample size, matched strong predictive baselines or final preregistration. Status remains DRAFT_NOT_PREREGISTERED.
+
+
+## R6 addendum — variable synthetic risk and full-known-model comparator
+
+[R6](R6-variable-risk-and-exact-baseline.md) now enumerates a separately specified three-basic-event risk law for development TRAIN/TUNE systems, with per-system service-loss probability varying over {0,1/8,1/4,1/2,3/4}. The exact pre-shock conditional restoration baseline marginalizes all possible cases under one fixed policy and does not observe the realization. **This is no longer R5's fixed 3/4 designed risk, but still not a calibrated real population or a confirmatory test set.**
+
+When the source model and hazard law are completely known, the exact model-based baseline is already Bayes-optimal for the synthetic conditional target; an engineered deterministic R1/GBR cannot improve population expected Brier loss unless learning/computation constraints matter. Future bounded methods must receive identical pre-shock raw inputs and full feature computation accounting. R3's observed no-op boundary remains a substantial realism limitation. No fitted feature, independent domain, frozen design, H1 result or registration was created.

@@ -44,3 +44,8 @@ This book develops a bounded operational formalism and a research agenda. It doe
 ## Primary research design — prospective only
 
 [Study design for H1, version 0.1 (draft, not preregistered)](../research/P1-H1-study-design-v0.1.md) · [machine-readable preregistration blockers](../research/p1_h1_design_candidate_v0_1.json).
+
+
+## Motivation and falsifiability boundary
+
+[Why study changing operational possibility?](../research/scientific-motivation-and-boundaries.md) · [R6 variable synthetic risk and known-model Bayes reference](../research/R6-variable-risk-and-exact-baseline.md).

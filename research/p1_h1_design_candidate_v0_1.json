@@ -109,6 +109,18 @@
       "loss_eligibility": "3/4_BY_DELIBERATE_CASE_DESIGN",
       "prediction_models_fit": false,
       "final_evaluation_policy_frozen": false
+    },
+    "development_risk_gate": {
+      "name": "R6_VARIABLE_SYNTHETIC_RISK_EXACT_FULL_INPUT_REFERENCE",
+      "report": "research/R6-variable-risk-and-exact-baseline.md",
+      "code": "experiments/p1_r6_fault_risk_dev.py",
+      "source_hazards": "STIPULATED_NOT_CALIBRATED",
+      "family_partitions": "TRAIN_AND_TUNE_ONLY",
+      "zero_eligible_system_handling": "UNDEFINED_REPORT_SEPARATELY",
+      "null_effect_boundary_observed": true,
+      "scientific_policy_frozen": false,
+      "confirmatory_data_collected": false,
+      "sealed_generated": 0
     }
   },
   "analysis": {

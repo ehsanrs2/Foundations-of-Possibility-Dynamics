@@ -75,3 +75,8 @@ The [R4 development registry](../research/R4-development-family-boundary.md) pre
 ## 7.17 R5 developer pilot: designed eligibility and policy dependence
 
 The [R5 methods report](../research/R5-development-pilot.md) explicitly discloses that three of each four stipulated synthetic fault outcomes remove the initially held service. The resulting 3/4 conditional-risk eligibility is **designed** and yields no evidence of real-world frequency or independent sampling variance. A single system is the sampling unit even if each supplies twelve scenario/policy records; treating them as independent systems would be pseudoreplication. Policy variants alter resource consumption and recovery, but are developer heuristics not frozen policy interventions for causal inference. The test-family boundary remains unexamined.
+
+
+## 7.18 R6: declared risk heterogeneity is not real fault calibration
+
+R6 replaces a constant **designed** 3/4 eligibility mass with varied synthetic failure probabilities, some exactly zero. Those probabilities remain input assumptions; describing their distribution as estimated empirical risk would be invalid. The exact full pre-shock marginal baseline is Bayes-optimal *under the declared known model* and squared/Brier loss, so a deterministic extra representation cannot beat it in population expected loss at unlimited compute. Importantly, R3 still marks a **no-effect boundary as observed**, even when no component fails. Event non-detection, serial shocks and realistic delay/noise remain unmodeled and require a distinct inference design.
