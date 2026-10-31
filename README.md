@@ -97,3 +97,8 @@ A primary strict-restoration outcome, matched-information baseline matrix, train
 ## Fundamental motivation and R6 developer-risk audit
 
 [Scientific question and limits](research/scientific-motivation-and-boundaries.md) explains why an operational-possibility research program could matter and what *would* establish novelty, without presupposing a new science. [R6](research/R6-variable-risk-and-exact-baseline.md) replaces R5's hard-coded 3/4 eligible-loss case design with independently stipulated variable **synthetic** basic event probabilities, explicitly preserving zero-risk systems. [R6 code](experiments/p1_r6_fault_risk_dev.py) computes a complete pre-fault, equal-information exact marginal reference under the known model. Neither real hazard rates nor GBR predictive advantage are established. H1 is untested.
+
+
+## R7: a silent no-effect event is not a visible disruption
+
+[Observation-filtered R7 executor and methods](research/R7-silent-event-observation.md) · [code](experiments/p1_r7_silent_observation.py) · [verification tests](tests/test_p1_r7_silent_observation.py). R7 is a separate opt-in full-state observation contract: only **actual changes** in held capabilities, available resources or visible disabled actions can switch a fixed policy from preparation to response mode. A scheduled but wholly ineffective R6 fault vector is **not announced**. Historical R3–R6 archives stay intact. This is synthetic software verification, not real sensor validation or H1 evidence.

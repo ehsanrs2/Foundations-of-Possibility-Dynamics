@@ -80,3 +80,8 @@ The [R5 methods report](../research/R5-development-pilot.md) explicitly disclose
 ## 7.18 R6: declared risk heterogeneity is not real fault calibration
 
 R6 replaces a constant **designed** 3/4 eligibility mass with varied synthetic failure probabilities, some exactly zero. Those probabilities remain input assumptions; describing their distribution as estimated empirical risk would be invalid. The exact full pre-shock marginal baseline is Bayes-optimal *under the declared known model* and squared/Brier loss, so a deterministic extra representation cannot beat it in population expected loss at unlimited compute. Importantly, R3 still marks a **no-effect boundary as observed**, even when no component fails. Event non-detection, serial shocks and realistic delay/noise remain unmodeled and require a distinct inference design.
+
+
+## 7.19 R7 observation validity and remaining realism gap
+
+[Gate R7](../research/R7-silent-event-observation.md) removes the artificial observable boundary in R6's no-effect joint-event cases. However, its *perfect and immediate* visibility of all durable holdings, inventory and disabled-rule identities still assumes a strong sensor/diagnostic system; an ineffective **latent** failure may be dangerous even without immediate visible change. The one-event, atomic-operation model cannot represent delayed fault discovery, sensor false positives/negatives or partially observed policies. These must be explicitly treated before any claim of physical validity.

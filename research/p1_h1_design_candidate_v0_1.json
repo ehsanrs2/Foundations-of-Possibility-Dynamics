@@ -121,6 +121,17 @@
       "scientific_policy_frozen": false,
       "confirmatory_data_collected": false,
       "sealed_generated": 0
+    },
+    "development_observation_gate": {
+      "gate": "R7_OPT_IN_SILENT_NOEFFECT_OBSERVATION",
+      "code": "experiments/p1_r7_silent_observation.py",
+      "report": "research/R7-silent-event-observation.md",
+      "full_immediate_state_observation": true,
+      "zero_effect_hidden": true,
+      "historical_R3_R6_unchanged": true,
+      "policy_selected_and_frozen": false,
+      "heldout_samples_generated": 0,
+      "confirmatory_data_collected": false
     }
   },
   "analysis": {
