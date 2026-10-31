@@ -109,3 +109,10 @@ The [new detailed design candidate](P1-H1-study-design-v0.1.md) proposes strict 
 ## R5 developer-pilot gate — descriptive only, not P1 predictive evidence
 
 [R5](R5-development-pilot.md) enumerates four R4 development-only scenario cases under three predeclared fixed non-anticipative policy variants for 24 systems per TRAIN family and 12 TUNE systems. R3 full histories are independently cross-checked, and a G3 augmented-state feasibility result is kept strictly separate as a *clairvoyant diagnostic*. Outputs contain eligibility, conditional strict restoration, resource/action use and nested-instance metadata, with downloadable raw JSON artifacts in CI. **Every instance has 3/4 eligibility by design, not by independent measurement.** The final generator-family distributions, R1 resource-sensitive feature, learning baseline, sampling/power and time/memory budgets remain unfrozen. The P1 JSON remains DRAFT_NOT_PREREGISTERED and no H1 result can be inferred.
+
+
+## R6 pre-failure risk / baseline design gate — still UNREGISTERED
+
+[R6](R6-variable-risk-and-exact-baseline.md) replaces the constant 3/4 developer-case loss risk with per-system externally **stipulated, independent synthetic** service/shared-infrastructure/kit basic-event indicators and early/late fault times. R3 full-policy histories are cross-checked against its independent implementation. The conditional restoration outcome is undefined when the actual-loss probability is zero. This is **not a sample of real-world hazard rates** and does not by itself justify power, selection or held-out population risk.
+
+The R6 full-model pre-fault exact conditional expectation provides a standard **equal-information Bayes reference** for tiny known synthetic models; it cannot be beaten in population expected Brier loss by any deterministic feature of the same full input without additional information. For prospective H1, bounded computation and model capacity remain possible reasons engineered representations could help; they must be compared under frozen, fair budgets. The workflow produces only TRAIN/TUNE development outputs. The P1 manifest remains DRAFT_NOT_PREREGISTERED.

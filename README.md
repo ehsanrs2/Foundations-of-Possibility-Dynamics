@@ -92,3 +92,8 @@ A primary strict-restoration outcome, matched-information baseline matrix, train
 ## R5: exploratory developer-only pilot (NOT H1)
 
 [R5 methodological report](research/R5-development-pilot.md) · [bounded pilot code](experiments/p1_r5_dev_pilot.py) · [workflow and JSON artifact](.github/workflows/r5-development-pilot.yml). The developer pilot executes 24 systems per TRAIN family and 12 TUNE systems under three fixed R3 policy variants, preserves nested scenario labels, resource accounting and full-history oracle comparisons. **The designed loss-eligibility mass is 3/4 by construction, not an empirical fault rate.** No held-out systems, predictive models, actual experiment preregistration or H1 results are produced.
+
+
+## Fundamental motivation and R6 developer-risk audit
+
+[Scientific question and limits](research/scientific-motivation-and-boundaries.md) explains why an operational-possibility research program could matter and what *would* establish novelty, without presupposing a new science. [R6](research/R6-variable-risk-and-exact-baseline.md) replaces R5's hard-coded 3/4 eligible-loss case design with independently stipulated variable **synthetic** basic event probabilities, explicitly preserving zero-risk systems. [R6 code](experiments/p1_r6_fault_risk_dev.py) computes a complete pre-fault, equal-information exact marginal reference under the known model. Neither real hazard rates nor GBR predictive advantage are established. H1 is untested.

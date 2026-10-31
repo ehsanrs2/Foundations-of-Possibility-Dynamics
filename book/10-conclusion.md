@@ -20,3 +20,8 @@ The critical review of Issues #8 and #9 provides two additional reasons to retai
 ## R1 restriction on scientific claims
 
 [Appendix C](../appendices/C-fault-event-ontology.md) and its small executable negative controls show how to require declared physical fault-event semantics **before** scoring route independence. This is a quality gate and a familiar reliability-modeling principle, not a novel GBR result or a validated ontology. [Appendix D](../appendices/D-predictive-estimands.md) lays out three distinct inferential questions and a tentative risk-set endpoint for future tests. Both appendices reduce ambiguity but leave H1, reviewer Issue #9 and the critical predictive scientific program **OPEN**.
+
+
+## Why a useful answer need not be a new law
+
+The research program investigates changing *operational* options, not newly appearing physical laws. The [explicit research motivation](../research/scientific-motivation-and-boundaries.md) distinguishes an important question from the unproven necessity of a distinct science. [R6](../research/R6-variable-risk-and-exact-baseline.md) adds a standard exact full-model reference, making the central novelty test harder in an appropriate way: if the model already contains every needed observable and unrestricted computation is available, an extra deterministic GBR feature cannot improve optimal prediction. Empirical value, if any, must be shown under fixed data/capacity/compute limits with real or independently validated outcomes.
