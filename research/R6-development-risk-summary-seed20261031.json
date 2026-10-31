@@ -1,0 +1,59 @@
+{
+  "classification": "DEVELOPMENT_ONLY_RISK_LAW_AND_EXACT_BASELINE_NOT_H1",
+  "confirmatory_samples": 0,
+  "family_profiles": [
+    {
+      "event_law_ontology": "THREE_STIPULATED_INDEPENDENT_BASIC_EVENTS",
+      "family": "random_AND_OR",
+      "independent_developer_systems": 24,
+      "mean_design_loss_risk": "11/32",
+      "mean_exact_full_input_brier_given_eligible": "67/336",
+      "mean_half_predictor_excess_brier_given_eligible": "17/336",
+      "mean_model_conditional_restoration_given_eligible": "1/3",
+      "positive_loss_risk_systems": 21,
+      "zero_loss_risk_systems": 3
+    },
+    {
+      "event_law_ontology": "THREE_STIPULATED_INDEPENDENT_BASIC_EVENTS",
+      "family": "modular_clusters",
+      "independent_developer_systems": 24,
+      "mean_design_loss_risk": "59/192",
+      "mean_exact_full_input_brier_given_eligible": "11/64",
+      "mean_half_predictor_excess_brier_given_eligible": "5/64",
+      "mean_model_conditional_restoration_given_eligible": "5/18",
+      "positive_loss_risk_systems": 18,
+      "zero_loss_risk_systems": 6
+    },
+    {
+      "event_law_ontology": "THREE_STIPULATED_INDEPENDENT_BASIC_EVENTS",
+      "family": "hub_dependencies",
+      "independent_developer_systems": 24,
+      "mean_design_loss_risk": "61/192",
+      "mean_exact_full_input_brier_given_eligible": "45/224",
+      "mean_half_predictor_excess_brier_given_eligible": "11/224",
+      "mean_model_conditional_restoration_given_eligible": "29/84",
+      "positive_loss_risk_systems": 21,
+      "zero_loss_risk_systems": 3
+    },
+    {
+      "event_law_ontology": "THREE_STIPULATED_INDEPENDENT_BASIC_EVENTS",
+      "family": "temporal_bottleneck",
+      "independent_developer_systems": 12,
+      "mean_design_loss_risk": "5/24",
+      "mean_exact_full_input_brier_given_eligible": "5/32",
+      "mean_half_predictor_excess_brier_given_eligible": "3/32",
+      "mean_model_conditional_restoration_given_eligible": "5/16",
+      "positive_loss_risk_systems": 8,
+      "zero_loss_risk_systems": 4
+    }
+  ],
+  "full_history_oracle_checks": 820,
+  "gate": "R6",
+  "heldout_generated": 0,
+  "independent_developer_systems": 84,
+  "known_model_oracle": "PREFAULT_EXPECTED_STRICT_RESTORATION_NOT_CLAIRVOYANT_SCENARIO",
+  "null_event_boundary_observed": true,
+  "result": "PASS",
+  "seed": 20261031,
+  "zero_risk_not_zero_outcome": true
+}

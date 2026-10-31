@@ -76,3 +76,21 @@ R6 removes the fixed 3/4 artificial incidence rate of R5, but the **new risk dis
 Before scientific preregistration the program still needs a defensible physical event ontology, genuinely independent risk observations or calibrated domain evidence, robust handling of censored/non-detected events, policy/feature semantics locked before test data, full method/compute parity, independent generator families, sample size and a falsifiable effect threshold. Keep Issues #3, #8, #9, #10, #11, #12 open.
 
 **Scientific verdict:** a measurement/design gate, not confirmation that Possibility Dynamics is a distinct science or that GBR predicts better than existing methods.
+
+
+## Executed developer diagnostic results — 2026-10-31
+
+The [R6 PR workflow run](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41198411855) passed, producing the [R6 developer-only raw artifact](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41198411855/artifacts/13040739409). The [summary JSON](R6-development-risk-summary-seed20261031.json) is also retained in the repository so the numerical findings do not depend only on a temporary artifact.
+
+A total of **84 tiny developer systems**, **820 full-history equivalence checks** and **zero sealed or confirmatory examples** were used. The number of case executions is no longer fixed at four per system: only positive-weight event combinations are enumerated.
+
+| Development family | Independent developer systems | Zero-loss-risk systems | Mean *designed* loss probability | Mean exact conditional restoration for eligible systems | Mean ideal Brier risk for eligible systems |
+|---|---:|---:|---:|---:|---:|
+| Random AND/OR | 24 | 3 | 11/32 | 1/3 | 67/336 |
+| Modular clusters | 24 | 6 | 59/192 | 5/18 | 11/64 |
+| Hub dependencies | 24 | 3 | 61/192 | 29/84 | 45/224 |
+| Temporal bottleneck | 12 | 4 | 5/24 | 5/16 | 5/32 |
+
+There are **16 zero-risk systems and 68 positive-loss-risk systems** overall, as determined by the deliberately chosen synthetic hazard family. This variation is useful for testing undefined conditional outcomes but **must not** be interpreted as 16 observed failure-free real-world systems or 68 actual failures. The reported Brier values are *exact known-model conditional expected risks* from the stipulated scenario distribution, **not fitted predictor scores or GBR gains**.
+
+Unlike R5's uniform 3/4 loss-risk design, each system now has an explicit variable p_S, but all p_S values were still **chosen by a PRNG from human-authored probability categories**. The experiment improves the *internal measurement design* only. No calibrated real-data uncertainty, scientific generalization, or novelty claim follows.

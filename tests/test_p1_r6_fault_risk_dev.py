@@ -147,6 +147,15 @@ class R6RiskLawTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 run(**args)
 
+    def test_archived_full_development_summary_is_reproducible(self):
+        import json
+        from pathlib import Path
+        archive = Path(__file__).parents[1] / "research" / (
+            "R6-development-risk-summary-seed20261031.json")
+        self.assertEqual(
+            summary(run(seed=20261031,train_n=24,tune_n=12)),
+            json.loads(archive.read_text(encoding="utf-8")))
+
     def test_summary_separates_system_records_from_family_results(self):
         public=summary(self.pilot)
         self.assertNotIn("system_records",public)
