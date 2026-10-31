@@ -184,6 +184,15 @@ class R7SilentObservationTests(unittest.TestCase):
         b=audit(seed=20261031,train_n=1,tune_n=1)
         self.assertEqual(a,b)
 
+    def test_archived_R7_developer_summary_is_exactly_reproducible(self):
+        import json
+        from pathlib import Path
+        archive=Path(__file__).parents[1] / "research" / (
+            "R7-silent-observation-summary-seed20261031.json")
+        self.assertEqual(
+            public_summary(audit(seed=20261031,train_n=24,tune_n=12)),
+            json.loads(archive.read_text(encoding="utf-8")))
+
     def test_reject_bad_case_or_developer_parameters(self):
         t=counterexample()
         wrong=replace(t.cases[0],name="not_registered")

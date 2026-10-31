@@ -54,3 +54,21 @@ The [R7 developer workflow](../.github/workflows/r7-silent-observation.yml) uplo
 ## Remaining scientific gates
 
 Correctly hiding a null boundary under perfect current-state observation is **necessary but insufficient** for realistic non-anticipative policies. Partial/noisy sensors, latent failures without immediate state changes, real fault ontology, multiple shocks, resource behavior and fixed fair compute baselines remain unresolved. The policy and H1 protocol are not preregistered. Keep Issues #3 and #10 open.
+
+
+## Executed R7 developer-only diagnostic — observed results (2026-10-31)
+
+The [R7 PR-head Actions run](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41204329644) passed the 19 R7 tests and the complete paired developer audit. The [exact archived R7 summary](R7-silent-observation-summary-seed20261031.json) has **84** independent artificial systems and **820** complete paired R7-vs-independent-oracle history comparisons. **225** of the 820 positive-weight event-case records had no actual visible change at the scheduled boundary and were therefore silent in R7. These records are nested observations, NOT 225 independently sampled systems.
+
+**A scientifically important negative outcome:** there were **zero action-history changes and zero strict-restoration-label changes** between R3 and R7 on the R6 developer family/priority-policy cases. The new detector *does* differ in the latent event-notification flag for ineffective cases. The fact that actions did not change in these specific tiny grammars is consistent with R4's priority structure: after-event restoration operations are unavailable while service remains held, so both priorities fall through to similar preparation operations. This explanation is model-specific, not a proof of universal behavioral equivalence.
+
+The deliberately constructed [null-boundary counterexample](../tests/test_p1_r7_silent_observation.py) separately confirms that the incorrect R3 alarm **can change actions** in a different admitted model: at t=1 the old policy chooses alternate, but R7 chooses prepare2. Neither example shows an H1 predictive advantage or observed real-world fault-detection performance.
+
+| R6 developer family | Systems | Mean exact probability of *unobserved* event boundary | Mean probability of action-history difference vs R3 |
+|---|---:|---:|---:|
+| random_AND_OR | 24 | 2653/6144 | 0 |
+| modular_clusters | 24 | 359/768 | 0 |
+| hub_dependencies | 24 | 695/1536 | 0 |
+| temporal_bottleneck | 12 | 39/64 | 0 |
+
+The zero label differences in these developer systems must be **reported**, not suppressed, and the old R6 archive remains valid under its own explicitly stated *boundary-observing* semantics. R7 is the recommended opt-in baseline for a future *perfect-state-observation* pilot, not an empirically validated sensing policy.
