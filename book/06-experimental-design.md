@@ -67,3 +67,8 @@ The [R5 pilot](../research/R5-development-pilot.md) evaluates 24 independently g
 ## 6.15 R6 variable synthetic event risks and an exact pre-failure oracle
 
 [R6](../research/R6-variable-risk-and-exact-baseline.md) implements a **development-only** joint basic-event model for service loss, shared infrastructure failure and one-unit inventory loss, with per-system separately seeded *stipulated* probabilities and variable early/late event times. R3 executes the same fixed non-clairvoyant policy under every case. The pre-shock exact reference integrates over the declared scenario law to predict strict recovery *conditioned on actual loss*, rather than conditioning on any realized future shock. Systems with zero actual-loss risk have undefined conditional outcomes. This removes the artificial R5 3/4 fixed risk-set share, but it **does not estimate actual fault incidence or validate a GBR feature**. The exact full-model reference supplies a strong known-simulator comparison, not a deployed bounded-compute learner.
+
+
+## 6.16 R7: no artificial detection of an ineffective scheduled event
+
+[The opt-in R7 kernel](../research/R7-silent-event-observation.md) distinguishes hidden true event timing from observable state changes. Unlike R3's old scheduled fault flag, it makes a policy switch mode only when capabilities, consumable stock, or the directly visible disabled-action set actually changes. An attempted deletion of an unheld component or a completely ineffective shock does NOT notify the controller. Strict restoration labels are still computed from the true event after execution, never handed to the policy. Historic R3/R6 calculations are preserved for explicit, matched-case sensitivity analysis; this is not a final P1 policy freeze.

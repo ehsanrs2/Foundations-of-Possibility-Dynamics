@@ -88,3 +88,8 @@ C-042: An explicit per-system *synthetic* independent-basic-event hazard law can
 C-043: For a completely known finite scenario law X, exact marginalization of one fixed non-anticipative policy's strict-restoration outcome supplies the optimal pre-shock conditional probability under Brier loss. The expected excess loss of a competing probability q is (q−p*)². **Status: standard conditional-expectation identity and model-based demonstration, not a new Possibility Dynamics theorem nor H1 validation.**
 
 C-044: A distinct scientific theory of dynamic possibility has been established as necessary by the experiments. **Status: NOT established.** The motivating questions, competing prior fields and explicit possible falsifiers are in [scientific motivation and boundaries](scientific-motivation-and-boundaries.md).
+
+
+C-045: Under a *perfect-observation* finite model, an ineffective scheduled fault vector cannot legitimately change a policy's event-detected signal if no held capability, stock, or known disabled-action status changes. **Status: R7 definition and bounded software counterexample; not real-sensor evidence.** See [R7](R7-silent-event-observation.md).
+
+C-046: Changing the observation contract from automatic fault-boundary notification (R3/R6) to change-triggered detection (R7) can alter an executable policy's action history without changing true goal loss. **Status: constructed diagnostic; no predictive/causal H1 inference.**

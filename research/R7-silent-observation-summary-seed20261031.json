@@ -1,0 +1,44 @@
+{
+  "changed_action_history_cases_vs_R3": 0,
+  "changed_strict_label_cases_vs_R3": 0,
+  "classification": "OBSERVATION_MODEL_DEVELOPMENT_ONLY_NOT_H1",
+  "complete_trace_oracle_comparisons": 820,
+  "confirmatory_samples": 0,
+  "family_profiles": [
+    {
+      "family": "random_AND_OR",
+      "independent_development_systems": 24,
+      "mean_history_difference_probability": "0",
+      "mean_silent_boundary_probability": "2653/6144",
+      "zero_actual_loss_risk_systems": 3
+    },
+    {
+      "family": "modular_clusters",
+      "independent_development_systems": 24,
+      "mean_history_difference_probability": "0",
+      "mean_silent_boundary_probability": "359/768",
+      "zero_actual_loss_risk_systems": 6
+    },
+    {
+      "family": "hub_dependencies",
+      "independent_development_systems": 24,
+      "mean_history_difference_probability": "0",
+      "mean_silent_boundary_probability": "695/1536",
+      "zero_actual_loss_risk_systems": 3
+    },
+    {
+      "family": "temporal_bottleneck",
+      "independent_development_systems": 12,
+      "mean_history_difference_probability": "0",
+      "mean_silent_boundary_probability": "39/64",
+      "zero_actual_loss_risk_systems": 4
+    }
+  ],
+  "gate": "R7",
+  "independent_development_systems": 84,
+  "observation_semantics": "PERFECT_STATE_CHANGE_DETECTION_NO_BOUNDARY_ANNOUNCEMENT",
+  "result": "PASS",
+  "sealed_family_cases": 0,
+  "seed": 20261031,
+  "silent_event_case_count": 225
+}

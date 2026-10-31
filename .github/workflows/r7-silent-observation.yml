@@ -1,0 +1,31 @@
+name: R7 silent-fault observation developer audit (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  r7-observation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run R7 no-notification and independent-history checks
+        run: python -m unittest tests.test_p1_r7_silent_observation -v
+      - name: Compare opt-in R7 with historical R3 on development cases
+        run: |
+          mkdir -p r7-developer-only
+          python -m experiments.p1_r7_silent_observation \
+            --seed 20261031 --train-n 24 --tune-n 12 \
+            --output r7-developer-only/r7_full_developer_records.json \
+            | tee r7-developer-only/r7_summary.json
+      - name: Upload R7 developer-only artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: r7-observation-dev-only-not-h1
+          path: r7-developer-only/
+          retention-days: 30
