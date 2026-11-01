@@ -49,3 +49,12 @@ With insufficient budget, the evaluator must report a rigorous **lower/upper pro
 [Source](../experiments/p1_r9_physical_controls.py) · [tests](../tests/test_p1_r9_physical_controls.py) · [CI workflow](../.github/workflows/r9-physical-controls.yml). All six fixtures and their expected exact results are predetermined; no TRAIN/TUNE data are refitted and no sealed H1 test examples exist.
 
 **Next gates:** independently defensible physical fault identities and shared causes; a resource-feasible representation that is invariant under legitimate model refinements; an actual all-in common compute/time/memory contract including feature computation and strong conventional augmented-state/reliability baselines; fixed policy, sensors and truly independent validation. Neither H1 nor scientific independence is established by R9. Keep Issues #3 and #8–#12 OPEN.
+
+
+## Executed fixture verification — 2026-11-01
+
+The initial [R9 fixture CI execution](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41299575144) **passed** all 19 focused R9 tests and exactly matched the six predeclared fractions in the table above. **28 independent R7 full-history oracle comparisons** were completed across the six fixtures; these are nested synthetic scenario checks, not 28 independent sampled physical systems. The [R9 exact archival results](R9-physical-controls-results-20261101.json) include the individual route measures, full-model exact probabilities and strict lower/upper probability intervals obtained after a two-scenario work budget.
+
+A separate manuscript integrity check initially failed because the PR branch was accidentally built from a tree missing five previously merged R8 files. **That unrelated branch-tree regression was corrected** by rebuilding R9 changes on the complete latest main tree, preserving the R8 source, test, CI workflow, scientific report and numeric archive. The corrected PR is being rechecked before any merge; no loss of historical files is acceptable.
+
+The six constructed results are consistency checks, not evidence that independently verified physical mechanisms exist or that the proposed feature improves out-of-sample predictive performance. The exact work bounds remain charged in artificial R7 timeline-tick units only, without cross-method CPU/RAM parity.

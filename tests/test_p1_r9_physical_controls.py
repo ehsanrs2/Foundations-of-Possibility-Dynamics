@@ -195,6 +195,14 @@ class R9PhysicsAndBudgetTests(unittest.TestCase):
         self.assertFalse(result["identical_computation_budget_across_algorithms"])
         self.assertEqual(result["result"],"PASS")
 
+    def test_archived_six_fixture_results_match_exact_regeneration(self):
+        from pathlib import Path
+        archive=Path(__file__).parents[1] / "research" / (
+            "R9-physical-controls-results-20261101.json")
+        self.assertEqual(
+            json.loads(archive.read_text(encoding="utf-8")),
+            audit())
+
     def test_r9_report_is_deterministically_reproducible(self):
         self.assertEqual(audit(),audit())
 
