@@ -85,3 +85,8 @@ The [R2 resource-policy bridge](../research/R2-resource-policy-bridge.md) gives 
 ## 4.12 Bounded R1 as a potentially non-discriminating feature
 
 The [R8 developer-only predictive comparison](../research/R8-development-predictive-baselines.md) measures a pre-fault scoped R1 backup-pair indicator only against the **declared synthetic shared upstream basic fault event**, without inventing independent route events. Baselines already include individually feasible plan counts and physical fault-event minimum cut size. R1 lacks simultaneous resource preparation semantics, so its added predictive utility (if any) is limited to a finite-capacity representation. When the declared fault scope makes the candidate constant or unassessable, the correct result is feature non-discrimination, not a repaired favorable metric after reading outcomes.
+
+
+## 4.13 R9: physical independence is not simultaneous executable backup
+
+[Constructed R9 controls](../research/R9-physical-identity-and-budget.md) explicitly distinguish fault-event-disjoint physical mechanisms, two aliases of a single device and distinct channels subject to one common cause. The strict physical R1 backup-pair indicator is positive only for genuinely distinct channel-event footprints with individually feasible plans. However an R1=1 and standard minimum cut=2 can coincide with **either 1/2 or 3/4** actual loss-conditioned R7 policy restoration depending solely on shared kit supply. A short preparation deadline likewise prevents both options being ready at the shock. This shows the limits of *individual* static plan redundancy; no new metric or physical theorem is claimed.

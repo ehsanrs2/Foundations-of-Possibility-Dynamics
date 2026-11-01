@@ -100,3 +100,10 @@ C-047: One developer-only ridge learner can compare common-fault-cut/topology/in
 C-048: Under the declared R6 synthetic common-upstream fault identity, a pair of separately feasible plans is not necessarily an independent physical backup; an R1 predictor with no across-system variation cannot add discriminating signal. **Status: R8 construct-validity diagnostic (pending actual run), not a general mathematical theorem.**
 
 C-049: R8 TRAIN/TUNE comparison (72 training and 12 tuning developer systems) obtained exactly zero incremental expected Brier improvement from the currently defined R1 scoped backup-pair indicator because the indicator was 0 for all 84 models under the declared common-upstream synthetic failure scope. **Status: executed negative developer-only construct-validity/prediction result, not final H1 or universal theorem.** See [R8 archive](R8-development-summary-seed20261101.json).
+
+
+C-050: In six predeclared artificial R9 physical-control fixtures, a fully declared fault ontology distinguishes two separate event-exposed physical channels from two names for the same channel and a common-cause event, while preserving standard event min-cut controls. **Status: constructed finite examples only, not empirical physical validation.** See [R9](R9-physical-identity-and-budget.md).
+
+C-051: A valid *individually feasible* fault-disjoint pair indicator and minimum event cut can remain unchanged (R1=1, min cut=2) while actual R7 fixed-policy restoration after loss differs between a one-kit and a two-kit system, because only one of the two preparation operations can be executed. **Status: resource/time counterexample, not a new predictive superiority theorem.**
+
+C-052: Under a bounded full-model scenario enumeration where each evaluated timeline tick is one abstract unit and every case actually loses service, the partial evaluated mass yields rigorous conditional restoration lower/upper bounds without a fabricated exact point estimate. **Status: restricted software budget contract; no matched CPU/wall-time/memory across independent algorithms.**
