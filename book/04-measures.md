@@ -80,3 +80,8 @@ If the entire observable pre-failure model is X and exact GBR is Z=f(X), then an
 ## 4.11 Physical independence is not sufficient for prepared contingency capacity
 
 The [R2 resource-policy bridge](../research/R2-resource-policy-bridge.md) gives a controlled negative example: G1 individually feasible routes are R1-disjoint under the same declared physical failure events in both cases, but G4's **implementable** pre-shock policies perform differently when a shared one-time kit or preparation deadline prevents both channels being readied. With one kit the non-clairvoyant score is 1/2; with two kits and enough preparation time it is 3/4, while the binary structural pair remains 1. These numbers are exact hand-built model values, **not measured predictive associations**. Neither historical G1 GBR nor the guarded R1 pair is a sufficient statistic for policy feasibility.
+
+
+## 4.12 Bounded R1 as a potentially non-discriminating feature
+
+The [R8 developer-only predictive comparison](../research/R8-development-predictive-baselines.md) measures a pre-fault scoped R1 backup-pair indicator only against the **declared synthetic shared upstream basic fault event**, without inventing independent route events. Baselines already include individually feasible plan counts and physical fault-event minimum cut size. R1 lacks simultaneous resource preparation semantics, so its added predictive utility (if any) is limited to a finite-capacity representation. When the declared fault scope makes the candidate constant or unassessable, the correct result is feature non-discrimination, not a repaired favorable metric after reading outcomes.

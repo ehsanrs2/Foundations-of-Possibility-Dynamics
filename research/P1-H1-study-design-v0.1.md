@@ -121,3 +121,8 @@ When the source model and hazard law are completely known, the exact model-based
 ## R7 observation correction — preregistration still blocked
 
 [The R7 gate](R7-silent-event-observation.md) corrects the known R6 limitation under a declared *perfect-current-state observation* model: a no-effect scheduled event is not automatically observable, and the fixed policy switches mode only upon actual state/resource/disabled-action change. Hidden event timing and truth are reserved for the offline outcome scorer. R3/R6 outputs are retained as historical sensitivity controls. This does not justify claiming full physical sensors, freeze the selected H1 policy or observation filtration, or run held-out predictive testing; the protocol remains DRAFT_NOT_PREREGISTERED.
+
+
+## R8 addendum — development-only predictive design rehearsal
+
+[The R8 experiment](R8-development-predictive-baselines.md) fits fixed ridge probability baselines on synthetic TRAIN groups and reports TUNE-family exact conditional expected Brier under R7's current fully observed, fixed priority policy. The ordinary baseline includes source-model topology/stock/plan-count and synthetic common-cause minimum-event-cut measures. Its augmented version adds the narrowly scoped R1 pair indicator without changing input information, splits or learner. Runtime is measured but not enforced at a common cap, and the full-known-model Bayes reference is *diagnostic*, not a fair budget-limited competitor. This can reveal whether the current R1 scope fails to discriminate in tiny developer grammars, but **cannot register or evaluate the prospective H1 study**.

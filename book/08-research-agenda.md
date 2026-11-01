@@ -78,3 +78,8 @@ The [R5 developer pilot](../research/R5-development-pilot.md) now produces expli
 ## R7: controlled observation boundary repair, not H1 data
 
 R7 supplies [a separately versioned, observation-filtered policy executor](../research/R7-silent-event-observation.md) and an independent chronological reference, retaining historical R3/R6 results unchanged. Development-only paired scenarios can expose false policy reactions to silent events. Next work must settle which sensor capabilities are available in target physical domains, then compare **resource- and compute-matched** standard prediction baselines with a completely specified prospective feature. The P1 registration gate remains open.
+
+
+## R8: challenge GBR with matched source inputs, without silently expanding fault scope
+
+[The R8 bounded development benchmark](../research/R8-development-predictive-baselines.md) compares ordinary network/stock/plan-count/common-fault-cut signals with the same predictor plus a physically scoped R1 feature. The exact model-known value is retained as a separate traditional standard upper-information benchmark. Important unresolved gates: physical fault identities beyond toy assumptions, feature variation/invariance, conventional capacity- and runtime-matched state-space predictors, independently justified failure distributions, policy/sensor validation, fully sealed family generators, sample-size power and immutable preregistration. If a feature is non-discriminating, record the failure rather than invent more independent failures to make it appear predictive.

@@ -93,3 +93,8 @@ C-044: A distinct scientific theory of dynamic possibility has been established 
 C-045: Under a *perfect-observation* finite model, an ineffective scheduled fault vector cannot legitimately change a policy's event-detected signal if no held capability, stock, or known disabled-action status changes. **Status: R7 definition and bounded software counterexample; not real-sensor evidence.** See [R7](R7-silent-event-observation.md).
 
 C-046: Changing the observation contract from automatic fault-boundary notification (R3/R6) to change-triggered detection (R7) can alter an executable policy's action history without changing true goal loss. **Status: constructed diagnostic; no predictive/causal H1 inference.**
+
+
+C-047: One developer-only ridge learner can compare common-fault-cut/topology/inventory baselines against the same model plus the R1 scoped pair indicator under identical pre-shock synthetic inputs, keeping the ideal full-model reference separate. **Status: bounded method comparison, not H1 confirmation.** See [R8](R8-development-predictive-baselines.md).
+
+C-048: Under the declared R6 synthetic common-upstream fault identity, a pair of separately feasible plans is not necessarily an independent physical backup; an R1 predictor with no across-system variation cannot add discriminating signal. **Status: R8 construct-validity diagnostic (pending actual run), not a general mathematical theorem.**
