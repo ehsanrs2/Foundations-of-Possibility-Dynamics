@@ -102,3 +102,8 @@ A primary strict-restoration outcome, matched-information baseline matrix, train
 ## R7: a silent no-effect event is not a visible disruption
 
 [Observation-filtered R7 executor and methods](research/R7-silent-event-observation.md) · [code](experiments/p1_r7_silent_observation.py) · [verification tests](tests/test_p1_r7_silent_observation.py). R7 is a separate opt-in full-state observation contract: only **actual changes** in held capabilities, available resources or visible disabled actions can switch a fixed policy from preparation to response mode. A scheduled but wholly ineffective R6 fault vector is **not announced**. Historical R3–R6 archives stay intact. This is synthetic software verification, not real sensor validation or H1 evidence.
+
+
+## R8 — development-only predictive baselines
+
+[R8 methodology](research/R8-development-predictive-baselines.md) · [executable comparison](experiments/p1_r8_dev_predictive_baselines.py) · [verification tests](tests/test_p1_r8_dev_predictive_baselines.py). A fixed ridge learner compares standard source-model/topology/stock/common-fault-cut features against the same inputs plus the physically scoped R1 pair indicator, on TRAIN/TUNE synthetic systems only. Exact R7 policy marginalization provides a separate **known-model Bayes lower bound**, not a budget-matched competitor. Feature computation and fitting times are recorded; **equal wall-time/memory caps are NOT enforced**. No prospective H1 sealed test is run and no physically validated redundancy claim is made.

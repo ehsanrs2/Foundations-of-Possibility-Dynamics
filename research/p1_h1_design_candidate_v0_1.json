@@ -132,6 +132,21 @@
       "policy_selected_and_frozen": false,
       "heldout_samples_generated": 0,
       "confirmatory_data_collected": false
+    },
+    "development_prediction_gate": {
+      "gate": "R8_TRAIN_TUNE_KNOWN_MODEL_RIDGE_BASELINES",
+      "source": "experiments/p1_r8_dev_predictive_baselines.py",
+      "report": "research/R8-development-predictive-baselines.md",
+      "train_seed": 20261101,
+      "families": "TRAIN_AND_TUNE_ONLY",
+      "principal_feature": "R1_SCOPED_PAIR_SHARED_UPSTREAM_EVENT_ONLY",
+      "model": "FIXED_RIDGE_LINEAR_PROBABILITY",
+      "matched_raw_inputs": true,
+      "matched_compute_time_memory_caps": false,
+      "exact_model_reference": "DIAGNOSTIC_IDEAL_NOT_EQUAL_BUDGET",
+      "real_fault_measurements": false,
+      "test_family_generator_calls": 0,
+      "confirmatory_samples": 0
     }
   },
   "analysis": {

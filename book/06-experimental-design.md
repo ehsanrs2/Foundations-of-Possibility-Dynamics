@@ -72,3 +72,8 @@ The [R5 pilot](../research/R5-development-pilot.md) evaluates 24 independently g
 ## 6.16 R7: no artificial detection of an ineffective scheduled event
 
 [The opt-in R7 kernel](../research/R7-silent-event-observation.md) distinguishes hidden true event timing from observable state changes. Unlike R3's old scheduled fault flag, it makes a policy switch mode only when capabilities, consumable stock, or the directly visible disabled-action set actually changes. An attempted deletion of an unheld component or a completely ineffective shock does NOT notify the controller. Strict restoration labels are still computed from the true event after execution, never handed to the policy. Historic R3/R6 calculations are preserved for explicit, matched-case sensitivity analysis; this is not a final P1 policy freeze.
+
+
+## 6.17 R8: a first TRAIN/TUNE-only predictive approximation comparison
+
+[R8](../research/R8-development-predictive-baselines.md) uses a fixed deterministic regularized linear probability learner, identical synthetic TRAIN/TUNE systems, prior hazard inputs and resource/topology/fault-cut features. The augmented arm adds just the physically scoped R1 backup-pair indicator. The policy outcome is the R7 *same-history* conditional strict restoration probability exactly marginalized across stipulated cases before observing any future fault. TUNE expected conditional Brier score is computed at the **system level** without counting scenario enumerations as independent samples. The exact full-known-model probability supplies the standard Bayes lower bound, not a time-limited fair competing learner. This is not H1 preregistration or independent-family held-out evaluation.

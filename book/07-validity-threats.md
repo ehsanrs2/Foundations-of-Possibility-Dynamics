@@ -85,3 +85,8 @@ R6 replaces a constant **designed** 3/4 eligibility mass with varied synthetic f
 ## 7.19 R7 observation validity and remaining realism gap
 
 [Gate R7](../research/R7-silent-event-observation.md) removes the artificial observable boundary in R6's no-effect joint-event cases. However, its *perfect and immediate* visibility of all durable holdings, inventory and disabled-rule identities still assumes a strong sensor/diagnostic system; an ineffective **latent** failure may be dangerous even without immediate visible change. The one-event, atomic-operation model cannot represent delayed fault discovery, sensor false positives/negatives or partially observed policies. These must be explicitly treated before any claim of physical validity.
+
+
+## 7.20 R8: artificial redundancy, target knowledge and compute parity
+
+R8's source model includes full simulator rules and stipulated hazard priors: exact label probabilities are therefore **derived from the same known model**, not measured physical outcomes. The R1 feature is deliberately limited to one synthetic common-upstream event, with all other components assumed protected in this scope, so it may be constant or missing. A conditional actual-loss risk set excludes zero-risk systems, which must be enumerated. The ridge comparison controls training inputs, simple learner and capacity but **does not enforce a common wall-time/RAM cap** or implement all standard bounded augmented-state baselines. A TUNE-family result is not untouched confirmatory performance.
