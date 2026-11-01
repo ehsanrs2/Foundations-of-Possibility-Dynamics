@@ -147,6 +147,23 @@
       "real_fault_measurements": false,
       "test_family_generator_calls": 0,
       "confirmatory_samples": 0
+    },
+    "r9_constructed_physical_controls": {
+      "source": "experiments/p1_r9_physical_controls.py",
+      "report": "research/R9-physical-identity-and-budget.md",
+      "developer_only": true,
+      "independently_physically_verified": false,
+      "static_individual_vs_jointly_executable_distinguished": true,
+      "modes": [
+        "independent",
+        "alias",
+        "common"
+      ],
+      "tests_all_in_shared_compute": false,
+      "bounded_policy_reference_unit": "ONE_SIMULATED_TIMELINE_TICK",
+      "partial_predictions": "RATIONAL_BOUNDS_NO_EXACT_POINT",
+      "sealed_test_samples_generated": 0,
+      "H1_confirmatory_data_collected": false
     }
   },
   "analysis": {

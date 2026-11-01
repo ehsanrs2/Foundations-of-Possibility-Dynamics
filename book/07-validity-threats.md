@@ -90,3 +90,8 @@ R6 replaces a constant **designed** 3/4 eligibility mass with varied synthetic f
 ## 7.20 R8: artificial redundancy, target knowledge and compute parity
 
 R8's source model includes full simulator rules and stipulated hazard priors: exact label probabilities are therefore **derived from the same known model**, not measured physical outcomes. The R1 feature is deliberately limited to one synthetic common-upstream event, with all other components assumed protected in this scope, so it may be constant or missing. A conditional actual-loss risk set excludes zero-risk systems, which must be enumerated. The ridge comparison controls training inputs, simple learner and capacity but **does not enforce a common wall-time/RAM cap** or implement all standard bounded augmented-state baselines. A TUNE-family result is not untouched confirmatory performance.
+
+
+## 7.21 R9: feature-identity validity versus synthetic fixture performance
+
+The [R9 designed physical mechanisms](../research/R9-physical-identity-and-budget.md) illustrate that textual action aliases must not be treated as separate assets and that a common upstream incident invalidates independently exposed route claims. Even valid disjoint-event plans may compete for one kit or miss a deadline. All incident probabilities and mechanism identities in R9 are **assumptions**, not externally confirmed material or sensor properties. The bounded standard reference counts only policy timeline steps; full plan enumeration, operation scanning, verification and real CPU/memory are not comparable, so shared computational parity still needs a separate gate.

@@ -1,0 +1,248 @@
+{
+  "R7_independent_full_trace_checks": 28,
+  "classification": "PREDECLARED_CONSTRUCTED_PHYSICAL_CONTROLS_NOT_H1",
+  "confirmatory_H1_samples": 0,
+  "gate": "R9",
+  "identical_computation_budget_across_algorithms": false,
+  "observed_real_physical_failures": 0,
+  "paired_structural_degeneracy_exposed": true,
+  "result": "PASS",
+  "results": [
+    {
+      "executed_conditional_restoration": "1/2",
+      "full_model_budget": {
+        "budget_ticks": 16,
+        "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+        "coverage_probability": "1",
+        "equal_CPU_WALLTIME_RAM_budget_claim": false,
+        "exact_conditional_restoration": "1/2",
+        "independent_history_checks_outside_budget": 4,
+        "lower_conditional_restoration": "1/2",
+        "scenarios_enumerated": 4,
+        "scenarios_total": 4,
+        "upper_conditional_restoration": "1/2",
+        "used_ticks": 16
+      },
+      "kits": 1,
+      "label": "separate_one_kit",
+      "mode": "independent",
+      "preparation_ticks": 2,
+      "structural": {
+        "event_min_cut": 2,
+        "individual_plans": 2,
+        "scoped_pair": 1,
+        "status": "SCOPED"
+      },
+      "two_scenarios_budget": {
+        "budget_ticks": 8,
+        "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+        "coverage_probability": "1/2",
+        "equal_CPU_WALLTIME_RAM_budget_claim": false,
+        "exact_conditional_restoration": null,
+        "independent_history_checks_outside_budget": 0,
+        "lower_conditional_restoration": "1/2",
+        "scenarios_enumerated": 2,
+        "scenarios_total": 4,
+        "upper_conditional_restoration": "1",
+        "used_ticks": 8
+      }
+    },
+    {
+      "executed_conditional_restoration": "3/4",
+      "full_model_budget": {
+        "budget_ticks": 16,
+        "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+        "coverage_probability": "1",
+        "equal_CPU_WALLTIME_RAM_budget_claim": false,
+        "exact_conditional_restoration": "3/4",
+        "independent_history_checks_outside_budget": 4,
+        "lower_conditional_restoration": "3/4",
+        "scenarios_enumerated": 4,
+        "scenarios_total": 4,
+        "upper_conditional_restoration": "3/4",
+        "used_ticks": 16
+      },
+      "kits": 2,
+      "label": "separate_two_kits",
+      "mode": "independent",
+      "preparation_ticks": 2,
+      "structural": {
+        "event_min_cut": 2,
+        "individual_plans": 2,
+        "scoped_pair": 1,
+        "status": "SCOPED"
+      },
+      "two_scenarios_budget": {
+        "budget_ticks": 8,
+        "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+        "coverage_probability": "1/2",
+        "equal_CPU_WALLTIME_RAM_budget_claim": false,
+        "exact_conditional_restoration": null,
+        "independent_history_checks_outside_budget": 0,
+        "lower_conditional_restoration": "1/2",
+        "scenarios_enumerated": 2,
+        "scenarios_total": 4,
+        "upper_conditional_restoration": "1",
+        "used_ticks": 8
+      }
+    },
+    {
+      "executed_conditional_restoration": "1/2",
+      "full_model_budget": {
+        "budget_ticks": 12,
+        "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+        "coverage_probability": "1",
+        "equal_CPU_WALLTIME_RAM_budget_claim": false,
+        "exact_conditional_restoration": "1/2",
+        "independent_history_checks_outside_budget": 4,
+        "lower_conditional_restoration": "1/2",
+        "scenarios_enumerated": 4,
+        "scenarios_total": 4,
+        "upper_conditional_restoration": "1/2",
+        "used_ticks": 12
+      },
+      "kits": 2,
+      "label": "separate_short_window",
+      "mode": "independent",
+      "preparation_ticks": 1,
+      "structural": {
+        "event_min_cut": 2,
+        "individual_plans": 2,
+        "scoped_pair": 1,
+        "status": "SCOPED"
+      },
+      "two_scenarios_budget": {
+        "budget_ticks": 6,
+        "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+        "coverage_probability": "1/2",
+        "equal_CPU_WALLTIME_RAM_budget_claim": false,
+        "exact_conditional_restoration": null,
+        "independent_history_checks_outside_budget": 0,
+        "lower_conditional_restoration": "1/2",
+        "scenarios_enumerated": 2,
+        "scenarios_total": 4,
+        "upper_conditional_restoration": "1",
+        "used_ticks": 6
+      }
+    },
+    {
+      "executed_conditional_restoration": "1/2",
+      "full_model_budget": {
+        "budget_ticks": 16,
+        "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+        "coverage_probability": "1",
+        "equal_CPU_WALLTIME_RAM_budget_claim": false,
+        "exact_conditional_restoration": "1/2",
+        "independent_history_checks_outside_budget": 4,
+        "lower_conditional_restoration": "1/2",
+        "scenarios_enumerated": 4,
+        "scenarios_total": 4,
+        "upper_conditional_restoration": "1/2",
+        "used_ticks": 16
+      },
+      "kits": 2,
+      "label": "aliased_same_mechanism",
+      "mode": "alias",
+      "preparation_ticks": 2,
+      "structural": {
+        "event_min_cut": 1,
+        "individual_plans": 2,
+        "scoped_pair": 0,
+        "status": "SCOPED"
+      },
+      "two_scenarios_budget": {
+        "budget_ticks": 8,
+        "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+        "coverage_probability": "1/2",
+        "equal_CPU_WALLTIME_RAM_budget_claim": false,
+        "exact_conditional_restoration": null,
+        "independent_history_checks_outside_budget": 0,
+        "lower_conditional_restoration": "1/2",
+        "scenarios_enumerated": 2,
+        "scenarios_total": 4,
+        "upper_conditional_restoration": "1",
+        "used_ticks": 8
+      }
+    },
+    {
+      "executed_conditional_restoration": "9/16",
+      "full_model_budget": {
+        "budget_ticks": 32,
+        "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+        "coverage_probability": "1",
+        "equal_CPU_WALLTIME_RAM_budget_claim": false,
+        "exact_conditional_restoration": "9/16",
+        "independent_history_checks_outside_budget": 8,
+        "lower_conditional_restoration": "9/16",
+        "scenarios_enumerated": 8,
+        "scenarios_total": 8,
+        "upper_conditional_restoration": "9/16",
+        "used_ticks": 32
+      },
+      "kits": 2,
+      "label": "common_upstream_cause",
+      "mode": "common",
+      "preparation_ticks": 2,
+      "structural": {
+        "event_min_cut": 1,
+        "individual_plans": 2,
+        "scoped_pair": 0,
+        "status": "SCOPED"
+      },
+      "two_scenarios_budget": {
+        "budget_ticks": 8,
+        "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+        "coverage_probability": "1/4",
+        "equal_CPU_WALLTIME_RAM_budget_claim": false,
+        "exact_conditional_restoration": null,
+        "independent_history_checks_outside_budget": 0,
+        "lower_conditional_restoration": "3/16",
+        "scenarios_enumerated": 2,
+        "scenarios_total": 8,
+        "upper_conditional_restoration": "15/16",
+        "used_ticks": 8
+      }
+    },
+    {
+      "executed_conditional_restoration": "0",
+      "full_model_budget": {
+        "budget_ticks": 16,
+        "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+        "coverage_probability": "1",
+        "equal_CPU_WALLTIME_RAM_budget_claim": false,
+        "exact_conditional_restoration": "0",
+        "independent_history_checks_outside_budget": 4,
+        "lower_conditional_restoration": "0",
+        "scenarios_enumerated": 4,
+        "scenarios_total": 4,
+        "upper_conditional_restoration": "0",
+        "used_ticks": 16
+      },
+      "kits": 0,
+      "label": "no_kits",
+      "mode": "independent",
+      "preparation_ticks": 2,
+      "structural": {
+        "event_min_cut": 0,
+        "individual_plans": 0,
+        "scoped_pair": 0,
+        "status": "NO_FEASIBLE_PLAN"
+      },
+      "two_scenarios_budget": {
+        "budget_ticks": 8,
+        "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+        "coverage_probability": "1/2",
+        "equal_CPU_WALLTIME_RAM_budget_claim": false,
+        "exact_conditional_restoration": null,
+        "independent_history_checks_outside_budget": 0,
+        "lower_conditional_restoration": "0",
+        "scenarios_enumerated": 2,
+        "scenarios_total": 4,
+        "upper_conditional_restoration": "1/2",
+        "used_ticks": 8
+      }
+    }
+  ],
+  "test_family_generators_called": 0,
+  "toy_conditions": 6
+}

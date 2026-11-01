@@ -107,3 +107,8 @@ A primary strict-restoration outcome, matched-information baseline matrix, train
 ## R8 — development-only predictive baselines
 
 [R8 methodology](research/R8-development-predictive-baselines.md) · [executable comparison](experiments/p1_r8_dev_predictive_baselines.py) · [verification tests](tests/test_p1_r8_dev_predictive_baselines.py). A fixed ridge learner compares standard source-model/topology/stock/common-fault-cut features against the same inputs plus the physically scoped R1 pair indicator, on TRAIN/TUNE synthetic systems only. Exact R7 policy marginalization provides a separate **known-model Bayes lower bound**, not a budget-matched competitor. Feature computation and fitting times are recorded; **equal wall-time/memory caps are NOT enforced**. No prospective H1 sealed test is run and no physically validated redundancy claim is made.
+
+
+## R9 — predeclared physical-backup counterexamples and partial-work bounds
+
+[R9 report](research/R9-physical-identity-and-budget.md) · [source](experiments/p1_r9_physical_controls.py) · [tests](tests/test_p1_r9_physical_controls.py). Six **constructed** fixtures contrast two genuinely independent channels, two names for one mechanism, a shared-cause event, a one-kit bottleneck, a shortened preparation deadline and no inventory. Their outcomes test the difference between individually feasible static redundancy and a resource-feasible non-anticipative R7 trajectory. An exact known-model scenario reference returns **rigorous probability bounds** if an explicit tick-count work budget is exhausted. This does NOT enforce fair, common CPU/RAM limits across different algorithms, does not revise the R8 negative result, and is not H1 or field validation.

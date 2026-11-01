@@ -1,0 +1,30 @@
+name: R9 constructed physical redundancy and work-budget controls (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  r9-fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test physical identity, kit bottleneck and budget bounds
+        run: python -m unittest tests.test_p1_r9_physical_controls -v
+      - name: Execute all predeclared artificial controls
+        run: |
+          mkdir -p r9-fixtures
+          python -m experiments.p1_r9_physical_controls \
+            --output r9-fixtures/r9_physical_controls.json \
+            | tee r9-fixtures/r9_summary.json
+      - name: Upload developer-only exact fixtures
+        uses: actions/upload-artifact@v4
+        with:
+          name: r9-predeclared-fixtures-not-h1
+          path: r9-fixtures/
+          retention-days: 30

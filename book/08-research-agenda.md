@@ -83,3 +83,8 @@ R7 supplies [a separately versioned, observation-filtered policy executor](../re
 ## R8: challenge GBR with matched source inputs, without silently expanding fault scope
 
 [The R8 bounded development benchmark](../research/R8-development-predictive-baselines.md) compares ordinary network/stock/plan-count/common-fault-cut signals with the same predictor plus a physically scoped R1 feature. The exact model-known value is retained as a separate traditional standard upper-information benchmark. Important unresolved gates: physical fault identities beyond toy assumptions, feature variation/invariance, conventional capacity- and runtime-matched state-space predictors, independently justified failure distributions, policy/sensor validation, fully sealed family generators, sample-size power and immutable preregistration. If a feature is non-discriminating, record the failure rather than invent more independent failures to make it appear predictive.
+
+
+## R9: preserve R8's negative finding while validating future construct scope
+
+[The R9 physical identity fixtures](../research/R9-physical-identity-and-budget.md) were written to distinguish legitimate channel independence from duplicate physical labels and common-cause dependence, not to retrofit a positive R8 feature result. The one- vs two-kit counterexample demonstrates an actual non-anticipative resource bottleneck. Next: independently grounded event incidence and a jointly executable backup feature, followed by a **true all-in CPU/wall-time/RAM and predictive-capacity comparison** with standard state-space and reliability baselines. Work-limited scenario enumeration already reports uncertainty bounds instead of a fabricated exact answer. H1 remains unregistered and untested.
