@@ -1,0 +1,35 @@
+{
+  "baseline_brier_expected_mean": 0.18284117625,
+  "baseline_plus_r1_brier_expected_mean": 0.18284117625,
+  "classification": "TRAIN_TUNE_DEVELOPMENT_PREDICTIVE_COMPARISON_NOT_H1",
+  "confirmatory_h1_samples": 0,
+  "equal_wall_time_or_memory_caps_enforced": false,
+  "exact_full_model_is_unbounded_reference": true,
+  "exact_known_model_ideal_brier_expected_mean": 0.126302083333,
+  "feature_enumeration_limit_actions": 10,
+  "feature_enumeration_limit_paths": 256,
+  "gate": "R8",
+  "identical_raw_pre_event_inputs": true,
+  "mean_paired_improvement_baseline_minus_augmented": 0,
+  "prediction_model": "STANDARDIZED_RIDGE_LINEAR_PROBABILITY_CLIPPED",
+  "r1_defined_systems": 84,
+  "r1_distinct_defined_values": [
+    0
+  ],
+  "r1_non_discriminating": true,
+  "result": "PASS",
+  "ridge_penalty_fixed": 1,
+  "same_train_tune_systems_and_learner": true,
+  "scoped_r1_status_counts": {
+    "NO_FEASIBLE_PLAN": 5,
+    "SCOPED": 79
+  },
+  "sealed_test_families_generated": 0,
+  "seed": 20261101,
+  "train_eligible_systems": 63,
+  "train_independent_systems": 72,
+  "tune_eligible_systems": 9,
+  "tune_independent_systems": 12,
+  "verified_full_histories": 858,
+  "zero_risk_systems": 12
+}
