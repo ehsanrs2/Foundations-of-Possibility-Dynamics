@@ -151,6 +151,15 @@ class R8PredictiveBaselineTests(unittest.TestCase):
         b.pop("plus_r1_fit_predict_wall_ns")
         self.assertEqual(a,b)
 
+    def test_archived_full_r8_development_summary_matches(self):
+        from pathlib import Path
+        archive=Path(__file__).parents[1] / "research" / (
+            "R8-development-summary-seed20261101.json")
+        self.assertEqual(
+            public_summary(evaluate(seed=20261101,train_n=24,
+                                    tune_n=12,verify=True)),
+            json.loads(archive.read_text(encoding="utf-8")))
+
     def test_input_validation(self):
         for kw in ({"train_n":0},{"train_n":25},{"tune_n":0},
                    {"tune_n":13},{"seed":True},{"train_n":1.0}):

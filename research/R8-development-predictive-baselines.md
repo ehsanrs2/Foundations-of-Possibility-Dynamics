@@ -64,3 +64,27 @@ If the R1 feature is constant or missing across these small grammars, a standard
 If a development gain appears, it must not be described as H1 validation: TUNE families were viewed during code and feature development, risk-law probabilities are human-chosen, and stronger standard baselines (bounded full augmented-state policy/reliability learners) remain absent. The final confirmation requires fixed domain evidence for physical identities, independent test units, a frozen policy and model family, training/feature compute budget, learning/tuning protocol and preregistration.
 
 Reviewer Issues #3 and #8–#12 remain open regardless of R8 development results. No changes to the original R3–R7 reports or their archived numerical results are necessary.
+
+
+## Executed R8 developer-only comparison (2026-11-01)
+
+The [R8 workflow run](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41296607466) completed successfully, including the dedicated regression suite and exact R7 full-history checks. The stable [R8 summary JSON](R8-development-summary-seed20261101.json) retains the measured numerical results; raw, environment-timed per-system outputs remain in the workflow artifact (short retention).
+
+**Independent developer system units:** 72 TRAIN systems (24 each from three training grammars) and 12 TUNE temporal-bottleneck systems. Exactly **63 TRAIN** and **9 TUNE** systems had positive goal-loss eligibility; **12** systems in total had zero risk and are NOT counted as failures. There were **858** whole-history R7-vs-independent-oracle comparisons across nested scenarios, not 858 independent samples. Sealed-family generation remained zero.
+
+**Principal descriptive result on the 9 eligible TUNE systems:**
+
+| Predictor / reference | Mean exact conditional expected Brier |
+|---|---:|
+| Standard ridge probability model, ordinary topology/stock/fault-cut features | **0.182841176250** |
+| Identical ridge model + narrowly scoped R1 pair | **0.182841176250** |
+| Known full-model R7 marginalized probability (unbounded ideal reference) | **0.126302083333** |
+| Difference, standard minus augmented | **0.000000000000** |
+
+The baseline and augmented arm were trained on exactly the same eligible TRAIN systems, with identical learner, prior hazard distribution inputs, topology/resource context and feature scaling. The R1 indicator was **defined and equal to zero in ALL 84 development systems**: 79 assessed as SCOPED with no two event-disjoint causal supports, and 5 with NO_FEASIBLE_PLAN in the translated *individual-route static G1 representation*. Therefore it has **no empirical variation** here, so a deterministic linear learner cannot extract an incremental R1 effect. This is a model/ontology construct-validity failure in the current synthetic grammar, **not** a confirmation of H1 and not a formal refutation of all possible constructive-option representations.
+
+**Do not change the physical fault-event scope post hoc to manufacture independent paths.** The one upstream event modeled by R6 applies to every restoration route's common prerequisite in these grammars. An invented independent repair-channel fault would contradict the stipulated experimental semantics.
+
+**Limits:** only nine eligible TUNE systems, fully artificial label probabilities computed from known model rules, no real observed outcomes, no confidence interval or external replication. An exact *full-model* Bayes marginal is an ideal reference and has not been given the same runtime/memory cap. Ridge comparison records computation times, but **there is still NO enforced equality of CPU, wall-time or memory budgets across the required advanced baselines**. No conclusion that GBR is redundant in every system is warranted.
+
+**Practical next gate:** the current development-family generators and independent physical failure scopes must be re-evaluated *prospectively* for meaningful and independently justified feature variation, while simultaneously implementing time-/resource-matched conventional dynamic state and reliability predictors. This should be a new exploratory design revision, never a retrofit of the R8 negative result into a positive H1 claim. P1 remains DRAFT_NOT_PREREGISTERED.
