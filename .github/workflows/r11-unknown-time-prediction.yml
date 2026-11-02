@@ -1,0 +1,30 @@
+name: R11 unknown-time matched-task developer predictions (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  r11-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test nonanticipation, same target and method parity
+        run: python -m unittest tests.test_p1_r11_unknown_time_prediction -v
+      - name: Run three same-objective bounded predictive learners
+        run: |
+          mkdir -p r11-dev-artifact
+          python -m experiments.p1_r11_unknown_time_prediction \
+            --output r11-dev-artifact/r11_raw_timing_and_prediction.json \
+            | tee r11-dev-artifact/r11_stable_summary.json
+      - name: Upload dev-only scores and worker resource measurements
+        uses: actions/upload-artifact@v4
+        with:
+          name: r11-unknown-time-dev-not-h1
+          path: r11-dev-artifact/
+          retention-days: 30

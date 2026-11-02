@@ -93,3 +93,8 @@ R7 supplies [a separately versioned, observation-filtered policy executor](../re
 ## R10: operational backup under state reachability and executable process caps
 
 The [R10 constructed controls](../research/R10-joint-executable-backup-and-process-caps.md) test a separate resource-aware **joint-prefix** indicator against independently implemented standard augmented-state reachability, revealing exact correspondence rather than independent theoretical novelty. Identical process wall/CPU/address-space caps now constrain feature extraction and standard known-model calculations, but the three tasks still differ and no common trained prediction objective exists. Next: externally justified fault ontology, unknown-time observation and pre-event policy, and a true matched-raw-input/learning-budget comparison with full standard baseline suite on prospectively sampled independent systems. H1 remains unfrozen and untested.
+
+
+## R11 matched-task development, still not H1
+
+The [R11 model rehearsal](../research/R11-unknown-time-matched-task-predictive-pilot.md) supplies a stricter comparison: three learner arms with the same time-uncertain fault objective, identical raw information and fixed Ridge fitting, under identical enforced process ceilings. It explicitly tests whether joint readiness from R10 offers anything unavailable to ordinary augmented-state reachability; it does not, because independent chronology computes the same feature. The remaining scientific necessity is a diverse, **prospectively independent**, physically justified population with realistic shock/event priors, fully specified observation conditions and stronger matched-capacity conventional predictive baselines. Sealed H1 sample construction remains blocked.
