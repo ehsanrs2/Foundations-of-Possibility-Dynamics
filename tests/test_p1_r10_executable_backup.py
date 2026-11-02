@@ -199,6 +199,13 @@ class R10JointPreparationTests(unittest.TestCase):
                 self.assertEqual(run["status"],"PASS")
         self.assertEqual(s["predeclared_toy_systems"],6)
 
+    def test_archived_complete_R10_scientific_result_matches(self):
+        archive=Path(__file__).parents[1] / "research" / (
+            "R10-joint-executable-results-20261102.json")
+        self.assertEqual(
+            reproducible_summary(self.result),
+            json.loads(archive.read_text(encoding="utf-8")))
+
     def test_archived_R9_negative_result_remains_unchanged(self):
         root=Path(__file__).parents[1] / "research"
         old=json.loads((root/"R8-development-summary-seed20261101.json").

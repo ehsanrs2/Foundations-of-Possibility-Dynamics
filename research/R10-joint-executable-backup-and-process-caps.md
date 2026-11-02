@@ -60,3 +60,23 @@ The [dedicated R10 workflow](../.github/workflows/r10-executable-backup.yml) exe
 R10 operationalizes two independent backup paths under shared material and temporal constraints on tiny synthetic fixtures. This succeeds as a correctness/interpretation check and **is explicitly equivalent to ordinary bounded augmented-state reachability**, not independent scientific innovation. It must not be retrofitted into R8's negative result or silently substituted as the original H1 feature. A new prospective H1 feature hypothesis, if desired, needs a separate immutable preregistration and independent data.
 
 The next scientifically adequate experiment needs independently justified physical event IDs, observed or validated hazard distributions, unrestricted sensor/observation specification, unknown fault times, a resource-aware **pre-failure** feature with a fixed computation budget, and properly matched predictive learners on held-out independently sampled systems. The sealed families remain untouched, and reviewer Issues #3 and #8–#12 remain open.
+
+
+## Actually executed R10 developer controls — 2026-11-02
+
+The initial [R10 development workflow](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41393048336) succeeded: the 20 focused R10 tests passed; the six known artificial fixture cases produced exactly the predeclared joint readiness results and **all 18 separate Linux worker invocations** (3 distinct computations × 6 fixtures) returned PASS under **identical 5-second wall / 5-second CPU / 256-MiB virtual-address-space caps**. All six independently coded DFS/DP prefix comparisons agreed. The previous R9 check also independently compared **28 complete R7 scenario trajectories**.
+
+| Exact designed fixture | Static R1 | Jointly executable fault-independent pair | Same fixed-policy readiness | Model-known conditional restoration |
+|---|---:|---:|---:|---:|
+| separate_one_kit | 1 | 0 | 0 | 1/2 |
+| separate_two_kits | 1 | 1 | 1 | 3/4 |
+| separate_short_window | 1 | 0 | 0 | 1/2 |
+| aliased_same_mechanism | 0 | 0 | 0 | 1/2 |
+| common_upstream_cause | 0 | 0 | 0 | 9/16 |
+| no_kits | 0 | 0 | 0 | 0 |
+
+**Positive but narrow construct discrimination:** the one-kit and two-kit independent cases both have static R1=1, but the new joint prefix feature is respectively 0 and 1. **Independent standard state DP and independent chronological DFS compute identical outcomes**. Thus this is a correct reformulation of conventional reachability, not a novel physical law or evidence of Brier improvement.
+
+The exact JSON scientific results and fixed caps are retained as [the deterministic R10 archive](R10-joint-executable-results-20261102.json), with a regression test that regenerates and compares them. CPU consumption, all-in wall time and Linux peak resident memory **differ between environments and are intentionally omitted from the deterministic archive**; they remain in the per-run [raw Actions artifact](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41393048336) subject to retention.
+
+**Scientific boundary:** equal resource *limits* were enforced, but not equal CPU work, statistical training, output objective or predicted accuracy. None of these six constructed systems were sampled independently from a physical population; both the ontology and the event timings are toy assumptions. R8's archived zero-gain predictive comparison remains unchanged, and the H1 study remains unregistered.

@@ -1,0 +1,497 @@
+{
+  "H1_training_or_test": false,
+  "R8_archive_modified": false,
+  "R9_reference_full_traces": 28,
+  "all_methods_have_same_resource_caps": true,
+  "classification": "DEVELOPMENT_ONLY_OPERATIONAL_FEASIBILITY_AND_PROCESS_CAPS_NOT_H1",
+  "conditions": [
+    {
+      "capped_process_measurements": {
+        "joint_state": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "joint_state",
+          "result": {
+            "action_feasibility_probes": 16,
+            "executable_prefix_witness": null,
+            "jointly_prepared_by_some_prefix": false,
+            "method": "STANDARD_AUGMENTED_STATE_DP",
+            "no_future_fault_identity_used": true,
+            "physical_event_independent": true,
+            "scoped_joint_ready_indicator": 0,
+            "state_layers": [
+              1,
+              3,
+              3
+            ]
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        },
+        "model_reference": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "model_reference",
+          "result": {
+            "budget_ticks": 16,
+            "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+            "coverage_probability": "1",
+            "equal_CPU_WALLTIME_RAM_budget_claim": false,
+            "exact_conditional_restoration": "1/2",
+            "independent_history_checks_outside_budget": 0,
+            "lower_conditional_restoration": "1/2",
+            "scenarios_enumerated": 4,
+            "scenarios_total": 4,
+            "upper_conditional_restoration": "1/2",
+            "used_ticks": 16
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        },
+        "static_r1": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "static_r1",
+          "result": {
+            "event_min_cut": 2,
+            "individual_plans": 2,
+            "scoped_pair": 1,
+            "status": "SCOPED"
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        }
+      },
+      "fixed_policy_prefix": [
+        "prepare_a",
+        "WAIT"
+      ],
+      "fixed_policy_ready": 0,
+      "joint_executable_prefix_backup": 0,
+      "joint_prefix_witness": null,
+      "kits": 1,
+      "label": "separate_one_kit",
+      "mode": "independent",
+      "physical_event_independent": true,
+      "preparation_ticks": 2,
+      "standard_duplicated_state_oracle": {
+        "executable_prefix_witness": null,
+        "independent_history_nodes": 9,
+        "jointly_prepared_by_some_prefix": false,
+        "scoped_joint_ready_indicator": 0
+      },
+      "static_individually_feasible_backup": 1,
+      "strict_restoration_known_model": "1/2"
+    },
+    {
+      "capped_process_measurements": {
+        "joint_state": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "joint_state",
+          "result": {
+            "action_feasibility_probes": 16,
+            "executable_prefix_witness": [
+              "prepare_a",
+              "prepare_b"
+            ],
+            "jointly_prepared_by_some_prefix": true,
+            "method": "STANDARD_AUGMENTED_STATE_DP",
+            "no_future_fault_identity_used": true,
+            "physical_event_independent": true,
+            "scoped_joint_ready_indicator": 1,
+            "state_layers": [
+              1,
+              3,
+              4
+            ]
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        },
+        "model_reference": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "model_reference",
+          "result": {
+            "budget_ticks": 16,
+            "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+            "coverage_probability": "1",
+            "equal_CPU_WALLTIME_RAM_budget_claim": false,
+            "exact_conditional_restoration": "3/4",
+            "independent_history_checks_outside_budget": 0,
+            "lower_conditional_restoration": "3/4",
+            "scenarios_enumerated": 4,
+            "scenarios_total": 4,
+            "upper_conditional_restoration": "3/4",
+            "used_ticks": 16
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        },
+        "static_r1": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "static_r1",
+          "result": {
+            "event_min_cut": 2,
+            "individual_plans": 2,
+            "scoped_pair": 1,
+            "status": "SCOPED"
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        }
+      },
+      "fixed_policy_prefix": [
+        "prepare_a",
+        "prepare_b"
+      ],
+      "fixed_policy_ready": 1,
+      "joint_executable_prefix_backup": 1,
+      "joint_prefix_witness": [
+        "prepare_a",
+        "prepare_b"
+      ],
+      "kits": 2,
+      "label": "separate_two_kits",
+      "mode": "independent",
+      "physical_event_independent": true,
+      "preparation_ticks": 2,
+      "standard_duplicated_state_oracle": {
+        "executable_prefix_witness": [
+          "prepare_a",
+          "prepare_b"
+        ],
+        "independent_history_nodes": 11,
+        "jointly_prepared_by_some_prefix": true,
+        "scoped_joint_ready_indicator": 1
+      },
+      "static_individually_feasible_backup": 1,
+      "strict_restoration_known_model": "3/4"
+    },
+    {
+      "capped_process_measurements": {
+        "joint_state": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "joint_state",
+          "result": {
+            "action_feasibility_probes": 4,
+            "executable_prefix_witness": null,
+            "jointly_prepared_by_some_prefix": false,
+            "method": "STANDARD_AUGMENTED_STATE_DP",
+            "no_future_fault_identity_used": true,
+            "physical_event_independent": true,
+            "scoped_joint_ready_indicator": 0,
+            "state_layers": [
+              1,
+              3
+            ]
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        },
+        "model_reference": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "model_reference",
+          "result": {
+            "budget_ticks": 12,
+            "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+            "coverage_probability": "1",
+            "equal_CPU_WALLTIME_RAM_budget_claim": false,
+            "exact_conditional_restoration": "1/2",
+            "independent_history_checks_outside_budget": 0,
+            "lower_conditional_restoration": "1/2",
+            "scenarios_enumerated": 4,
+            "scenarios_total": 4,
+            "upper_conditional_restoration": "1/2",
+            "used_ticks": 12
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        },
+        "static_r1": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "static_r1",
+          "result": {
+            "event_min_cut": 2,
+            "individual_plans": 2,
+            "scoped_pair": 1,
+            "status": "SCOPED"
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        }
+      },
+      "fixed_policy_prefix": [
+        "prepare_a"
+      ],
+      "fixed_policy_ready": 0,
+      "joint_executable_prefix_backup": 0,
+      "joint_prefix_witness": null,
+      "kits": 2,
+      "label": "separate_short_window",
+      "mode": "independent",
+      "physical_event_independent": true,
+      "preparation_ticks": 1,
+      "standard_duplicated_state_oracle": {
+        "executable_prefix_witness": null,
+        "independent_history_nodes": 4,
+        "jointly_prepared_by_some_prefix": false,
+        "scoped_joint_ready_indicator": 0
+      },
+      "static_individually_feasible_backup": 1,
+      "strict_restoration_known_model": "1/2"
+    },
+    {
+      "capped_process_measurements": {
+        "joint_state": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "joint_state",
+          "result": {
+            "action_feasibility_probes": 16,
+            "executable_prefix_witness": null,
+            "jointly_prepared_by_some_prefix": true,
+            "method": "STANDARD_AUGMENTED_STATE_DP",
+            "no_future_fault_identity_used": true,
+            "physical_event_independent": false,
+            "scoped_joint_ready_indicator": 0,
+            "state_layers": [
+              1,
+              3,
+              4
+            ]
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        },
+        "model_reference": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "model_reference",
+          "result": {
+            "budget_ticks": 16,
+            "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+            "coverage_probability": "1",
+            "equal_CPU_WALLTIME_RAM_budget_claim": false,
+            "exact_conditional_restoration": "1/2",
+            "independent_history_checks_outside_budget": 0,
+            "lower_conditional_restoration": "1/2",
+            "scenarios_enumerated": 4,
+            "scenarios_total": 4,
+            "upper_conditional_restoration": "1/2",
+            "used_ticks": 16
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        },
+        "static_r1": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "static_r1",
+          "result": {
+            "event_min_cut": 1,
+            "individual_plans": 2,
+            "scoped_pair": 0,
+            "status": "SCOPED"
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        }
+      },
+      "fixed_policy_prefix": [
+        "prepare_a",
+        "prepare_b"
+      ],
+      "fixed_policy_ready": 0,
+      "joint_executable_prefix_backup": 0,
+      "joint_prefix_witness": null,
+      "kits": 2,
+      "label": "aliased_same_mechanism",
+      "mode": "alias",
+      "physical_event_independent": false,
+      "preparation_ticks": 2,
+      "standard_duplicated_state_oracle": {
+        "executable_prefix_witness": null,
+        "independent_history_nodes": 11,
+        "jointly_prepared_by_some_prefix": true,
+        "scoped_joint_ready_indicator": 0
+      },
+      "static_individually_feasible_backup": 0,
+      "strict_restoration_known_model": "1/2"
+    },
+    {
+      "capped_process_measurements": {
+        "joint_state": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "joint_state",
+          "result": {
+            "action_feasibility_probes": 16,
+            "executable_prefix_witness": null,
+            "jointly_prepared_by_some_prefix": true,
+            "method": "STANDARD_AUGMENTED_STATE_DP",
+            "no_future_fault_identity_used": true,
+            "physical_event_independent": false,
+            "scoped_joint_ready_indicator": 0,
+            "state_layers": [
+              1,
+              3,
+              4
+            ]
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        },
+        "model_reference": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "model_reference",
+          "result": {
+            "budget_ticks": 32,
+            "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+            "coverage_probability": "1",
+            "equal_CPU_WALLTIME_RAM_budget_claim": false,
+            "exact_conditional_restoration": "9/16",
+            "independent_history_checks_outside_budget": 0,
+            "lower_conditional_restoration": "9/16",
+            "scenarios_enumerated": 8,
+            "scenarios_total": 8,
+            "upper_conditional_restoration": "9/16",
+            "used_ticks": 32
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        },
+        "static_r1": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "static_r1",
+          "result": {
+            "event_min_cut": 1,
+            "individual_plans": 2,
+            "scoped_pair": 0,
+            "status": "SCOPED"
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        }
+      },
+      "fixed_policy_prefix": [
+        "prepare_a",
+        "prepare_b"
+      ],
+      "fixed_policy_ready": 0,
+      "joint_executable_prefix_backup": 0,
+      "joint_prefix_witness": null,
+      "kits": 2,
+      "label": "common_upstream_cause",
+      "mode": "common",
+      "physical_event_independent": false,
+      "preparation_ticks": 2,
+      "standard_duplicated_state_oracle": {
+        "executable_prefix_witness": null,
+        "independent_history_nodes": 11,
+        "jointly_prepared_by_some_prefix": true,
+        "scoped_joint_ready_indicator": 0
+      },
+      "static_individually_feasible_backup": 0,
+      "strict_restoration_known_model": "9/16"
+    },
+    {
+      "capped_process_measurements": {
+        "joint_state": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "joint_state",
+          "result": {
+            "action_feasibility_probes": 8,
+            "executable_prefix_witness": null,
+            "jointly_prepared_by_some_prefix": false,
+            "method": "STANDARD_AUGMENTED_STATE_DP",
+            "no_future_fault_identity_used": true,
+            "physical_event_independent": true,
+            "scoped_joint_ready_indicator": 0,
+            "state_layers": [
+              1,
+              1,
+              1
+            ]
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        },
+        "model_reference": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "model_reference",
+          "result": {
+            "budget_ticks": 16,
+            "budget_unit": "ONE_R7_POLICY_TIMELINE_TICK",
+            "coverage_probability": "1",
+            "equal_CPU_WALLTIME_RAM_budget_claim": false,
+            "exact_conditional_restoration": "0",
+            "independent_history_checks_outside_budget": 0,
+            "lower_conditional_restoration": "0",
+            "scenarios_enumerated": 4,
+            "scenarios_total": 4,
+            "upper_conditional_restoration": "0",
+            "used_ticks": 16
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        },
+        "static_r1": {
+          "address_space_limit_mb": 256,
+          "cpu_limit_seconds": 5,
+          "method": "static_r1",
+          "result": {
+            "event_min_cut": 0,
+            "individual_plans": 0,
+            "scoped_pair": 0,
+            "status": "NO_FEASIBLE_PLAN"
+          },
+          "status": "PASS",
+          "wall_limit_seconds": 5
+        }
+      },
+      "fixed_policy_prefix": [
+        "WAIT",
+        "WAIT"
+      ],
+      "fixed_policy_ready": 0,
+      "joint_executable_prefix_backup": 0,
+      "joint_prefix_witness": null,
+      "kits": 0,
+      "label": "no_kits",
+      "mode": "independent",
+      "physical_event_independent": true,
+      "preparation_ticks": 2,
+      "standard_duplicated_state_oracle": {
+        "executable_prefix_witness": null,
+        "independent_history_nodes": 3,
+        "jointly_prepared_by_some_prefix": false,
+        "scoped_joint_ready_indicator": 0
+      },
+      "static_individually_feasible_backup": 0,
+      "strict_restoration_known_model": "0"
+    }
+  ],
+  "equal_work_or_equal_predictive_objective": false,
+  "gate": "R10",
+  "independently_checked_complete_prefix_systems": 6,
+  "known_fault_boundary_in_toy_fixtures": true,
+  "physical_identities_assumed_not_field_validated": true,
+  "predeclared_toy_systems": 6,
+  "result": "PASS",
+  "sealed_family_generator_calls": 0,
+  "uniform_caps": {
+    "address_space_mb": 256,
+    "cpu_seconds": 5,
+    "wall_seconds": 5
+  }
+}
