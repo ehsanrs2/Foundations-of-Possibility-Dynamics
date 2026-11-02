@@ -201,6 +201,13 @@ class R12TransferChecks(unittest.TestCase):
                 self.assertNotIn(field,worker)
             self.assertEqual(worker["status"],"PASS")
 
+    def test_archived_full_R12_scientific_comparison_is_reproduced(self):
+        source=Path(__file__).parents[1]/"research"/(
+            "R12-cross-grammar-results-20261102.json")
+        self.assertEqual(
+            stable_archive(self.data),
+            json.loads(source.read_text(encoding="utf-8")))
+
     def test_archived_R8_development_failure_unmodified(self):
         path=Path(__file__).parents[1]/"research"/(
             "R8-development-summary-seed20261101.json")

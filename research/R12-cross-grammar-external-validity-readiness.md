@@ -56,3 +56,24 @@ A credible future external-validity program still needs independently sourced ph
 If no available dataset contains both actual goal loss and *same-policy service restoration*, one cannot label its generic uptime or damage outcome as strict restoration to manufacture validation.
 
 R12 does not update the original R8 negative result, substitute a new feature into the P1 H1 protocol, or test whether Possibility Dynamics merits status as an independent scientific discipline. Keep Issues #3 and #8–#12 OPEN.
+
+
+## Executed R12 developer cross-grammar comparison — 2026-11-02
+
+The revised R12 [CI workflow run](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41452753804) passed its 23 dedicated tests and all five separately resource-capped predictive workers. The six older R11 science files had been accidentally omitted from the first R12 branch tree; this was **corrected on the full R11 main tree** before the successful run, and regression preservation is checked. **576 independently coded complete R7 histories** agreed, along with **54 DP versus independent DFS prefix judgments**. The 27 training settings derive from nine direct-route graph signatures; 36 tuning settings derive from eighteen distinct staged-route graphs, with **zero graph-signature overlap**.
+
+| Method on 36 synthetic TUNE *parameter settings* | Mean exact model-expected conditional Brier |
+|---|---:|
+| Conventional raw Ridge | **0.165914979088** |
+| Raw + conventional stock/route/late-prior interaction | **0.165522792238** |
+| Raw + standard augmented-state DP joint readiness | **0.164259405297** |
+| Raw + equivalent independent history-based readiness | **0.164259405297** |
+| Unfitted exact full-known-model conditional probability (ideal Bayes) | **0.162407769097** |
+
+The synthetic *descriptive* mean difference raw minus augmented is **+0.001655573791**; relative to the conventional interaction comparator the difference is **+0.001263386941**. All feature and model comparisons are development-side only, not statistically inferential. The two ordinary algorithms produce identical forecast records. The known-model full-state baseline is still more accurate, as expected for an exact model-conditioned oracle.
+
+**CRITICAL:** These are merely 27 *researcher-designed synthetic graph configurations* (9 training, 18 tuning), repeatedly reused at different known prior probabilities. Zero identical-graph hash overlap is a useful leakage control, **NOT proof of independent field engineering evidence** or independent population sampling. The TUNE grammars were expressly authored for this developer study. No natural failure rates, device IDs, deployable policy observations, external dataset or genuine confirmatory test has been supplied.
+
+The [archived deterministic R12 JSON](R12-cross-grammar-results-20261102.json) preserves complete 36-row per-method forecast traces and the enforced resource caps. Per-worker nondeterministic CPU/wall/RSS measures remain in the [Actions raw artifact](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41452753804) and are deliberately omitted from the reproducible archive.
+
+**Decision:** advance to an independently sourced physical-data admission gate or explicit negative feasibility finding, not a declaration that the H1 hypothesis or a new science has been proven. The original R8 failure and the P1 draft protocol are unchanged.
