@@ -164,6 +164,24 @@
       "partial_predictions": "RATIONAL_BOUNDS_NO_EXACT_POINT",
       "sealed_test_samples_generated": 0,
       "H1_confirmatory_data_collected": false
+    },
+    "r10_joint_executable_development": {
+      "code": "experiments/p1_r10_executable_backup.py",
+      "report": "research/R10-joint-executable-backup-and-process-caps.md",
+      "candidate": "EXPLORATORY_JOINT_PREFIX_PHYSICALLY_EVENT_DISJOINT_READY_PAIR",
+      "is_original_R1_H1_feature": false,
+      "baseline": "STANDARD_AUGMENTED_STATE_REACHABILITY_AND_INDEPENDENT_HISTORY",
+      "fixed_policy_separately_scored": true,
+      "known_shock_boundary_in_toy": true,
+      "linux_subprocess_limits_enforced": true,
+      "limits": {
+        "wall_seconds": 5,
+        "cpu_seconds": 5,
+        "virtual_address_space_mb": 256
+      },
+      "methods_share_predictive_objective": false,
+      "H1_feature_and_policy_frozen": false,
+      "sealed_samples_generated": 0
     }
   },
   "analysis": {
