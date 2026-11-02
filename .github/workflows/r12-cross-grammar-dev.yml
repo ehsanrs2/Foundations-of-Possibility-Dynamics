@@ -1,0 +1,30 @@
+name: R12 cross-grammar synthetic transfer and standard-baseline audit (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  r12-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test structural split, no-lookahead, standard baseline and Bayes bound
+        run: python -m unittest tests.test_p1_r12_cross_grammar_transfer -v
+      - name: Run bounded equal-target synthetic transfer predictors
+        run: |
+          mkdir -p r12-dev-artifact
+          python -m experiments.p1_r12_cross_grammar_transfer \
+            --output r12-dev-artifact/r12_full_synthetic_run.json \
+            | tee r12-dev-artifact/r12_stable_run.json
+      - name: Upload R12 developer-only results
+        uses: actions/upload-artifact@v4
+        with:
+          name: r12-cross-grammar-development-not-h1
+          path: r12-dev-artifact/
+          retention-days: 30
