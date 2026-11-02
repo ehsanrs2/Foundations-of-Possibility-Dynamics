@@ -88,3 +88,8 @@ R7 supplies [a separately versioned, observation-filtered policy executor](../re
 ## R9: preserve R8's negative finding while validating future construct scope
 
 [The R9 physical identity fixtures](../research/R9-physical-identity-and-budget.md) were written to distinguish legitimate channel independence from duplicate physical labels and common-cause dependence, not to retrofit a positive R8 feature result. The one- vs two-kit counterexample demonstrates an actual non-anticipative resource bottleneck. Next: independently grounded event incidence and a jointly executable backup feature, followed by a **true all-in CPU/wall-time/RAM and predictive-capacity comparison** with standard state-space and reliability baselines. Work-limited scenario enumeration already reports uncertainty bounds instead of a fabricated exact answer. H1 remains unregistered and untested.
+
+
+## R10: operational backup under state reachability and executable process caps
+
+The [R10 constructed controls](../research/R10-joint-executable-backup-and-process-caps.md) test a separate resource-aware **joint-prefix** indicator against independently implemented standard augmented-state reachability, revealing exact correspondence rather than independent theoretical novelty. Identical process wall/CPU/address-space caps now constrain feature extraction and standard known-model calculations, but the three tasks still differ and no common trained prediction objective exists. Next: externally justified fault ontology, unknown-time observation and pre-event policy, and a true matched-raw-input/learning-budget comparison with full standard baseline suite on prospectively sampled independent systems. H1 remains unfrozen and untested.

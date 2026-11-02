@@ -95,3 +95,8 @@ R8's source model includes full simulator rules and stipulated hazard priors: ex
 ## 7.21 R9: feature-identity validity versus synthetic fixture performance
 
 The [R9 designed physical mechanisms](../research/R9-physical-identity-and-budget.md) illustrate that textual action aliases must not be treated as separate assets and that a common upstream incident invalidates independently exposed route claims. Even valid disjoint-event plans may compete for one kit or miss a deadline. All incident probabilities and mechanism identities in R9 are **assumptions**, not externally confirmed material or sensor properties. The bounded standard reference counts only policy timeline steps; full plan enumeration, operation scanning, verification and real CPU/memory are not comparable, so shared computational parity still needs a separate gate.
+
+
+## 7.22 R10: joint readiness remains known-boundary, synthetic reachability
+
+The [R10 joint readiness gate](../research/R10-joint-executable-backup-and-process-caps.md) prevents treating *individually feasible* independent backup plans as jointly ready under a shared kit stock and preparation deadline. However its pre-event prefix is evaluated with the **known** synthetic R9 fault time; an unknown or partially observed shock-time distribution needs a new risk-aware policy contract. Physical event identities are stipulated toy assumptions. The common-process limits enforce Linux virtual-address-space and CPU caps, but are **not a matched all-in H1 prediction benchmark**: feature computation and full-model exact integration solve different problems. Neither physical validation nor inferential statistical power follows.
