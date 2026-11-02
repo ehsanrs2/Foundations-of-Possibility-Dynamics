@@ -207,6 +207,33 @@
       "new_joint_feature_replaces_original_H1": false,
       "R8_original_negative_preserved": true,
       "H1_confirmatory_results": 0
+    },
+    "r12_cross_grammar_dev": {
+      "source": "experiments/p1_r12_cross_grammar_transfer.py",
+      "report": "research/R12-cross-grammar-external-validity-readiness.md",
+      "source_structures": 9,
+      "tune_structures": 18,
+      "source_time_prior_rows": 27,
+      "tune_time_prior_rows": 36,
+      "semantic_graph_hash_overlap": 0,
+      "physical_external_systems": 0,
+      "observed_real_failures": 0,
+      "methods": [
+        "raw",
+        "interaction",
+        "state_dp",
+        "history",
+        "known_model"
+      ],
+      "known_model": "UNFITTED_EXACT_BAYES_ORACLE_NOT_MATCHED_LEARNER",
+      "joint_feature_replaces_frozen_H1": false,
+      "known_shock_time_for_controller": false,
+      "common_process_limits": {
+        "wall_seconds": 10,
+        "cpu_seconds": 10,
+        "virtual_address_space_mb": 256
+      },
+      "H1_confirmatory_data": 0
     }
   },
   "analysis": {
