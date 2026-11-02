@@ -62,3 +62,23 @@ The [dedicated R11 Actions workflow](../.github/workflows/r11-unknown-time-predi
 Any improvement of either engineered readiness column over raw is **development-side feature engineering on nine reused synthetic configurations**, NOT confirmation of H1 or a new science. Agreement of the standard-DP and independent-history variants is expected because they calculate precisely the same state-reachability property. A negative result is equally informative; no post hoc change to R8's physical fault scope or the R11 train/tune prior split is permitted.
 
 **Unresolved:** independent physically sourced event ontology; real or calibrated failure observations; partial/noisy sensing; shock-time distributions identified from field evidence; nontrivial resource-aware variation across true independent system families; a strong conventional matched-capacity prediction suite; power/sample-size design; truly untouched sealed families and preregistration. H1 stays DRAFT_NOT_PREREGISTERED; Issues #3 and #8–#12 remain open.
+
+
+## Executed developer comparison — 2026-11-02
+
+The initial [R11 GitHub Actions run](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41416005089) passed its 24 focused tests, all three bounded same-objective predictive workers, and **384 complete independent chronological R7 trace comparisons**. The [raw resource and prediction artifact](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41416005089/artifacts/13127906509) records environment-specific elapsed wall/CPU/RSS as well as per-setting outputs. The [stable archived R11 summary](R11-unknown-time-prediction-results-20261102.json) excludes variable timing/RSS and retains the exact same model scores and cases.
+
+| Fixed learner on 18 *reused* TUNE parameter settings | Mean model-expected Brier |
+|---|---:|
+| Raw familiar physical mode/stock/mincut/hazard features | **0.163607515992** |
+| Raw + prior-weighted joint backup from ordinary augmented-state DP | **0.163115603693** |
+| Raw + the SAME backup feature from independently enumerated histories | **0.163115603693** |
+| Model-known exact Bayes lower bound, NOT a fitted equal-budget competitor | **0.162407769097** |
+
+The **descriptive raw-minus-augmented gain = +0.000491912299** expected Brier units on the toy TUNE parameter grid. It is not a claim about independent holdout prediction, physical robustness or statistical significance. The standard DP and independent-history augmented arms produced **exactly identical tune-setting forecasts and score**. The alleged feature's finite-model information content is therefore already in a standard augmented-state calculation, so this pilot provides **no evidence of independent scientific novelty**.
+
+The basic model has exactly **nine distinct hand-designed physical structures** repeated at five prior weights; the 27 TRAIN and 18 TUNE rows reuse their structures. Consequently no valid independent-system standard error, generalization estimate or confirmatory H1 claim is available. Every simulated outcome is derived from known synthetic fault mechanics, not measured from a deployment.
+
+**Computational gate:** all three worker jobs successfully completed with the same enforced 5s wall, 5s CPU and 256-MiB virtual-AS ceilings and the same deterministic Ridge setting. This is an equal *resource-ceiling and scoring* comparison of the three specified methods, not equal actual CPU consumption, equal feature dimension or a full contest against sophisticated conventional bounded-state prediction models.
+
+**Next scientific step:** if this feature is worth proposing as an explicit prospective H1 variant, first define physically justified event ontologies and genuinely independent systems; preregister a distinct hypothesis and baseline suite, including strong conventional augmented-state predictors, without relabeling the original R8 null finding. P1 remains DRAFT_NOT_PREREGISTERED.

@@ -202,6 +202,13 @@ class R11DevelopmentTests(unittest.TestCase):
                 self.assertNotIn(f,value)
             self.assertEqual(value["status"],"PASS")
 
+    def test_archived_complete_R11_developer_result_matches(self):
+        archive=Path(__file__).parents[1]/"research"/(
+            "R11-unknown-time-prediction-results-20261102.json")
+        self.assertEqual(
+            deterministic_archive(self.result),
+            json.loads(archive.read_text(encoding="utf-8")))
+
     def test_original_R8_zero_gain_archive_preserved(self):
         archive=Path(__file__).parents[1]/"research"/(
             "R8-development-summary-seed20261101.json")
