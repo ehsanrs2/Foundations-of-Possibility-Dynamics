@@ -1,0 +1,660 @@
+{
+  "H1_confirmatory_test": false,
+  "R8_negative_archive_unchanged": true,
+  "classification": "UNKNOWN_TIME_EQUAL_OBJECTIVE_TOY_DEVELOPMENT_NOT_H1",
+  "full_history_oracle_comparisons": 384,
+  "gate": "R11",
+  "independent_heldout_systems": 0,
+  "physical_event_calibration": false,
+  "process_caps": {
+    "cpu_seconds": 5,
+    "virtual_address_space_mb": 256,
+    "wall_seconds": 5
+  },
+  "result": "PASS",
+  "results": {
+    "independent_history": {
+      "method": "independent_history",
+      "prediction": {
+        "all_scenarios_real_loss": true,
+        "classification": "REPEATED_TOY_PARAMETER_DESIGN_NOT_H1",
+        "confirmatory_H1_samples": 0,
+        "fixed_ridge_penalty": 1,
+        "full_history_oracle_comparisons": 0,
+        "fully_model_known_synthetic_outcome": true,
+        "gate": "R11",
+        "known_event_time_disclosed_to_policy": false,
+        "mean_expected_brier": 0.163115603693,
+        "mean_model_ideal_brier": 0.162407769097,
+        "method": "independent_history",
+        "no_sealed_family_calls": true,
+        "train_hazard_priors": [
+          "0",
+          "1/2",
+          "1"
+        ],
+        "train_parameter_settings": 27,
+        "tune_hazard_priors": [
+          "1/4",
+          "3/4"
+        ],
+        "tune_parameter_settings": 18,
+        "tune_records": [
+          {
+            "conditional_expected_brier": 0.000036746214,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0.006061865577,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "independent",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "independent",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.250000128488,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.499641547292,
+            "ideal_model_brier": 0.25,
+            "kits": 1,
+            "mode": "independent",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.250198410986,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.48591415655,
+            "ideal_model_brier": 0.25,
+            "kits": 1,
+            "mode": "independent",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.214846920279,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "11/16",
+            "forecast": 0.685719472287,
+            "ideal_model_brier": 0.21484375,
+            "kits": 2,
+            "mode": "independent",
+            "prior_joint_ready": "3/4"
+          },
+          {
+            "conditional_expected_brier": 0.246449615404,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "9/16",
+            "forecast": 0.581364395137,
+            "ideal_model_brier": 0.24609375,
+            "kits": 2,
+            "mode": "independent",
+            "prior_joint_ready": "1/4"
+          },
+          {
+            "conditional_expected_brier": 0.001761029999,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0.041964627947,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "alias",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.000797341565,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0.028237237205,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "alias",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.251356133847,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.463174277371,
+            "ideal_model_brier": 0.25,
+            "kits": 1,
+            "mode": "alias",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.252555617271,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.449446886629,
+            "ideal_model_brier": 0.25,
+            "kits": 1,
+            "mode": "alias",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.250177174009,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.513310672755,
+            "ideal_model_brier": 0.25,
+            "kits": 2,
+            "mode": "alias",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.250000173654,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.499583282013,
+            "ideal_model_brier": 0.25,
+            "kits": 2,
+            "mode": "alias",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "common",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "common",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.235769721036,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "3/8",
+            "forecast": 0.412345964118,
+            "ideal_model_brier": 0.234375,
+            "kits": 1,
+            "mode": "common",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.234932837008,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "3/8",
+            "forecast": 0.398618573376,
+            "ideal_model_brier": 0.234375,
+            "kits": 1,
+            "mode": "common",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.252579999614,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "33/64",
+            "forecast": 0.462482359502,
+            "ideal_model_brier": 0.249755859375,
+            "kits": 2,
+            "mode": "common",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.244619017096,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "27/64",
+            "forecast": 0.44875496876,
+            "ideal_model_brier": 0.243896484375,
+            "kits": 2,
+            "mode": "common",
+            "prior_joint_ready": "0"
+          }
+        ],
+        "unique_physical_structure_configs": 9
+      },
+      "status": "PASS"
+    },
+    "raw": {
+      "method": "raw",
+      "prediction": {
+        "all_scenarios_real_loss": true,
+        "classification": "REPEATED_TOY_PARAMETER_DESIGN_NOT_H1",
+        "confirmatory_H1_samples": 0,
+        "fixed_ridge_penalty": 1,
+        "full_history_oracle_comparisons": 0,
+        "fully_model_known_synthetic_outcome": true,
+        "gate": "R11",
+        "known_event_time_disclosed_to_policy": false,
+        "mean_expected_brier": 0.163607515992,
+        "mean_model_ideal_brier": 0.162407769097,
+        "method": "raw",
+        "no_sealed_family_calls": true,
+        "train_hazard_priors": [
+          "0",
+          "1/2",
+          "1"
+        ],
+        "train_parameter_settings": 27,
+        "tune_hazard_priors": [
+          "1/4",
+          "3/4"
+        ],
+        "tune_parameter_settings": 18,
+        "tune_records": [
+          {
+            "conditional_expected_brier": 0.000164188674,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0.012813612824,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "independent",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "independent",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.251192751916,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.534536240621,
+            "ideal_model_brier": 0.25,
+            "kits": 1,
+            "mode": "independent",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.250123182043,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.511098740621,
+            "ideal_model_brier": 0.25,
+            "kits": 1,
+            "mode": "independent",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.220371607105,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "11/16",
+            "forecast": 0.613150439778,
+            "ideal_model_brier": 0.21484375,
+            "kits": 2,
+            "mode": "independent",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.246834294091,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "9/16",
+            "forecast": 0.589712939778,
+            "ideal_model_brier": 0.24609375,
+            "kits": 2,
+            "mode": "independent",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.00204255591,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0.04519464471,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "alias",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.000473373346,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0.02175714471,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "alias",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.252056946566,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.454646427201,
+            "ideal_model_brier": 0.25,
+            "kits": 1,
+            "mode": "alias",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.254732211697,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.431208927201,
+            "ideal_model_brier": 0.25,
+            "kits": 1,
+            "mode": "alias",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.251106269266,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.533260626357,
+            "ideal_model_brier": 0.25,
+            "kits": 2,
+            "mode": "alias",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.250096493811,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.509823126357,
+            "ideal_model_brier": 0.25,
+            "kits": 2,
+            "mode": "alias",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "common",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "common",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.235205483692,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "3/8",
+            "forecast": 0.403818113948,
+            "ideal_model_brier": 0.234375,
+            "kits": 1,
+            "mode": "common",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.234403951006,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "3/8",
+            "forecast": 0.380380613948,
+            "ideal_model_brier": 0.234375,
+            "kits": 1,
+            "mode": "common",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.250857613838,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "33/64",
+            "forecast": 0.482432313104,
+            "ideal_model_brier": 0.249755859375,
+            "kits": 2,
+            "mode": "common",
+            "prior_joint_ready": null
+          },
+          {
+            "conditional_expected_brier": 0.2452743649,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "27/64",
+            "forecast": 0.458994813104,
+            "ideal_model_brier": 0.243896484375,
+            "kits": 2,
+            "mode": "common",
+            "prior_joint_ready": null
+          }
+        ],
+        "unique_physical_structure_configs": 9
+      },
+      "status": "PASS"
+    },
+    "standard_dp": {
+      "method": "standard_dp",
+      "prediction": {
+        "all_scenarios_real_loss": true,
+        "classification": "REPEATED_TOY_PARAMETER_DESIGN_NOT_H1",
+        "confirmatory_H1_samples": 0,
+        "fixed_ridge_penalty": 1,
+        "full_history_oracle_comparisons": 0,
+        "fully_model_known_synthetic_outcome": true,
+        "gate": "R11",
+        "known_event_time_disclosed_to_policy": false,
+        "mean_expected_brier": 0.163115603693,
+        "mean_model_ideal_brier": 0.162407769097,
+        "method": "standard_dp",
+        "no_sealed_family_calls": true,
+        "train_hazard_priors": [
+          "0",
+          "1/2",
+          "1"
+        ],
+        "train_parameter_settings": 27,
+        "tune_hazard_priors": [
+          "1/4",
+          "3/4"
+        ],
+        "tune_parameter_settings": 18,
+        "tune_records": [
+          {
+            "conditional_expected_brier": 0.000036746214,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0.006061865577,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "independent",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "independent",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.250000128488,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.499641547292,
+            "ideal_model_brier": 0.25,
+            "kits": 1,
+            "mode": "independent",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.250198410986,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.48591415655,
+            "ideal_model_brier": 0.25,
+            "kits": 1,
+            "mode": "independent",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.214846920279,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "11/16",
+            "forecast": 0.685719472287,
+            "ideal_model_brier": 0.21484375,
+            "kits": 2,
+            "mode": "independent",
+            "prior_joint_ready": "3/4"
+          },
+          {
+            "conditional_expected_brier": 0.246449615404,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "9/16",
+            "forecast": 0.581364395137,
+            "ideal_model_brier": 0.24609375,
+            "kits": 2,
+            "mode": "independent",
+            "prior_joint_ready": "1/4"
+          },
+          {
+            "conditional_expected_brier": 0.001761029999,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0.041964627947,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "alias",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.000797341565,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0.028237237205,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "alias",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.251356133847,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.463174277371,
+            "ideal_model_brier": 0.25,
+            "kits": 1,
+            "mode": "alias",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.252555617271,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.449446886629,
+            "ideal_model_brier": 0.25,
+            "kits": 1,
+            "mode": "alias",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.250177174009,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.513310672755,
+            "ideal_model_brier": 0.25,
+            "kits": 2,
+            "mode": "alias",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.250000173654,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "1/2",
+            "forecast": 0.499583282013,
+            "ideal_model_brier": 0.25,
+            "kits": 2,
+            "mode": "alias",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "common",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "0",
+            "forecast": 0,
+            "ideal_model_brier": 0,
+            "kits": 0,
+            "mode": "common",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.235769721036,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "3/8",
+            "forecast": 0.412345964118,
+            "ideal_model_brier": 0.234375,
+            "kits": 1,
+            "mode": "common",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.234932837008,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "3/8",
+            "forecast": 0.398618573376,
+            "ideal_model_brier": 0.234375,
+            "kits": 1,
+            "mode": "common",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.252579999614,
+            "early_probability": "1/4",
+            "exact_model_conditional_probability": "33/64",
+            "forecast": 0.462482359502,
+            "ideal_model_brier": 0.249755859375,
+            "kits": 2,
+            "mode": "common",
+            "prior_joint_ready": "0"
+          },
+          {
+            "conditional_expected_brier": 0.244619017096,
+            "early_probability": "3/4",
+            "exact_model_conditional_probability": "27/64",
+            "forecast": 0.44875496876,
+            "ideal_model_brier": 0.243896484375,
+            "kits": 2,
+            "mode": "common",
+            "prior_joint_ready": "0"
+          }
+        ],
+        "unique_physical_structure_configs": 9
+      },
+      "status": "PASS"
+    }
+  },
+  "same_enforced_process_caps": true,
+  "same_source_inputs_frozen_ridge_and_expected_brier": true,
+  "same_structure_repeated_across_train_tune": true,
+  "standard_DP_equals_independent_history_feature": true,
+  "train_parameter_settings": 27,
+  "tune_parameter_settings": 18,
+  "unique_physical_structure_configs": 9
+}
