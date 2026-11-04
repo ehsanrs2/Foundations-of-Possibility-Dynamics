@@ -1,0 +1,154 @@
+{
+  "H1_preregistered": false,
+  "R8_negative_archive_unchanged": true,
+  "actual_strict_restoration_labels_verified": 0,
+  "classification": "PUBLIC_DATA_PROVENANCE_SCREEN_NOT_H1",
+  "full_raw_data_access_verified": false,
+  "gate": "R13",
+  "independent_physical_systems_admitted": 0,
+  "public_source_review": {
+    "gate": "R13",
+    "independent_physical_systems_admitted": 0,
+    "source_candidates_screened": 6,
+    "source_ids": [
+      "pnnl_event_correlated_outages",
+      "ornl_eagle_i_2025",
+      "doe_417_event_summaries",
+      "lanl_usrc_hpc_failures",
+      "backblaze_drive_stats",
+      "google_cluster_trace_2011"
+    ],
+    "source_screens": [
+      {
+        "critical_gap": "County customer counts can decline without proving the SAME customer's service was restored on one observed policy trajectory.",
+        "documented_criteria": 2,
+        "incompatible_unit": 1,
+        "not_demonstrated": 8,
+        "potential_auxiliary_use": "COUNTY_AGGREGATE_OUTAGE_RECOVERY_PROXY",
+        "raw_rows_verified": 0,
+        "source_id": "pnnl_event_correlated_outages",
+        "strict_h1_episode_admission": "BLOCKED_PUBLISHER_METADATA_ONLY"
+      },
+      {
+        "critical_gap": "Aggregate count recovery cannot identify same service, observed interventions, or physical fault-disjoint backup.",
+        "documented_criteria": 1,
+        "incompatible_unit": 1,
+        "not_demonstrated": 9,
+        "potential_auxiliary_use": "COUNTY_OUTAGE_TIME_SERIES_ONLY",
+        "raw_rows_verified": 0,
+        "source_id": "ornl_eagle_i_2025",
+        "strict_h1_episode_admission": "BLOCKED_PUBLISHER_METADATA_ONLY"
+      },
+      {
+        "critical_gap": "Large incident reports and any restoration time do not independently establish individually linked service restoration and nonanticipative policy history.",
+        "documented_criteria": 1,
+        "incompatible_unit": 0,
+        "not_demonstrated": 10,
+        "potential_auxiliary_use": "MAJOR_DISTURBANCE_METADATA",
+        "raw_rows_verified": 0,
+        "source_id": "doe_417_event_summaries",
+        "strict_h1_episode_admission": "BLOCKED_PUBLISHER_METADATA_ONLY"
+      },
+      {
+        "critical_gap": "A node's return from outage is not evidence that one identified job/service regained its original goal under one observed recovery policy.",
+        "documented_criteria": 1,
+        "incompatible_unit": 1,
+        "not_demonstrated": 9,
+        "potential_auxiliary_use": "PHYSICAL_NODE_DOWNTIME_AND_CAUSE",
+        "raw_rows_verified": 0,
+        "source_id": "lanl_usrc_hpc_failures",
+        "strict_h1_episode_admission": "BLOCKED_PUBLISHER_METADATA_ONLY"
+      },
+      {
+        "critical_gap": "An actual failed drive is not necessarily loss of a service goal; no per-service restoration trajectory or policy actions documented.",
+        "documented_criteria": 2,
+        "incompatible_unit": 1,
+        "not_demonstrated": 8,
+        "potential_auxiliary_use": "PHYSICAL_COMPONENT_FAILURE_RISK",
+        "raw_rows_verified": 0,
+        "source_id": "backblaze_drive_stats",
+        "strict_h1_episode_admission": "BLOCKED_PUBLISHER_METADATA_ONLY"
+      },
+      {
+        "critical_gap": "Machine removal/readdition or task scheduling is not by itself proof of strict lost-and-restored same service goal.",
+        "documented_criteria": 1,
+        "incompatible_unit": 1,
+        "not_demonstrated": 9,
+        "potential_auxiliary_use": "COMPUTE_RESOURCE_FAULT_EVENT_PROXIES",
+        "raw_rows_verified": 0,
+        "source_id": "google_cluster_trace_2011",
+        "strict_h1_episode_admission": "BLOCKED_PUBLISHER_METADATA_ONLY"
+      }
+    ],
+    "sources_admitted_for_strict_restoration": 0,
+    "status": "SOURCE_DISCOVERY_NOT_H1_VALIDATION",
+    "verified_raw_source_rows": 0
+  },
+  "real_raw_observational_rows_ingested": 0,
+  "recommendation": "REQUIRE_INDEPENDENT_PHYSICAL_EPISODE_SOURCE_AND_ROW_LEVEL_PROVENANCE_BEFORE_H1",
+  "result": "PASS",
+  "schema_only_synthetic_controls": {
+    "demo_cases": 7,
+    "demo_outcomes": {
+      "aggregate_count_not_unit": {
+        "admitted_as_confirmatory_h1": false,
+        "contract_status": "BLOCKED_INVALID_EPISODE",
+        "errors": [
+          "UNIT_NOT_TRACKED_SINGLE_SERVICE"
+        ],
+        "independently_verified_real_provenance": false,
+        "provisional_strict_restoration_label": null
+      },
+      "censored_no_followup": {
+        "admitted_as_confirmatory_h1": false,
+        "contract_status": "CENSORED_BEFORE_DEADLINE",
+        "errors": [],
+        "independently_verified_real_provenance": false,
+        "provisional_strict_restoration_label": null
+      },
+      "device_failure_without_service_loss": {
+        "admitted_as_confirmatory_h1": false,
+        "contract_status": "INELIGIBLE_NO_ACTUAL_SERVICE_LOSS",
+        "errors": [],
+        "independently_verified_real_provenance": false,
+        "provisional_strict_restoration_label": null
+      },
+      "different_service_trajectory": {
+        "admitted_as_confirmatory_h1": false,
+        "contract_status": "BLOCKED_INVALID_EPISODE",
+        "errors": [
+          "CROSS_SYSTEM_OR_POLICY_TRAJECTORY_JOIN"
+        ],
+        "independently_verified_real_provenance": false,
+        "provisional_strict_restoration_label": null
+      },
+      "eligible_no_recovery_observed_to_deadline": {
+        "admitted_as_confirmatory_h1": false,
+        "contract_status": "PROVISIONAL_SCHEMA_COMPLETE_NOT_VERIFIED_PHYSICAL",
+        "errors": [],
+        "independently_verified_real_provenance": false,
+        "provisional_strict_restoration_label": 0
+      },
+      "eligible_recovered": {
+        "admitted_as_confirmatory_h1": false,
+        "contract_status": "PROVISIONAL_SCHEMA_COMPLETE_NOT_VERIFIED_PHYSICAL",
+        "errors": [],
+        "independently_verified_real_provenance": false,
+        "provisional_strict_restoration_label": 1
+      },
+      "postfault_feature_leak": {
+        "admitted_as_confirmatory_h1": false,
+        "contract_status": "BLOCKED_INVALID_EPISODE",
+        "errors": [
+          "INCONSISTENT_EVENT_ORDER"
+        ],
+        "independently_verified_real_provenance": false,
+        "provisional_strict_restoration_label": null
+      }
+    },
+    "examples_are_synthetic_not_real_samples": true,
+    "provisional_binary_demo_labels": 2,
+    "true_physical_observations": 0
+  },
+  "sealed_test_families_instantiated": 0
+}

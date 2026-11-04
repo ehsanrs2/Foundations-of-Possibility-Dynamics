@@ -54,3 +54,14 @@ An authorized real-world provider would need to supply a deidentified and secure
 Without such evidence, the scientifically correct conclusion is **insufficient observational evidence for H1**, not an H1 null result or a proof of a new science. An independent paper on aggregate outages may be appropriate under a separately preregistered, weaker estimand, but cannot validate the originally stated same-service restoration hypothesis.
 
 Keep Issues #3 and #8–#12 open.
+
+
+## Executed negative intake finding — 2026-11-04
+
+The initial [R13 GitHub Actions audit](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/41835539088) passed **26 focused tests**. A separate metadata-only screen of all **six publicly described institutional sources** returned **0 qualified physical systems, 0 independently verified observational episodes and 0 raw source rows inspected**. This is the deliberate and scientifically correct negative admission result, NOT a negative H1 predictive effect.
+
+Seven entirely SYNTHETIC contract exercises yielded exactly: two provisional labels (one recovery within deadline, one fully observed nonrecovery); one case censored before the deadline; one service-not-lost case ineligible; and three blocked invalid cases (county aggregate not a tracked service, post-event pre-feature leakage, and cross-service trajectory join). No example is considered independently validated physical evidence.
+
+The numerical [R13 stable audit archive](R13-public-source-admission-results-20261104.json) retains all six source screen outcomes and all seven synthetic control classifications, with a dedicated regression that reruns the same checker. Published data-source descriptions cannot supply a valid field-data predictive advantage or a Brier confidence interval; no H1 tests or regression against R8's archived zero-gain findings were attempted.
+
+The right next step is an **authorized external row-level service-episode and physical-mechanism linkage pilot**, preceded by independent verification of source semantics, privacy and provenance. If this cannot be obtained, maintain the explicit missing-evidence finding; do not replace original strict restoration with county aggregate outage duration without a separate new study.

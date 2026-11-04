@@ -219,6 +219,13 @@ class R13EvidenceAdmissionTests(unittest.TestCase):
         self.assertFalse(any(x["admitted_as_confirmatory_h1"]
                              for x in controls["demo_outcomes"].values()))
 
+    def test_committed_R13_source_admission_audit_is_exactly_reproducible(self):
+        archive=Path(__file__).parents[1]/"research"/(
+            "R13-public-source-admission-results-20261104.json")
+        self.assertEqual(
+            json.loads(archive.read_text(encoding="utf-8")),
+            audit())
+
     def test_R13_does_not_modify_R8_negative_archive_or_H1_status(self):
         p=Path(__file__).parents[1]
         old=json.loads((p/"research/R8-development-summary-seed20261101.json").
