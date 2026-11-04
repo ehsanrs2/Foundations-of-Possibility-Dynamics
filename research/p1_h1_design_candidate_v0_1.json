@@ -234,6 +234,21 @@
         "virtual_address_space_mb": 256
       },
       "H1_confirmatory_data": 0
+    },
+    "r13_public_external_data_admission": {
+      "gate": "R13_PUBLISHER_DESCRIPTION_EVIDENCE_SCREEN",
+      "report": "research/R13-public-data-admission-and-evidence-gaps.md",
+      "registry": "research/R13-public-source-admission-manifest.json",
+      "validator": "experiments/p1_r13_real_data_admission.py",
+      "source_candidates_checked": 6,
+      "raw_external_observational_files_downloaded": 0,
+      "independently_audited_real_episodes": 0,
+      "strict_restoration_field_labels_admitted": 0,
+      "independent_real_systems_admitted": 0,
+      "demonstration_cases_are_synthetic": true,
+      "raw_provenance_validation_implemented": false,
+      "H1_original_feature_changed": false,
+      "data_model_only_study_not_confirmatory": true
     }
   },
   "analysis": {

@@ -1,0 +1,30 @@
+name: R13 public real-data provenance admission gate (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  r13-evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test metadata-only source screening and episode guardrails
+        run: python -m unittest tests.test_p1_r13_real_data_admission -v
+      - name: Reproduce real-source admission evidence gaps
+        run: |
+          mkdir -p r13-developer-audit
+          python -m experiments.p1_r13_real_data_admission \
+            --output r13-developer-audit/r13_complete_metadata_screen.json \
+            | tee r13-developer-audit/r13_summary.json
+      - name: Upload reproducible negative evidence-screen result
+        uses: actions/upload-artifact@v4
+        with:
+          name: r13-public-source-admission-not-h1
+          path: r13-developer-audit/
+          retention-days: 30
