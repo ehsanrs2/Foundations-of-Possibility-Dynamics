@@ -107,6 +107,11 @@ class R15JobLineageTests(unittest.TestCase):
         self.assertEqual(LANL_SOURCE_DOCUMENTS[1],
                          "https://www.usenix.org/lanl-data")
 
+    def test_versioned_R15_linkage_ledger_is_identical_to_audit(self):
+        source=Path(__file__).resolve().parents[1]/"research"/(
+            "R15-node-job-lineage-results-20261108.json")
+        self.assertEqual(json.loads(source.read_text(encoding="utf-8")),audit())
+
     def test_r14_historical_archive_is_unaltered(self):
         data=json.loads(R14_ARCHIVE.read_text(encoding="utf-8"))
         self.assertEqual(data["raw_rows_inspected"],23739)

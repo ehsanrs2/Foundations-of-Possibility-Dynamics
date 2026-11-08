@@ -27,6 +27,17 @@ jobs:
         run: |
           python -m experiments.p1_r15_linkage_gate \
             | tee r15-probe/linked_service_admission_status.json
+      - name: Reproduce the versioned deterministic R15 linkage result
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          actual=json.loads(Path("r15-probe/linked_service_admission_status.json").read_text())
+          expected=json.loads(Path("research/R15-node-job-lineage-results-20261108.json").read_text())
+          if actual!=expected:
+              raise SystemExit("R15 linkage evidence changed; stop")
+          print("R15 linkage-admission archive matches")
+          PY
       - name: Upload stable or unavailable publisher-link report
         uses: actions/upload-artifact@v4
         with:

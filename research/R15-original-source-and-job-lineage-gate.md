@@ -53,3 +53,12 @@ The R15 workflow rechecks the raw R14 artifact and source-link discovery; the la
 The next *real-data* step must obtain independently confirmed original LANL bytes (or a documented custodian checksum and archive provenance), **and separately** raw access to compatible job usage/event data. Even then, an independent domain custodian must justify *unique* job-run lineage and checkpoint restart semantics, event-to-job causal link, exact pre-fault goal state, policy action history, physical backup capacities and endpoint censoring.
 
 If those cannot be verified, the defensible alternative is a **distinct preregistered node fault duration or usage scheduling question**. No statistical test of the originally framed H1 is permissible on the currently observed tables. The original R8 no-gain outcome and R12 synthetic comparisons are unchanged, H1 preregistration remains DRAFT, and all sealed test families remain closed.
+
+
+## Executed R15 evidence outcome — 2026-11-08
+
+The [executed R15 publisher/source and lineage run](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/42453569220) passed **six official-link parser tests** and **15 separate fail-closed same-job-linkage controls**. The official publisher landing-page GET produced **UNAVAILABLE_OR_UNVERIFIED / URLError** in this runner; no original file was fetched, so no independent original-vs-mirror SHA equivalence was established.
+
+The [deterministic R15 job-lineage archive](R15-node-job-lineage-results-20261108.json) records the observed 26-column actual R14 node fault schema, zero explicit job/restart/service/policy ID columns, two *publisher-listed but uninspected* supplementary archives, all **11 unverified independent-source/service-policy conditions**, and two wholly synthetic ambiguous overlaps (two different job IDs on one node/time). It admits **0 actual field strict restoration labels**, does not change R8 or R14 and does not instantiate the sealed H1 families.
+
+This is a reproducible **negative source-linkage admission finding**, NOT a scientifically quantified null effect of H1. The network failure is limited to this CI runner and does not prove the LANL site or original archive are universally inaccessible.
