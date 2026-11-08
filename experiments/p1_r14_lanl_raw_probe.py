@@ -52,7 +52,15 @@ def normalized(s: str) -> str:
 
 
 def header_index(header: list[str], name: str) -> int:
-    matches=[i for i,h in enumerate(header) if normalized(h)==normalized(name)]
+    # The original published README spells these Problem Started/Fixed.
+    # Real legacy CSVs sometimes abbreviate the column to Prob Started/Fixed.
+    # Only these two transparent, explicitly documented aliases are allowed.
+    aliases={
+        "Problem Started":{"problemstarted","probstarted"},
+        "Problem Fixed":{"problemfixed","probfixed"},
+    }
+    accepted=aliases.get(name,{normalized(name)})
+    matches=[i for i,h in enumerate(header) if normalized(h) in accepted]
     if len(matches)!=1:
         raise ValueError("required LANL node-failure field missing or duplicated: "+name)
     return matches[0]

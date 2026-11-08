@@ -29,6 +29,15 @@ jobs:
           ACTUAL_BLOB="$(git hash-object r14-audit/lanl-mirror.csv.xz)"
           test "$ACTUAL_BLOB" = "$EXPECTED_BLOB"
           printf "Pinned third-party mirror Git blob verified\n"
+      - name: Record only legacy CSV HEADER spelling for schema audit
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, lzma
+          with lzma.open("r14-audit/lanl-mirror.csv.xz","rt",encoding="utf-8-sig") as f:
+              columns=next(csv.reader(f))
+          print("Original mirror CSV header fields:",repr(columns))
+          PY
       - name: Independently inspect raw node-fault record schema and sampled timestamps
         shell: bash
         run: |

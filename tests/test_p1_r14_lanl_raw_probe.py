@@ -115,6 +115,13 @@ class R14RawNodeIntakeTests(unittest.TestCase):
         result=audit_raw(self.path)
         self.assertEqual(result["sample_rows_with_cause_category"],0)
 
+    def test_legacy_prob_started_fixed_aliases_are_explicitly_supported(self):
+        legacy=["Prob Started" if h=="Problem Started" else
+                "Prob Fixed" if h=="Problem Fixed" else h for h in HEADER]
+        digest=self.put([row()],header=legacy)
+        value=audit_raw(self.path,expected_sha256=digest)
+        self.assertEqual(value["sample_parseable_start_and_fix_times"],1)
+
     def test_missing_problem_fixed_column_blocks(self):
         header=[x for x in HEADER if x!="Problem Fixed"]
         self.put([row()[:-1]],header=header)
