@@ -26,7 +26,7 @@ jobs:
       - name: Archive deterministic join-data feasibility without H1 labels
         run: |
           python -m experiments.p1_r15_linkage_gate \
-            > r15-probe/linked_service_admission_status.json
+            | tee r15-probe/linked_service_admission_status.json
       - name: Upload stable or unavailable publisher-link report
         uses: actions/upload-artifact@v4
         with:
