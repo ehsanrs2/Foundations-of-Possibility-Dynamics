@@ -177,6 +177,23 @@ class R14RawNodeIntakeTests(unittest.TestCase):
         self.assertEqual(result["admission"],
                          "BLOCKED_PHYSICAL_SERVICE_TRAJECTORY_AND_ORIGINAL_PROVENANCE")
 
+    def test_archived_mirrored_raw_node_qa_has_no_h1_labels(self):
+        import json
+        source=Path(__file__).resolve().parents[1]/"research"/(
+            "R14-lanl-mirror-raw-audit-20261108.json")
+        report=json.loads(source.read_text(encoding="utf-8"))
+        self.assertEqual(report["gate"],"R14")
+        self.assertEqual(report["compressed_sha256"],
+            "ed32fd254a013df79f5f475f4eac85980f7229735e100ac427343ef449a75140")
+        self.assertEqual(report["raw_rows_inspected"],23739)
+        self.assertEqual(report["uncompressed_physical_line_count"],23740)
+        self.assertEqual(report["schema_column_count"],26)
+        self.assertEqual(report["sample_rows_evaluated"],256)
+        self.assertEqual(report["sample_anonymized_system_groups"],1)
+        self.assertFalse(report["independently_authenticated_against_original_LANL_bytes"])
+        self.assertEqual(report["strict_restoration_eligible_labels"],0)
+        self.assertFalse(report["H1_confirmatory_result"])
+
     def test_earlier_H1_draft_and_R8_negative_archive_preserved(self):
         base=Path(__file__).resolve().parents[1]
         prior=__import__("json").loads(

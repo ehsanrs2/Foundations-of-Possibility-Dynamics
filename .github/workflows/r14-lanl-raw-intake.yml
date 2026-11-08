@@ -49,6 +49,22 @@ jobs:
             --output r14-audit/r14_real_node_failure_summary.json
           rm -f r14-audit/lanl-mirror.csv.xz
           test ! -f r14-audit/lanl-mirror.csv.xz
+      - name: Verify exact mirrored-source audit matches versioned archive
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          expected=json.loads(Path(
+              "research/R14-lanl-mirror-raw-audit-20261108.json"
+          ).read_text(encoding="utf-8"))
+          actual=json.loads(Path(
+              "r14-audit/r14_real_node_failure_summary.json"
+          ).read_text(encoding="utf-8"))
+          if actual!=expected:
+              raise SystemExit("R14 pinned raw QA changed: stop before merging")
+          print("Exact R14 raw-source audit matches versioned archive")
+          PY
       - name: Archive ONLY source hashes, aggregate QA, and explicit no-H1-admission
         uses: actions/upload-artifact@v4
         with:
