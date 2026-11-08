@@ -45,6 +45,7 @@ jobs:
           python -m experiments.p1_r14_lanl_raw_probe \
             --input-xz r14-audit/lanl-mirror.csv.xz \
             --sample-rows 256 \
+            --expected-sha256 ed32fd254a013df79f5f475f4eac85980f7229735e100ac427343ef449a75140 \
             --output r14-audit/r14_real_node_failure_summary.json
           rm -f r14-audit/lanl-mirror.csv.xz
           test ! -f r14-audit/lanl-mirror.csv.xz

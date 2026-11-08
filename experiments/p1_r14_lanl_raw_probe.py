@@ -161,6 +161,9 @@ def audit_raw(path: Path, *, expected_sha256: str | None = None,
         sample_time_complete+=1
         if fixed<started:
             sample_negative_duration+=1
+    physical_line_count=sum(1 for _ in _stream(path))
+    if physical_line_count<all_rows+1:
+        raise AssertionError("CSV line counting is internally inconsistent")
     if all_rows==0 or sampled==0:
         raise ValueError("no raw data rows")
     if all_rows<10:
@@ -183,6 +186,11 @@ def audit_raw(path: Path, *, expected_sha256: str | None = None,
         "mirror_archive_url":MIRROR_URL,
         "compressed_sha256":digest,
         "compressed_bytes":size,
+        "uncompressed_physical_line_count":physical_line_count,
+        "publisher_reported_record_count":23741,
+        "mirror_parsed_nonblank_rows_minus_publisher_count":all_rows-23741,
+        "publisher_vs_mirror_count_discrepancy_resolved":False,
+        "actual_csv_column_names":header,
         "independently_authenticated_against_original_LANL_bytes":False,
         "publisher_raw_file_directly_retrieved":False,
         "dataset_scale":dataset_scale,

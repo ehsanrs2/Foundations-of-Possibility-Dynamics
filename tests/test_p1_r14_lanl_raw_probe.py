@@ -115,6 +115,14 @@ class R14RawNodeIntakeTests(unittest.TestCase):
         result=audit_raw(self.path)
         self.assertEqual(result["sample_rows_with_cause_category"],0)
 
+    def test_audit_counts_physical_lines_and_keeps_publisher_mismatch_unresolved(self):
+        self.put([row(),row()])
+        out=audit_raw(self.path)
+        self.assertEqual(out["uncompressed_physical_line_count"],3)
+        self.assertEqual(out["publisher_reported_record_count"],23741)
+        self.assertFalse(out["publisher_vs_mirror_count_discrepancy_resolved"])
+        self.assertEqual(out["actual_csv_column_names"],HEADER)
+
     def test_legacy_prob_started_fixed_aliases_are_explicitly_supported(self):
         legacy=["Prob Started" if h=="Problem Started" else
                 "Prob Fixed" if h=="Problem Fixed" else h for h in HEADER]

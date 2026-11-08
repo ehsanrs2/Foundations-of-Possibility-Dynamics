@@ -47,3 +47,12 @@ Use the observed mirror archive SHA-256 as the exact expected SHA-256 on subsequ
 A genuinely qualifying H1 task must secure a service/job join to the actual interrupted workload, full pre-event capabilities and available backup resources, a fixed observed policy, actual goal loss, and restoration under the same episode with a validated physical fault-event map. Until then no independent field restoration label, population Brier gain or H1 inference is admissible. The original R8 and R12 scores remain frozen; P1 stays DRAFT_NOT_PREREGISTERED.
 
 If a valid service-level corpus proves impossible, it is acceptable to preregister a DIFFERENT auxiliary node-time-to-repair study, but its target and novelty claims MUST NOT be relabeled as the original H1 hypothesis.
+
+
+## Initial actual-file inspection, 2026-11-08 — before archive freeze
+
+The first successful real-file run [R14 workflow #42451199559](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/42451199559) downloaded **253,144 bytes** from the fixed public GitHub mirror commit. Its Git blob hash matched the declared mirror Git object, and the compressed-archive **SHA-256** was ed32fd254a013df79f5f475f4eac85980f7229735e100ac427343ef449a75140. The raw CSV had **26 documented columns**, with abbreviated fields `Prob Started` and `Prob Fixed` (consistent with the historical version of the README).
+
+The parser counted **23,739 nonblank source data rows**, versus **23,741** listed on the LANL page. This difference of two has not yet been independently reconciled with the authoritative original file and counting convention. To prevent silently converting it into a false source-integrity assurance, R14 explicitly records this as an **unresolved count discrepancy**.
+
+The first 256 well-formed raw data rows yielded 256 parseable fault start/fix pairs, no recorded missing field among these four critical columns, and no fix-before-start time in that narrow sample. The first 256 rows all had the same anonymized system ID, so the sample has **zero claim to be representative of all systems or all nodes**. This is descriptive data QA, not a representative sample or a success rate. No raw identifying fields are archived, and **no single service-goal/policy restoration records were admitted**.
