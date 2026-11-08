@@ -108,3 +108,8 @@ The [R12 experiment](../research/R12-cross-grammar-external-validity-readiness.m
 ## R13: obtain independent service-episode evidence before external H1
 
 [R13](../research/R13-public-data-admission-and-evidence-gaps.md) makes a negative feasibility finding: no raw field episode has yet been admitted after reviewing six institutionally documented public datasets. Some can support meaningful *separate* county outage, node downtime or hardware failure studies, but not same-service strict restoration without external identity linkage and action/repair histories. The [data-custodian request checklist](../research/R13-physical-evidence-request-checklist.md) defines the minimum deidentified fault/service/policy chain and provider review. Next gate requires a legally accessed, independently audited raw episode subset or an explicit change of research question/preregistration; never reinterpret an aggregate outage trend as H1 success. All synthetic R8–R12 evidence remains development-only.
+
+
+## R14 raw-node-data milestone, remaining service-evidence barrier
+
+The [R14 public mirrored LANL intake](../research/R14-lanl-actual-raw-node-fault-intake.md) demonstrates how to verify the bytes of one downloaded public real-node fault file and check observed fields without fabricating strict-restoration labels. A suitable next step would independently verify the original LA-UR file checksum with LANL, then obtain an authorized linked job/service timeline and its pre-fault resource/observation history. Alternatively, preregister a clearly distinct node time-to-repair proxy study rather than treat node administrative fix as H1 proof. The sealed H1 generators remain closed.
