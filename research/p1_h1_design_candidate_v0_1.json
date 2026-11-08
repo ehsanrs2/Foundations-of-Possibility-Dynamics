@@ -264,6 +264,21 @@
       "R8_original_negative_preserved": true,
       "sealed_test_families_generated": 0,
       "preregistered_H1_test": false
+    },
+    "r15_original_lanl_and_job_restart_evidence_gate": {
+      "report": "research/R15-original-source-and-job-lineage-gate.md",
+      "upstream_discovery_source": "experiments/p1_r15_upstream_probe.py",
+      "job_lineage_admission_source": "experiments/p1_r15_linkage_gate.py",
+      "initial_github_runner_primary_lanl_access": "UNAVAILABLE_OR_UNVERIFIED_URLERROR",
+      "original_publisher_csv_bytes_attested": false,
+      "R14_mirror_raw_rows_inspected": 23739,
+      "observed_original_job_restart_ids_in_fault_csv": 0,
+      "supplementary_usage_records_publisher_listed": 489376,
+      "supplementary_event_records_publisher_listed": 433490,
+      "supplementary_raw_records_retrieved": 0,
+      "validated_same_job_recovery_labels": 0,
+      "field_H1_confirmatory_data": 0,
+      "sealed_family_generation": 0
     }
   },
   "analysis": {

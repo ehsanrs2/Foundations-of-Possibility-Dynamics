@@ -1,0 +1,88 @@
+{
+  "R14_mirror_sha256_and_row_count_preserved": true,
+  "R8_negative_result_preserved": true,
+  "full_H1_evaluation_performed": false,
+  "gate": "R15",
+  "original_failure_file_authentication": "BLOCKED_LANL_DIRECT_RETRIEVAL_NOT_VERIFIED",
+  "physical_service_restoration_labels": 0,
+  "result": "PASS_EVIDENCE_GATE_REMAINS_BLOCKED",
+  "source_join_evidence": {
+    "actual_service_episodes_admitted": 0,
+    "all_required_conditions_met": false,
+    "candidate_time_overlap_is_causal_join": false,
+    "classification": "REAL_NODE_TRACE_TO_JOB_RESTART_PROVENANCE_BLOCKED_NOT_H1",
+    "direct_publisher_original_file_authenticated": false,
+    "gate": "R15",
+    "new_confirmatory_h1_samples": 0,
+    "observed_raw_input": {
+      "actual_csv_columns": 26,
+      "explicit_job_service_restart_policy_columns_present": [],
+      "independently_validated_h1_labels": 0,
+      "node_data_rows_inspected_in_R14": 23739,
+      "node_fault_start_and_admin_fix_times_present": true,
+      "publisher_original_data_authenticated": false,
+      "source": "REAL_LANL_NODE_FAULT_CSV_THIRD_PARTY_MIRROR",
+      "system_and_node_identifiers_present": true
+    },
+    "published_context_checkpoint_restart": "https://www.usenix.org/lanl-data",
+    "published_possible_complementary_sources": [
+      {
+        "name": "LANL System 20 usage with node info",
+        "publisher_listed_records": 489376,
+        "publisher_page": "https://usrc.lanl.gov/data/failure-data.php",
+        "raw_rows_ingested_for_R15": 0,
+        "stable_same_job_join_key_verified": false
+      },
+      {
+        "name": "LANL System 20 usage event info",
+        "publisher_listed_records": 433490,
+        "publisher_page": "https://usrc.lanl.gov/data/failure-data.php",
+        "raw_rows_ingested_for_R15": 0,
+        "stable_same_job_join_key_verified": false
+      }
+    ],
+    "required_independently_verified_conditions": {
+      "documented_same_machine_and_clock_mapping": false,
+      "fault_caused_original_job_goal_loss": false,
+      "pre_fault_job_working_goal_observed": false,
+      "primary_publisher_raw_failure_file_authenticated": false,
+      "recovery_actions_with_nonanticipative_policy_and_resources": false,
+      "right_censoring_and_independent_system_units": false,
+      "same_job_goal_reacquired_on_original_policy_history": false,
+      "stable_original_job_identity": false,
+      "usage_and_event_raw_sources_authentic": false,
+      "validated_job_restart_lineage_after_failure": false,
+      "verified_physical_event_and_common_cause_mapping": false
+    },
+    "sealed_H1_families_touched": 0
+  },
+  "status": "NO_EMPIRICAL_JOB_TO_NODE_RESTORATION_JOIN_VERIFIED",
+  "synthetic_join_collision_controls": {
+    "cases": [
+      {
+        "admitted_as_real_h1_episode": false,
+        "job_restarted_and_restored_proven": false,
+        "overlapping_time_intervals": true,
+        "physical_causal_service_loss_verified": false,
+        "same_original_job_goal_reacquired": false,
+        "same_system_and_node": true,
+        "temporal_candidate_only": true
+      },
+      {
+        "admitted_as_real_h1_episode": false,
+        "job_restarted_and_restored_proven": false,
+        "overlapping_time_intervals": true,
+        "physical_causal_service_loss_verified": false,
+        "same_original_job_goal_reacquired": false,
+        "same_system_and_node": true,
+        "temporal_candidate_only": true
+      }
+    ],
+    "no_false_positive_h1_admission": true,
+    "origin": "SYNTHETIC_COLLISION_EXAMPLE",
+    "same_fault_node_candidate_job_runs": 2,
+    "unresolved_original_job_identity_collisions": 2,
+    "valid_real_service_recovery_labels": 0,
+    "verified_restarts": 0
+  }
+}

@@ -1,0 +1,46 @@
+name: R15 publisher original-source link discovery (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  r15-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test restrictive link discovery and unchanged R14 negative admission
+        run: python -m unittest tests.test_p1_r15_upstream_probe -v
+      - name: Probe official publisher page without downloading unknown data objects
+        run: |
+          mkdir -p r15-probe
+          python -m experiments.p1_r15_upstream_probe \
+            --output r15-probe/publisher_source_discovery.json
+      - name: Run R15 strict node-to-same-job linkage guardrail tests
+        run: python -m unittest tests.test_p1_r15_linkage_gate -v
+      - name: Archive deterministic join-data feasibility without H1 labels
+        run: |
+          python -m experiments.p1_r15_linkage_gate \
+            | tee r15-probe/linked_service_admission_status.json
+      - name: Reproduce the versioned deterministic R15 linkage result
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          actual=json.loads(Path("r15-probe/linked_service_admission_status.json").read_text())
+          expected=json.loads(Path("research/R15-node-job-lineage-results-20261108.json").read_text())
+          if actual!=expected:
+              raise SystemExit("R15 linkage evidence changed; stop")
+          print("R15 linkage-admission archive matches")
+          PY
+      - name: Upload stable or unavailable publisher-link report
+        uses: actions/upload-artifact@v4
+        with:
+          name: r15-publisher-link-discovery-NOT-H1
+          path: r15-probe/
+          retention-days: 30
