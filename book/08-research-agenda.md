@@ -113,3 +113,8 @@ The [R12 experiment](../research/R12-cross-grammar-external-validity-readiness.m
 ## R14 raw-node-data milestone, remaining service-evidence barrier
 
 The [R14 public mirrored LANL intake](../research/R14-lanl-actual-raw-node-fault-intake.md) demonstrates how to verify the bytes of one downloaded public real-node fault file and check observed fields without fabricating strict-restoration labels. A suitable next step would independently verify the original LA-UR file checksum with LANL, then obtain an authorized linked job/service timeline and its pre-fault resource/observation history. Alternatively, preregister a clearly distinct node time-to-repair proxy study rather than treat node administrative fix as H1 proof. The sealed H1 generators remain closed.
+
+
+## R15: service/job join provenance remains an admission dependency
+
+[R15](../research/R15-original-source-and-job-lineage-gate.md) blocked both original-source attestation and same-job restoration inference: direct LANL official landing-page retrieval failed in a GitHub-hosted runner, and the actual mirrored LANL node fault columns offer no stable original-job/restart ID. Before any H1 field test, request an original publisher checksum/archive and an authorized, unique job-run lineage plus pre-event goal, actual fault-to-job loss, observed corrective policy actions, same-job successful restart/deadline or censor, physical backup route ontology and independent system grouping. If unavailable, register a separate node-duration proxy study rather than rename its outcome H1.
