@@ -249,6 +249,21 @@
       "raw_provenance_validation_implemented": false,
       "H1_original_feature_changed": false,
       "data_model_only_study_not_confirmatory": true
+    },
+    "r14_lanl_real_node_mirror_raw_intake": {
+      "source": "experiments/p1_r14_lanl_raw_probe.py",
+      "report": "research/R14-lanl-actual-raw-node-fault-intake.md",
+      "original_publisher": "Los Alamos National Laboratory / USRC",
+      "raw_data_source": "THIRD_PARTY_GIT_PINNED_MIRROR_NOT_ORIGINAL_AUTHENTICATED",
+      "first_rows_sampled_for_QA": 256,
+      "raw_rows_for_H1_admitted": 0,
+      "original_publisher_file_sha256_validated": false,
+      "service_goal_restoration_measured": false,
+      "same_policy_trajectory_verified": false,
+      "raw_data_not_committed": true,
+      "R8_original_negative_preserved": true,
+      "sealed_test_families_generated": 0,
+      "preregistered_H1_test": false
     }
   },
   "analysis": {

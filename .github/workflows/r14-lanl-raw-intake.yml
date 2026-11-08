@@ -1,0 +1,73 @@
+name: R14 pinned real LANL node-failure mirror raw audit (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  r14-raw:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify deterministic R14 parser controls
+        run: python -m unittest tests.test_p1_r14_lanl_raw_probe -v
+      - name: Obtain pinned historical real node-failure CSV from public mirror
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p r14-audit
+          curl -fL --silent --show-error --retry 3 --max-time 60 \
+            --max-filesize 1048576 \
+            "https://raw.githubusercontent.com/Derek-Jones/ESEUR-code-data/bc1d9e99da2a956cdecba9d9d7f6f9b61a371c5f/reliability/LA-UR-05-7318-failure-data-1996-2005.csv.xz" \
+            -o r14-audit/lanl-mirror.csv.xz
+          EXPECTED_BLOB="1f3c115dd319a2cbabc02d312bb733c60e1ef29d"
+          ACTUAL_BLOB="$(git hash-object r14-audit/lanl-mirror.csv.xz)"
+          test "$ACTUAL_BLOB" = "$EXPECTED_BLOB"
+          printf "Pinned third-party mirror Git blob verified\n"
+      - name: Record only legacy CSV HEADER spelling for schema audit
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, lzma
+          with lzma.open("r14-audit/lanl-mirror.csv.xz","rt",encoding="utf-8-sig") as f:
+              columns=next(csv.reader(f))
+          print("Original mirror CSV header fields:",repr(columns))
+          PY
+      - name: Independently inspect raw node-fault record schema and sampled timestamps
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m experiments.p1_r14_lanl_raw_probe \
+            --input-xz r14-audit/lanl-mirror.csv.xz \
+            --sample-rows 256 \
+            --expected-sha256 ed32fd254a013df79f5f475f4eac85980f7229735e100ac427343ef449a75140 \
+            --output r14-audit/r14_real_node_failure_summary.json
+          rm -f r14-audit/lanl-mirror.csv.xz
+          test ! -f r14-audit/lanl-mirror.csv.xz
+      - name: Verify exact mirrored-source audit matches versioned archive
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          expected=json.loads(Path(
+              "research/R14-lanl-mirror-raw-audit-20261108.json"
+          ).read_text(encoding="utf-8"))
+          actual=json.loads(Path(
+              "r14-audit/r14_real_node_failure_summary.json"
+          ).read_text(encoding="utf-8"))
+          if actual!=expected:
+              raise SystemExit("R14 pinned raw QA changed: stop before merging")
+          print("Exact R14 raw-source audit matches versioned archive")
+          PY
+      - name: Archive ONLY source hashes, aggregate QA, and explicit no-H1-admission
+        uses: actions/upload-artifact@v4
+        with:
+          name: r14-lanl-mirror-node-qa-NOT-H1
+          path: r14-audit/r14_real_node_failure_summary.json
+          retention-days: 30
