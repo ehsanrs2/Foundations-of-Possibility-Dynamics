@@ -1,0 +1,29 @@
+name: R15 publisher original-source link discovery (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  r15-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test restrictive link discovery and unchanged R14 negative admission
+        run: python -m unittest tests.test_p1_r15_upstream_probe -v
+      - name: Probe official publisher page without downloading unknown data objects
+        run: |
+          mkdir -p r15-probe
+          python -m experiments.p1_r15_upstream_probe \
+            --output r15-probe/publisher_source_discovery.json
+      - name: Upload stable or unavailable publisher-link report
+        uses: actions/upload-artifact@v4
+        with:
+          name: r15-publisher-link-discovery-NOT-H1
+          path: r15-probe/
+          retention-days: 30
