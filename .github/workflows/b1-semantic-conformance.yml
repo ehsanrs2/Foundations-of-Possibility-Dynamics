@@ -1,0 +1,27 @@
+name: B1 operational GOG semantic conformance (NOT H1)
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  b1-semantics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Focused B1 conformance tests
+        run: python -m unittest tests.test_p1_r16b_semantic_conformance -v
+      - name: Reproducible B1 diagnostic
+        run: python -m experiments.p1_r16b_semantic_conformance > b1-semantic-conformance.json
+      - name: Full historical test regression
+        run: python -m unittest discover -s tests -v
+      - name: Upload B1 developer-only output
+        uses: actions/upload-artifact@v4
+        with:
+          name: b1-semantic-conformance
+          path: b1-semantic-conformance.json
