@@ -1,0 +1,27 @@
+name: B2 bounded observable-trace equivalence (NOT H1)
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  b2-traces:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Focused B2 conformance and negative controls
+        run: python -m unittest tests.test_p1_r16c_bounded_trace_equivalence -v
+      - name: B2 synthetic diagnostic
+        run: python -m experiments.p1_r16c_bounded_trace_equivalence > b2-bounded-traces.json
+      - name: Full historical regression
+        run: python -m unittest discover -s tests -v
+      - name: Upload bounded diagnostic
+        uses: actions/upload-artifact@v4
+        with:
+          name: b2-bounded-trace-diagnostic
+          path: b2-bounded-traces.json
