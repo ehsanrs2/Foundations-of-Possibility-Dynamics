@@ -164,7 +164,7 @@ def audit() -> dict:
         "sealed_family_calls": 0,
         "oracle_engines": ["G2_state_layers", "G2_independent_history",
                            "G3_augmented_state"],
-        "checked_profile_variants": 9,
+        "checked_profile_variants": 8,
         "new_goal_example_gog": new.gog,
         "backup_only_gog": backup.gog,
         "resource_exclusive_individual_gog": two_result.gog,
