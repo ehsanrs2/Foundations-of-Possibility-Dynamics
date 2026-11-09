@@ -1,0 +1,137 @@
+{
+  "schema": "R16A_DECISION_MANIFEST_V1",
+  "source_main_commit": "0a5e0613be7a30c5489c2bb0cfc864587aa47f29",
+  "as_of_date": "2026-11-09",
+  "status": "ARCHITECTURE_REVIEW_PROPOSED",
+  "claim_tracks": [
+    {
+      "id": "P1_H1_PREDICTIVE",
+      "role": "PRIMARY_DRAFT",
+      "status": "DRAFT_NOT_PREREGISTERED",
+      "feature": "R1_scoped_pair_pre_fault",
+      "target": "conditional_strict_restoration_after_actual_goal_loss",
+      "scope": "bounded_predictive_utility_not_causal_or_novel_law"
+    },
+    {
+      "id": "GOG_GENERATIVITY",
+      "role": "SEPARATE_EXPLORATORY",
+      "status": "NOT_PREREGISTERED",
+      "target": "newly_reachable_goals_under_optional_construction",
+      "scope": "goal_universe_and_representation_sensitivity"
+    },
+    {
+      "id": "CONSTRUCTION_CAUSAL",
+      "role": "SEPARATE_EXPLORATORY",
+      "status": "NOT_PREREGISTERED",
+      "target": "intervention_effect_on_realized_outcomes",
+      "scope": "requires_intervention_and_risk_set_design"
+    }
+  ],
+  "gates": [
+    {
+      "id": "A",
+      "status": "UNDER_REVIEW",
+      "depends_on": [],
+      "exit": "critical_review_accepts_claim_split_and_core_architecture_contract"
+    },
+    {
+      "id": "B",
+      "status": "PLANNED",
+      "depends_on": [
+        "A"
+      ],
+      "exit": "versioned_semantics_with_independent_oracle_and_representation_controls"
+    },
+    {
+      "id": "C",
+      "status": "PLANNED",
+      "depends_on": [
+        "B"
+      ],
+      "exit": "matched_information_compute_and_conventional_baseline_benchmark_design"
+    },
+    {
+      "id": "D",
+      "status": "PLANNED",
+      "depends_on": [
+        "A"
+      ],
+      "exit": "independently_verified_field_goal_episodes_or_controlled_instrumented_testbed"
+    },
+    {
+      "id": "E",
+      "status": "PLANNED",
+      "depends_on": [
+        "B",
+        "C"
+      ],
+      "exit": "independent_protocol_review_and_immutable_preregistration_before_holdout"
+    },
+    {
+      "id": "F",
+      "status": "PLANNED",
+      "depends_on": [
+        "E"
+      ],
+      "exit": "sealed_or_independently_sourced_confirmatory_results_with_uncertainty"
+    },
+    {
+      "id": "G",
+      "status": "PLANNED",
+      "depends_on": [
+        "F"
+      ],
+      "exit": "claims_ledger_and_monograph_updated_without_posthoc_endpoint_swap"
+    }
+  ],
+  "field_claim_requires_gate_D": true,
+  "development_evidence": [
+    {
+      "gate": "R8",
+      "source": "research/R8-development-summary-seed20261101.json",
+      "classification": "DEVELOPMENT_NEGATIVE_R1",
+      "brier_gain": 0,
+      "feature": "R1"
+    },
+    {
+      "gate": "R11",
+      "source": "research/R11-unknown-time-prediction-results-20261102.json",
+      "classification": "DEVELOPMENT_ONLY_JOINT_READINESS",
+      "brier_gain": 0.000491912299,
+      "feature": "CONVENTIONAL_JOINT_READINESS"
+    },
+    {
+      "gate": "R12",
+      "source": "research/R12-cross-grammar-results-20261102.json",
+      "classification": "DEVELOPMENT_ONLY_CROSS_GRAMMAR",
+      "brier_gain": 0.001655573791,
+      "feature": "CONVENTIONAL_JOINT_READINESS"
+    }
+  ],
+  "real_evidence": {
+    "source": "research/R15-node-job-lineage-results-20261108.json",
+    "verified_publisher_original": false,
+    "verified_job_restart_lineage": false,
+    "real_h1_labels": 0,
+    "lanl_node_fix_is_goal_restoration": false,
+    "r16_source_protocol_pr": 31,
+    "source_protocol_pr_state": "DRAFT"
+  },
+  "safeguards": {
+    "preregistration_complete": false,
+    "confirmatory_testing_permitted": false,
+    "confirmatory_h1_samples": 0,
+    "sealed_family_generation_permitted": false,
+    "r8_negative_preserved": true,
+    "r11_r12_promoted_to_h1": false,
+    "r10_readiness_replaces_r1_without_new_protocol": false,
+    "gog_is_h1": false,
+    "claim_of_independent_new_science": false
+  },
+  "next_execution": {
+    "id": "B1",
+    "description": "Specify versioned operational semantics and compatibility matrix for G2/G3/G4/R3/R7/R10, including exploratory GOG fixtures and invariance counterexamples",
+    "deliverable": "research/R16B-core-semantics-contract.md",
+    "condition": "A reviewer resolution or explicitly provisional development-only scope"
+  }
+}
