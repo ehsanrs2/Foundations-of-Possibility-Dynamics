@@ -1,0 +1,27 @@
+name: B3 deterministic policy response equivalence (NOT H1)
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  b3-command-response:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Focused bounded action-observation tests
+        run: python -m unittest tests.test_p1_r16d_b3_policy_response -v
+      - name: Generate B3 synthetic diagnostic
+        run: python -m experiments.p1_r16d_b3_policy_response > b3-command-response.json
+      - name: Full repository regression
+        run: python -m unittest discover -s tests -v
+      - name: Upload synthetic B3 diagnostic
+        uses: actions/upload-artifact@v4
+        with:
+          name: b3-command-response-diagnostic
+          path: b3-command-response.json
