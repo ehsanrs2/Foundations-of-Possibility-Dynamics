@@ -115,7 +115,7 @@ def _command_step(held: frozenset[str], stock: tuple[int, ...],
     if command not in actions:
         raise ValueError("unknown canonical tester command")
     a = actions[command]
-    if (command in disabled or (a.generative and not construction)
+    if (a.name in disabled or (a.generative and not construction)
             or not a.requires <= held
             or any(x < y for x, y in zip(stock, a.consumes))):
         return False, held, stock
