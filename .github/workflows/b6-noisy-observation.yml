@@ -1,0 +1,27 @@
+name: B6 noisy observation and synthetic evidence audit (NOT H1)
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  b6-noisy-observation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Focused sensor, risk, and audit evidence controls
+        run: python -m unittest tests.test_p1_r16g_b6_noisy_sensor_evidence -v
+      - name: Exact synthetic noise and evidence diagnostic
+        run: python -m experiments.p1_r16g_b6_noisy_sensor_evidence > b6-noisy-sensor-results.json
+      - name: Full historical scientific regression
+        run: python -m unittest discover -s tests -v
+      - name: Upload developer-only B6 diagnostic
+        uses: actions/upload-artifact@v4
+        with:
+          name: b6-noisy-observation-synthetic-results
+          path: b6-noisy-sensor-results.json
