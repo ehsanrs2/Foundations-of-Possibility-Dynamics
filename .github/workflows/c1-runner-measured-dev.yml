@@ -1,0 +1,27 @@
+name: C1 runner measured six-arm development (NOT H1)
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  c1-runner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Focused actual executor, cap and fairness tests
+        run: python -m unittest tests.test_p1_r16j_c1_runner -v
+      - name: Run measured six-arm developer comparison in separate limited processes
+        run: python -m experiments.p1_r16j_c1_runner > c1-runner-measured-dev.json
+      - name: Full historical scientific regression
+        run: python -m unittest discover -s tests -v
+      - name: Upload measured development diagnostic (NOT H1)
+        uses: actions/upload-artifact@v4
+        with:
+          name: c1-runner-measured-developer-only
+          path: c1-runner-measured-dev.json
