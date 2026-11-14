@@ -121,6 +121,18 @@ class C1RunnerTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "PAIRED_TASK_OR_CAPACITY_MISMATCH"):
             summarize_runs(bad)
 
+    def test_unequal_actual_compute_limits_are_rejected(self):
+        bad = deepcopy(self.mock_measured)
+        bad["raw"]["budget"]["wall_seconds"] = 50
+        with self.assertRaisesRegex(ValueError, "UNEQUAL_ENFORCED_PROCESS_CAPS"):
+            summarize_runs(bad)
+
+    def test_worker_method_mislabeled_is_rejected(self):
+        bad = deepcopy(self.mock_measured)
+        bad["raw"]["prediction"]["method"] = "r1_scoped_pair_candidate"
+        with self.assertRaisesRegex(ValueError, "METHOD_IDENTITY_MISMATCH"):
+            summarize_runs(bad)
+
     def test_mismatched_feature_capacity_is_detected(self):
         bad = deepcopy(self.mock_measured)
         bad["raw"]["prediction"][
