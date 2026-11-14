@@ -111,7 +111,7 @@ class C1RunnerTests(unittest.TestCase):
     def test_mismatched_target_is_detected(self):
         bad = deepcopy(self.mock_measured)
         bad["r1_scoped_pair_candidate"]["prediction"]["tune_records"][0][
-            "known_model_probability"] = "0"
+            "known_model_probability"] = "99/100"
         with self.assertRaisesRegex(ValueError, "DIFFERENT_OUTCOME_LABELS"):
             summarize_runs(bad)
 
