@@ -1,0 +1,27 @@
+name: C1 matched-budget benchmark design gate (NO H1 result)
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  c1-fair-comparator:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Matched information and cost audit tests
+        run: python -m unittest tests.test_p1_r16i_c1_matched_benchmark -v
+      - name: Exact manufactured per-system Brier arithmetic
+        run: python -m experiments.p1_r16i_c1_matched_benchmark > c1-fair-benchmark-audit.json
+      - name: Full historical regression
+        run: python -m unittest discover -s tests -v
+      - name: Upload design-only diagnostic
+        uses: actions/upload-artifact@v4
+        with:
+          name: c1-design-only-audit
+          path: c1-fair-benchmark-audit.json
