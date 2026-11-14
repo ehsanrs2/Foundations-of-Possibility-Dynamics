@@ -270,7 +270,13 @@ def summarize_runs(runs: dict[str, dict]) -> dict:
                          if runs[m].get("status") != "PASS"},
             "H1_confirmatory_samples": 0,
         }
+    budgets = {json.dumps(runs[m].get("budget"), sort_keys=True)
+               for m in METHODS}
+    if len(budgets) != 1:
+        raise ValueError("UNEQUAL_ENFORCED_PROCESS_CAPS")
     predictions = {m: runs[m]["prediction"] for m in METHODS}
+    if any(predictions[m].get("method") != m for m in METHODS):
+        raise ValueError("METHOD_IDENTITY_MISMATCH")
     keys = {v["tune_identity_sha256"] for v in predictions.values()}
     counts = {(v["train_parameter_settings"], v["tune_parameter_settings"],
                v["fixed_feature_slots_excluding_intercept"])
