@@ -1,0 +1,28 @@
+{
+  "schema": "R16K_PROGRESS_SNAPSHOT_V1",
+  "as_of": "2026-11-25",
+  "source_main": "5febb0aacd9f5d514d3bbebabdc3a47f60e3e931",
+  "historical_manifest": "R16A-decision-manifest.json",
+  "gates": {
+    "A": "UNDER_REVIEW",
+    "B": "PROVISIONAL_B1_B6_DEVELOPMENT_CONFORMANCE",
+    "C": "C1_MEASURED_DEVELOPMENT_C2A_PROPOSED",
+    "D": "B7_STRUCTURE_ONLY_FIELD_BLOCKED",
+    "E": "NOT_PREREGISTERED",
+    "F": "SEALED",
+    "G": "NOT_FINAL"
+  },
+  "H1": {
+    "feature": "R1_scoped_pair_pre_fault",
+    "status": "DRAFT_NOT_PREREGISTERED",
+    "confirmatory_samples": 0,
+    "field_labels": 0,
+    "sealed_families_accessed": false
+  },
+  "next": [
+    "C2b_independent_protocol_review",
+    "B7_operational_pilot_and_independent_attestation",
+    "N1_novelty_decision"
+  ],
+  "note": "Historical R16-A is preserved because its audit intentionally tests a pinned proposal; this is its dated successor, not a retrospective edit."
+}
