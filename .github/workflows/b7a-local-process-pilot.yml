@@ -1,0 +1,23 @@
+name: B7a local owned process pilot (NOT independent H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  local-pilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest tests.test_p1_r16l_b7_process_pilot -v
+      - run: python -m experiments.p1_r16l_b7_process_pilot > b7a-local-pilot.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: b7a-local-pilot-not-H1
+          path: b7a-local-pilot.json
