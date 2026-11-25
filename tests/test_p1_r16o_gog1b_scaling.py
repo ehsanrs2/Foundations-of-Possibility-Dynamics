@@ -68,7 +68,7 @@ class ScalingTests(unittest.TestCase):
         r=worker("shared_index")
         oracle={n:{k:c[k] for k in ("ordinary","constructive")}
                 for n,c in r["cases"].items()}
-        runs={m:[{"status":"PASS",**deepcopy(r),"method":m}
+        runs={m:[{"status":"PASS","wall_ms":1.0,**deepcopy(r),"method":m}
                  for _ in range(REPETITIONS)] for m in METHODS}
         runs["shared_index"][0]["cases"]["shared_g2_stock1_noise0"]["constructive"]["g1"]=99
         with self.assertRaisesRegex(AssertionError,"earliest mismatch"):
