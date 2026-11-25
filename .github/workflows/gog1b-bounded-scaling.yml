@@ -1,0 +1,33 @@
+name: GOG-1b bounded scaling and indexed slices (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  gog1b:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest tests.test_p1_r16o_gog1b_scaling -v
+      - name: Run repeated capped scaling comparison
+        run: python -m experiments.p1_r16o_gog1b_scaling > gog1b-results.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gog1b-development-scaling
+          path: gog1b-results.json
+      - name: Report exact paired comparison
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('gog1b-results.json'))
+          assert d['comparison'] is not None, {m:[r['status'] for r in v] for m,v in d['runs'].items()}
+          print(json.dumps({'cases':d['exact_cases'],'repetitions':d['repetitions'],'comparison':d['comparison']},indent=2))
+          PY
+      - run: python -m unittest discover -s tests -v
