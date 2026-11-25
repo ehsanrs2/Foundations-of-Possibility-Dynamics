@@ -158,3 +158,12 @@ C-071: C1-Runner executes six learned comparator arms with measured process wall
 C-072: C2a proposes a group-disjoint developer comparison with a new dual-stage grammar, preserving static R1 semantics and separating known developer families from sealed P1 families. **Status: development protocol and implementation under review**, no new confirmation or claim of real-system independence. See [R16-K](R16K-C2-grouped-development-and-next-gates.md).
 
 H1 remains DRAFT_NOT_PREREGISTERED, with zero confirmatory samples; R8's negative finding stands. See [dated progress manifest](R16K-progress-manifest.json).
+
+
+## N1 — retrospective evidence and decision proposal (2026-11-25)
+
+C-073: C2a's completed measured developer run reported grouped DEV_EVAL expected Brier 0.1595602648531204 (raw), 0.16040127346668326 (raw + R1), and 0.1552048132360558 (raw + conventional joint-readiness DP). **Negative developer comparison for R1**, not confirmatory H1 rejection. [CI run](https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/45558400768).
+
+C-074: B7a executed local owned-child stop, restart and no-restart controls in CI. Same-ID checkpoint continuation is a local engineering outcome, not independently observed field service restoration. **No independent assessor, no field H1 admission.** See [R16-L](R16L-B7a-local-process-operational-pilot.md).
+
+C-075: N1 checks retrospective R1 information redundancy in the C2a population, with a triangle event-support counterexample delimiting any claimed universal equivalence to the event cut. Proposes pausing R1 confirmatory preparations pending independent critical review and a separate GOG-1 computational research plan. **Provisional decision; historical H1 draft unchanged, no sealed access, zero confirmatory units.** See [R16-M](R16M-N1-novelty-and-R1-decision.md).
