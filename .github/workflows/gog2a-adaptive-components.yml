@@ -1,0 +1,40 @@
+name: GOG-2a adaptive dependency components (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  gog2a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest tests.test_p1_r16p_gog2a_components -v
+      - name: Repeated capped comparison
+        run: python -m experiments.p1_r16p_gog2a_components > gog2a-results.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gog2a-development-components
+          path: gog2a-results.json
+      - name: Report exact paired comparison
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('gog2a-results.json'))
+          assert d['comparison'] is not None, {m:[r['status'] for r in v] for m,v in d['runs'].items()}
+          print(json.dumps({'exact_cases':d['exact_cases'],'repetitions':d['repetitions'],
+              'comparison':{m:{'cpu_ms':v['median_worker_cpu_ms'],
+                                'wall_ms':v['median_process_wall_ms'],
+                                'peak_rss_kib':v['median_peak_rss_kib'],
+                                'class_query_ms':{k:c['median_sum_query_ms'] for k,c in v['classes'].items()},
+                                'work':{k:sum(c['work'][k] for c in v['classes'].values())
+                                        for k in v['classes']['all']['work']}}
+                            for m,v in d['comparison'].items()}},indent=2))
+          PY
+      - run: python -m unittest discover -s tests -v
