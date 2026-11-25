@@ -1,0 +1,26 @@
+name: C2a grouped developer transfer (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  c2a:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest tests.test_p1_r16k_c2_grouped_development -v
+      - name: Execute capped comparators
+        run: python -m experiments.p1_r16k_c2_grouped_development > c2a-results.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: c2a-development-results
+          path: c2a-results.json
+      - name: Check complete coverage
+        run: python -c "import json; d=json.load(open('c2a-results.json')); print(d['comparison']); assert d['comparison'] is not None"
+      - run: python -m unittest discover -s tests -v
