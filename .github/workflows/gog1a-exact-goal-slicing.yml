@@ -1,0 +1,33 @@
+name: GOG-1a exact goal slicing development (NOT H1)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  gog1a:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest tests.test_p1_r16n_gog1_goal_slicing -v
+      - name: Measure capped exact solver comparison
+        run: python -m experiments.p1_r16n_gog1_goal_slicing > gog1a-results.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gog1a-development-comparison
+          path: gog1a-results.json
+      - name: Report paired measured costs
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('gog1a-results.json'))
+          assert d['comparison'] is not None, d
+          print(json.dumps({'cases':d['exact_suite_cases'],'comparison':d['comparison'],'timing':{m:{k:r[k] for k in ('wall_ms','worker_cpu_ms','peak_rss_kib')} for m,r in d['runs'].items()}, 'per_case':{m:{c:x['work'] for c,x in r['cases'].items()} for m,r in d['runs'].items()}},indent=2))
+          PY
+      - run: python -m unittest discover -s tests -v
