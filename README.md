@@ -8,6 +8,12 @@
 
 Study how bounded systems generate, lose and rebuild *operationally reachable* capabilities under resource and time constraints. Test whether constructible backup routes predict disturbance recovery above established network redundancy, reachability, viability and empowerment measures.
 
+## Current research synthesis (28 November 2026)
+
+[Read S1: bounded operational possibility](research/R16R-S1-scientific-synthesis.md) · [Current review status](research/R16R-S1-status.json).
+
+The project now has a substantial bounded software and development research record. R8 and C2a did not demonstrate incremental predictive benefit for the primary R1 feature; N1 proposes pausing its confirmatory preparation. GOG is descriptive under a fixed ontology, and GOG-2a adaptive grouping did not outperform ordinary goal-wise indexing on the reused developer suite. The local process pilot is not independent field evidence. H1 remains unregistered, with zero confirmatory samples and zero independently admitted field labels. S1 is an author/developer synthesis, not independent review or a completed literature search. The historical monograph remains v0.2 pending reviewed revision.
+
 ## Present scientific status
 
 The book contains finite-system definitions, candidate GOG and GBR gain measures, a hand-designed illustrative communication scenario and a detailed prospective experimental protocol. **No ensemble validation, cross-domain tests or general physical law has been established.** Known augmented state-space methods may describe the same phenomena.

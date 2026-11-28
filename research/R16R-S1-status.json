@@ -1,0 +1,30 @@
+{
+  "schema": "R16R_S1_SYNTHESIS_V1",
+  "as_of": "2026-11-28",
+  "source_main": "2f76004da87892bf200b1b989ad8663833b0bacf",
+  "predecessor": "R16Q-progress-manifest.json",
+  "synthesis": "R16R-S1-scientific-synthesis.md",
+  "status": "AUTHOR_DEVELOPER_SYNTHESIS_UNDER_REVIEW",
+  "external_literature_search_completed": false,
+  "independent_review_completed": false,
+  "scientific_novelty_established": false,
+  "tracks": {
+    "R1": "PAUSED_PENDING_INDEPENDENT_REVIEW",
+    "GOG": "DESCRIPTIVE_BOUNDED_REACHABILITY_ADAPTIVE_TUNING_PAUSED",
+    "causal": "NOT_EVALUATED",
+    "B7": "LOCAL_PILOT_ONLY_INDEPENDENT_FIELD_BLOCKED"
+  },
+  "H1": {
+    "feature": "R1_scoped_pair_pre_fault",
+    "status": "DRAFT_NOT_PREREGISTERED",
+    "confirmatory_samples": 0,
+    "field_labels": 0,
+    "sealed_families_accessed": false
+  },
+  "next": [
+    "S2_verified_literature_comparison",
+    "S3_independent_novelty_assessment",
+    "B7_independent_evidence_feasibility",
+    "reviewed_book_revision"
+  ]
+}
