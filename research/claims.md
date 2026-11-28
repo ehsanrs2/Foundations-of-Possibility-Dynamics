@@ -167,3 +167,12 @@ C-073: C2a's completed measured developer run reported grouped DEV_EVAL expected
 C-074: B7a executed local owned-child stop, restart and no-restart controls in CI. Same-ID checkpoint continuation is a local engineering outcome, not independently observed field service restoration. **No independent assessor, no field H1 admission.** See [R16-L](R16L-B7a-local-process-operational-pilot.md).
 
 C-075: N1 checks retrospective R1 information redundancy in the C2a population, with a triangle event-support counterexample delimiting any claimed universal equivalence to the event cut. Proposes pausing R1 confirmatory preparations pending independent critical review and a separate GOG-1 computational research plan. **Provisional decision; historical H1 draft unchanged, no sealed access, zero confirmatory units.** See [R16-M](R16M-N1-novelty-and-R1-decision.md).
+
+
+## GOG-1a through GOG-2a — review checkpoint (2026-11-28)
+
+C-076: GOG-1a and GOG-1b compare ordinary state-layer search, dominance and shared/goal-wise relevance slicing with exact earliest goal dictionaries in both construction arms. All resource producers and their prerequisite closures are retained. Bounded developer results illustrate work trade-offs; exactness and lower selected counters do not establish a general speedup or novel mathematics. See [R16-N](R16N-GOG1-exact-goal-slicing.md) and [R16-O](R16O-GOG1b-bounded-scaling.md).
+
+C-077: GOG-2a adaptive dependency components preserve exact earliest goal dictionaries on 28 developer fixtures. On the PR and merged-main CI runs, the same deterministic work counts recur, but adaptive grouping has higher median CPU and end-to-end wall than ordinary goal-wise indexing on both runs. **Negative developer result for the proposed grouping method relative to singleton slicing; not independent-domain or statistical rejection of all grouping methods.** See [R16-P](R16P-GOG2a-adaptive-components.md) and [archived CI summaries](R16Q-GOG2a-CI-summary-20261128.json).
+
+C-078: R16-Q proposes pausing adaptive grouping tuning on the reused developer suite and seeking independent critical review before further scientific claims or new prospective comparison. **Proposed decision, not independent reviewer acceptance.** GOG stays descriptive; R1 historical draft and negative results preserved; H1 DRAFT_NOT_PREREGISTERED, zero confirmatory samples or field labels, sealed families untouched. See [review and decision packet](R16Q-GOG-review-and-next-decision.md) and [current progress snapshot](R16Q-progress-manifest.json).

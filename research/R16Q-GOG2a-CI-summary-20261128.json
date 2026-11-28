@@ -1,0 +1,294 @@
+{
+  "schema": "GOG2A_CI_LOG_SUMMARY_ARCHIVE_V1",
+  "as_of": "2026-11-28",
+  "classification": "REPEATED_DEVELOPMENT_FIXTURES_NOT_INDEPENDENT_DOMAINS",
+  "source": "JSON summary transcribed programmatically from successful GitHub Actions job logs; not raw per-repetition artifacts or independently authenticated signatures",
+  "runs": [
+    {
+      "run_id": 45611438837,
+      "job_id": 139195698115,
+      "head_sha": "508bc8b2c0ce6d9f2c40ead202c2a39e1ac41e43",
+      "source_url": "https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/45611438837",
+      "job_conclusion": "success",
+      "reported_test_counts": [
+        10,
+        655
+      ],
+      "report": {
+        "exact_cases": 28,
+        "repetitions": 3,
+        "comparison": {
+          "state_layers": {
+            "cpu_ms": 27.990821,
+            "wall_ms": 109.837112,
+            "peak_rss_kib": 21936,
+            "class_query_ms": {
+              "singleton": 9.970497,
+              "pairs": 7.78001,
+              "all": 6.600939,
+              "chain": 0.436505,
+              "resource_control": 0.220932
+            },
+            "work": {
+              "expanded": 2294,
+              "action_checks": 25718,
+              "dominance_checks": 0,
+              "slice_action_checks": 0,
+              "retained_actions": 435,
+              "search_calls": 56,
+              "index_action_checks": 0,
+              "pair_tests": 0,
+              "merge_operations": 0,
+              "union_action_memberships": 0,
+              "union_capability_memberships": 0
+            }
+          },
+          "shared_index": {
+            "cpu_ms": 22.996642,
+            "wall_ms": 100.73562,
+            "peak_rss_kib": 21808,
+            "class_query_ms": {
+              "singleton": 7.875368,
+              "pairs": 6.165265,
+              "all": 5.496277,
+              "chain": 0.590442,
+              "resource_control": 0.301842
+            },
+            "work": {
+              "expanded": 1035,
+              "action_checks": 10243,
+              "dominance_checks": 31808,
+              "slice_action_checks": 387,
+              "retained_actions": 387,
+              "search_calls": 56,
+              "index_action_checks": 435,
+              "pair_tests": 0,
+              "merge_operations": 0,
+              "union_action_memberships": 0,
+              "union_capability_memberships": 0
+            }
+          },
+          "goalwise_index": {
+            "cpu_ms": 12.005228,
+            "wall_ms": 93.646296,
+            "peak_rss_kib": 21788,
+            "class_query_ms": {
+              "singleton": 2.844316,
+              "pairs": 3.246378,
+              "all": 3.5776209999999997,
+              "chain": 0.427438,
+              "resource_control": 0.305991
+            },
+            "work": {
+              "expanded": 1604,
+              "action_checks": 3329,
+              "dominance_checks": 1752,
+              "slice_action_checks": 442,
+              "retained_actions": 442,
+              "search_calls": 254,
+              "index_action_checks": 435,
+              "pair_tests": 0,
+              "merge_operations": 0,
+              "union_action_memberships": 0,
+              "union_capability_memberships": 0
+            }
+          },
+          "fixed_pairs": {
+            "cpu_ms": 13.9976,
+            "wall_ms": 99.788728,
+            "peak_rss_kib": 21628,
+            "class_query_ms": {
+              "singleton": 3.072663,
+              "pairs": 4.4256590000000005,
+              "all": 3.456572,
+              "chain": 0.437396,
+              "resource_control": 0.31480600000000003
+            },
+            "work": {
+              "expanded": 1155,
+              "action_checks": 4767,
+              "dominance_checks": 4117,
+              "slice_action_checks": 420,
+              "retained_actions": 420,
+              "search_calls": 130,
+              "index_action_checks": 435,
+              "pair_tests": 0,
+              "merge_operations": 0,
+              "union_action_memberships": 0,
+              "union_capability_memberships": 0
+            }
+          },
+          "adaptive_components": {
+            "cpu_ms": 16.994168,
+            "wall_ms": 96.388945,
+            "peak_rss_kib": 21804,
+            "class_query_ms": {
+              "singleton": 3.420516,
+              "pairs": 3.4066479999999997,
+              "all": 6.551527,
+              "chain": 0.672866,
+              "resource_control": 0.380871
+            },
+            "work": {
+              "expanded": 1335,
+              "action_checks": 5283,
+              "dominance_checks": 8596,
+              "slice_action_checks": 442,
+              "retained_actions": 387,
+              "search_calls": 199,
+              "index_action_checks": 435,
+              "pair_tests": 516,
+              "merge_operations": 55,
+              "union_action_memberships": 1997,
+              "union_capability_memberships": 817
+            }
+          }
+        }
+      }
+    },
+    {
+      "run_id": 46111841179,
+      "job_id": 140876875064,
+      "head_sha": "9b647ec766694cbb9cf6fb1b90aac3a267ee829f",
+      "source_url": "https://github.com/ehsanrs2/Foundations-of-Possibility-Dynamics/actions/runs/46111841179",
+      "job_conclusion": "success",
+      "reported_test_counts": [
+        10,
+        655
+      ],
+      "report": {
+        "exact_cases": 28,
+        "repetitions": 3,
+        "comparison": {
+          "state_layers": {
+            "cpu_ms": 20.994592,
+            "wall_ms": 88.305285,
+            "peak_rss_kib": 21916,
+            "class_query_ms": {
+              "singleton": 7.641865,
+              "pairs": 5.855835000000001,
+              "all": 5.018122,
+              "chain": 0.317218,
+              "resource_control": 0.15251900000000002
+            },
+            "work": {
+              "expanded": 2294,
+              "action_checks": 25718,
+              "dominance_checks": 0,
+              "slice_action_checks": 0,
+              "retained_actions": 435,
+              "search_calls": 56,
+              "index_action_checks": 0,
+              "pair_tests": 0,
+              "merge_operations": 0,
+              "union_action_memberships": 0,
+              "union_capability_memberships": 0
+            }
+          },
+          "shared_index": {
+            "cpu_ms": 17.99622,
+            "wall_ms": 84.650268,
+            "peak_rss_kib": 21792,
+            "class_query_ms": {
+              "singleton": 5.979579,
+              "pairs": 4.642523000000001,
+              "all": 4.0351099999999995,
+              "chain": 0.426312,
+              "resource_control": 0.201013
+            },
+            "work": {
+              "expanded": 1035,
+              "action_checks": 10243,
+              "dominance_checks": 31808,
+              "slice_action_checks": 387,
+              "retained_actions": 387,
+              "search_calls": 56,
+              "index_action_checks": 435,
+              "pair_tests": 0,
+              "merge_operations": 0,
+              "union_action_memberships": 0,
+              "union_capability_memberships": 0
+            }
+          },
+          "goalwise_index": {
+            "cpu_ms": 8.996418,
+            "wall_ms": 75.825631,
+            "peak_rss_kib": 21628,
+            "class_query_ms": {
+              "singleton": 1.9810669999999997,
+              "pairs": 2.285663,
+              "all": 2.506648,
+              "chain": 0.307043,
+              "resource_control": 0.19894
+            },
+            "work": {
+              "expanded": 1604,
+              "action_checks": 3329,
+              "dominance_checks": 1752,
+              "slice_action_checks": 442,
+              "retained_actions": 442,
+              "search_calls": 254,
+              "index_action_checks": 435,
+              "pair_tests": 0,
+              "merge_operations": 0,
+              "union_action_memberships": 0,
+              "union_capability_memberships": 0
+            }
+          },
+          "fixed_pairs": {
+            "cpu_ms": 9.995484,
+            "wall_ms": 77.521517,
+            "peak_rss_kib": 21812,
+            "class_query_ms": {
+              "singleton": 2.1694869999999997,
+              "pairs": 3.207383,
+              "all": 2.334098,
+              "chain": 0.308595,
+              "resource_control": 0.209786
+            },
+            "work": {
+              "expanded": 1155,
+              "action_checks": 4767,
+              "dominance_checks": 4117,
+              "slice_action_checks": 420,
+              "retained_actions": 420,
+              "search_calls": 130,
+              "index_action_checks": 435,
+              "pair_tests": 0,
+              "merge_operations": 0,
+              "union_action_memberships": 0,
+              "union_capability_memberships": 0
+            }
+          },
+          "adaptive_components": {
+            "cpu_ms": 11.996382,
+            "wall_ms": 78.543015,
+            "peak_rss_kib": 21760,
+            "class_query_ms": {
+              "singleton": 2.359544,
+              "pairs": 2.3746479999999996,
+              "all": 4.765612,
+              "chain": 0.493754,
+              "resource_control": 0.239632
+            },
+            "work": {
+              "expanded": 1335,
+              "action_checks": 5283,
+              "dominance_checks": 8596,
+              "slice_action_checks": 442,
+              "retained_actions": 387,
+              "search_calls": 199,
+              "index_action_checks": 435,
+              "pair_tests": 516,
+              "merge_operations": 55,
+              "union_action_memberships": 1997,
+              "union_capability_memberships": 817
+            }
+          }
+        }
+      }
+    }
+  ],
+  "H1_confirmatory_samples": 0,
+  "sealed_families_accessed": false
+}
